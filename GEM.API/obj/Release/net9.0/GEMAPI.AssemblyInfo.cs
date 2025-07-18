@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GEMAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b075fac66cba50f3d2efdda5882a80c3ae7b725")]
 [assembly: System.Reflection.AssemblyProductAttribute("GEMAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GEMAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

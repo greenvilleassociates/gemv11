@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/567/apiv9/GEM.API/GEMAPI.csproj": {}
+    "/home/567/v10/GEM.API/GEMAPI.csproj": {}
   },
   "projects": {
-    "/home/567/apiv9/GEM.API/GEMAPI.csproj": {
+    "/home/567/v10/GEM.API/GEMAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/567/apiv9/GEM.API/GEMAPI.csproj",
+        "projectUniqueName": "/home/567/v10/GEM.API/GEMAPI.csproj",
         "projectName": "GEMAPI",
-        "projectPath": "/home/567/apiv9/GEM.API/GEMAPI.csproj",
+        "projectPath": "/home/567/v10/GEM.API/GEMAPI.csproj",
         "packagesPath": "/root/.nuget/packages/",
-        "outputPath": "/home/567/apiv9/GEM.API/obj/",
+        "outputPath": "/home/567/v10/GEM.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/root/.nuget/NuGet/NuGet.Config"

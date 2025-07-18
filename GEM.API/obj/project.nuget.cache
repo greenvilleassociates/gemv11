@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bZZAz+7gC0g=",
+  "dgSpecHash": "c9TtBR1DIKw=",
   "success": true,
-  "projectFilePath": "/home/567/apiv9/GEM.API/GEMAPI.csproj",
+  "projectFilePath": "/home/567/v10/GEM.API/GEMAPI.csproj",
   "expectedPackageFiles": [
     "/root/.nuget/packages/humanizer/2.14.1/humanizer.2.14.1.nupkg.sha512",
     "/root/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
