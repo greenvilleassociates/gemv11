@@ -1,0 +1,8 @@
+Version files go in this formation version.MajorRelease.MinorRelease.txt
+
+Greenville Associates Enterprise Software
+Media, Pennsylvania 19063
+Version5.0 Code
+January 1, 2024
+
+This version has an updated directory structure for deployment in FusionContainers.

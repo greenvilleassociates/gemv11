@@ -1,0 +1,4 @@
+//Virtual Machine Endpont needs to have the exact string needed to reboot a node. On Amazon, Google, and Azure this requires custom security keys, and software installed. 
+//So the controller requirements went up inline with the grid complexity.
+
+alter table ghostvm add resetstring //Reboot command

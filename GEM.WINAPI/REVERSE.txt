@@ -1,0 +1,26 @@
+dotnet ef dbcontext scaffold "Host=dbserver.590team1.info;Database=gem;Username=postgres;Password=*Columbia1" Npgsql.EntityFrameworkCore.PostgreSQL -o Models --no-build
+Current Tables as of today
+gmanagers
+gemployees
+ghregions
+gbregions
+gbranches
+gsites
+gchange
+gapps
+gusers
+gusers_cards
+gproducts
+gitsm
+gitsm_detail
+gapptype
+gdbmstype
+gdbmstopology
+gserver
+grouter
+gswitch
+gworkorders
+ggridroots
+ggridnodes
+ggrids
+ggridtopology

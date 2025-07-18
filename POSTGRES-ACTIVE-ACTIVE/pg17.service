@@ -1,0 +1,28 @@
+// NOTE PGEDGE NEEDS CHOWN TO NON-ROOT USER
+// NOTE PGEDGE DIRECTORY NEEDS CHMOD 750
+// NOTE PGEDGE server.key NEEDS CHOMD 600
+OR SERVICE WILL NOT START.
+Postgres is running with the following command structure.
+Username is gridsa Password is Base + 234
+/opt/pgedge/pg17/bin/postgres -D /opt/pgedge/data/pg17
+
+/ETC/SYSTEMD/SYSTEM
+systemctl enable pg17
+systemctl start pg17
+****************FILE BELOW
+
+Running on port 5434
+
+
+[Unit]
+Description=PG17withSpock
+After=network.target
+
+[Service]
+ExecStart=/opt/pgedge/pg17/bin/postgres -D /opt/pgedge/data/pg17
+Restart=always
+User=$USER
+Group=$USER
+
+[Install]
+WantedBy=multi-user.target

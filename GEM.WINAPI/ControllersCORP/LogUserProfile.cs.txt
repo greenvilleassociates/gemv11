@@ -1,0 +1,150 @@
+/*using System;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using Microsoft.AspNetCore.Http;
+using System.Net.Mail;
+using GEMAPI.Models;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OpenApi;
+using System.Text.Json;
+namespace Enterprise.Controllers;
+
+public static class LogUserprofileEndpoints
+{
+    public static void MapLogUserprofileEndpoints(this IEndpointRouteBuilder routes)
+    {
+        var group = routes.MapGroup("/api/Userprofile").WithTags(nameof(Userprofile));
+
+        //[HttpGet] Get All User Profiles
+        group.MapGet("/", async () =>
+        {
+            using (var context = new Gemcorp2Context())
+            {
+                var userprofiles = await context.Userprofiles.ToListAsync();
+
+                var apiLog = new Apilog
+                {
+                    Descr = "Fetching all user profiles",
+                    Logdate = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss"),
+                    Apiurl = "/api/Userprofile",
+                    Apirequestdetail = "Request for all user profiles",
+                };
+
+                context.Apilogs.Add(apiLog);
+                await context.SaveChangesAsync();
+
+                return userprofiles;
+            }
+        })
+        .WithName("GetAllUserprofiles")
+        .WithOpenApi();
+
+        //[HttpGet] Get User Profile by ID
+        group.MapGet("/{id}", async (int id) =>
+        {
+            using (var context = new Gemcorp2Context())
+            {
+                var userprofile = await context.Userprofiles.Where(m => m.Id == id).ToListAsync();
+
+                var apiLog = new Apilog
+                {
+                    Descr = $"Fetching user profile with ID {id}",
+                    Logdate = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss"),
+                    Apiurl = $"/api/Userprofile/{id}",
+                    Apirequestdetail = $"Requested Userprofile ID: {id}",
+                };
+
+                context.Apilogs.Add(apiLog);
+                await context.SaveChangesAsync();
+
+                return userprofile;
+            }
+        })
+        .WithName("GetUserprofileById")
+        .WithOpenApi();
+
+        //[HttpPut] Update User Profile
+        group.MapPut("/{id}", async (int id, Userprofile input) =>
+        {
+            using (var context = new Gemcorp2Context())
+            {
+                var userprofile = await context.Userprofiles.FindAsync(id);
+                if (userprofile == null) return TypedResults.NotFound("User profile not found");
+
+                // Update fields
+                context.Entry(userprofile).CurrentValues.SetValues(input);
+                await context.SaveChangesAsync();
+
+                var apiLog = new Apilog
+                {
+                    Descr = $"Updated user profile with ID {id}",
+                    Logdate = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss"),
+                    Apiurl = $"/api/Userprofile/{id}",
+                    Apirequestdetail = JsonSerializer.Serialize(input),
+                };
+
+                context.Apilogs.Add(apiLog);
+                await context.SaveChangesAsync();
+
+                return TypedResults.Accepted($"Updated ID: {input.Id}");
+            }
+        })
+        .WithName("UpdateUserprofile")
+        .WithOpenApi();
+
+        //[HttpPost] Create User Profile
+        group.MapPost("/", async (Userprofile input) =>
+        {
+            using (var context = new Gemcorp2Context())
+            {
+                context.Userprofiles.Add(input);
+                await context.SaveChangesAsync();
+
+                var apiLog = new Apilog
+                {
+                    Descr = "Created new user profile",
+                    Logdate = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss"),
+                    Apiurl = "/api/Userprofile",
+                    Apirequestdetail = JsonSerializer.Serialize(input),
+                };
+
+                context.Apilogs.Add(apiLog);
+                await context.SaveChangesAsync();
+
+                return TypedResults.Created($"Created ID: {input.Id}");
+            }
+        })
+        .WithName("CreateUserprofile")
+        .WithOpenApi();
+
+        //[HttpDelete] Delete User Profile
+        group.MapDelete("/{id}", async (int id) =>
+        {
+            using (var context = new Gemcorp2Context())
+            {
+                var userprofile = await context.Userprofiles.FindAsync(id);
+                if (userprofile == null) return TypedResults.NotFound("User profile not found");
+
+                context.Userprofiles.Remove(userprofile);
+                await context.SaveChangesAsync();
+
+                var apiLog = new Apilog
+                {
+                    Descr = $"Deleted user profile with ID {id}",
+                    Logdate = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss"),
+                    Apiurl = $"/api/Userprofile/{id}",
+                    Apirequestdetail = $"Deleted Userprofile ID: {id}",
+                };
+
+                context.Apilogs.Add(apiLog);
+                await context.SaveChangesAsync();
+
+                return TypedResults.Ok($"Deleted ID: {id}");
+            }
+        })
+        .WithName("DeleteUserprofile")
+        .WithOpenApi();
+    }
+}
+*/

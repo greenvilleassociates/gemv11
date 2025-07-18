@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Compliance Charts</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .chart-container { padding: 20px; }
+    </style>
+</head>
+<body>
+<div align="center"><span align="center"><img src="cocky590.png" width="100px" height="100px"></span></div>  
+    <div class="container mt-4">
+        <h2 class="mb-4">Compliance Charts by Grid ID</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">Grid ID 1</div>
+                    <div class="card-body">
+                        <canvas id="chartGrid1"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-success text-white">Grid ID 2</div>
+                    <div class="card-body">
+                        <canvas id="chartGrid2"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-secondary text-white">Grid ID 3</div>
+                    <div class="card-body">
+                        <canvas id="chartGrid3"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-info text-white">Grid ID 4</div>
+                    <div class="card-body">
+                        <canvas id="chartGrid4"></canvas>
+                    </div>
+                </div>
+            </div>
+            <!-- Chart for Null or Zero Grid IDs -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-warning text-dark">Grid ID: AllOthers(Zero,Null,>4)</div>
+                    <div class="card-body">
+                        <canvas id="chartGridNull"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function fetchAppData() {
+            try {
+                const response = await fetch("https://gridactions3b.590team1.info/api/Gapp");
+                const data = await response.json();
+                const gridIds = [1, 2, 3, 4, "nullOrZero"];
+
+                let gridCounts = {};
+
+                gridIds.forEach(gridId => {
+                    let filteredApps;
+                    
+                    if (gridId === "nullOrZero") {
+                        filteredApps = data.filter(app => ![1, 2, 3, 4].includes(app.gridid)); // Anything null or 0
+                    } else {
+                        filteredApps = data.filter(app => app.gridid === gridId);
+                    }
+
+                    let compliantApps = filteredApps.filter(app => app.iscompliant === 1).length;
+                    let nonCompliantApps = filteredApps.filter(app => app.iscompliant === 0).length;
+                    let totalApps = compliantApps + nonCompliantApps;
+
+                    gridCounts[gridId] = totalApps;
+                    renderChart(`chartGrid${gridId === "nullOrZero" ? 'Null' : gridId}`, gridId, compliantApps, nonCompliantApps, totalApps);
+                });
+
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            }
+        }
+
+        function renderChart(canvasId, gridId, compliant, nonCompliant, totalApps) {
+            const ctx = document.getElementById(canvasId).getContext("2d");
+
+            new Chart(ctx, {
+                type: "bar",
+                data: {
+                    labels: ["Compliant", "Non-Compliant", "Total Apps"],
+                    datasets: [{
+                        label: `Grid ID ${gridId === "nullOrZero" ? 'Null or Zero' : gridId}`,
+                        data: [compliant, nonCompliant, totalApps],
+                        backgroundColor: ["#4CAF50", "#F44336", "#007BFF"]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 10 // Y-axis limit stays at 10
+                        }
+                    }
+                }
+            });
+        }
+
+        fetchAppData();
+    </script>
+
+</body>
+</html>
+
+

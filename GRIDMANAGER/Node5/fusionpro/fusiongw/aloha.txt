@@ -1,0 +1,1 @@
+we need to synch batches from FusionCommerce to target ERP systems in FusionPro. In FusionDeveloper this could be other custom code. For Example Woo to SAP would have a different GW system.

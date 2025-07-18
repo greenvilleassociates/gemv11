@@ -1,0 +1,23 @@
+<html>
+<body onload="checkpll()">
+<p align="center"><img src="cocky590.png" width=80% height=500px></p>
+<span align=center><p align="center">You cannot access this content until you login.<a href="https://www.590team1.info/login.html" target="_blank"></a></p></span>
+<BR><BR>
+<div align=center><span align=center><button onclick="call_login()">Login Now</button></span></div>
+</body>
+<script>
+function checkpll()
+{
+var someuid = localStorage.getItem("uid");
+if (uid != "901")
+{
+  window.open("index.html", "_self");
+}
+}
+function call_login()
+{
+window.open("login.html", "_self");
+}
+ 
+</script> 
+</html>

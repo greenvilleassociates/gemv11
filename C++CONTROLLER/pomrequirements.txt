@@ -1,0 +1,20 @@
+Copilot build with activemq
+(Installed Properly on Ubuntu22).
+
+
+Creating a Java service that includes both a sender and a receiver for messages is a fantastic idea! Here’s a basic example using Java with Java Message Service (JMS) and Apache ActiveMQ as the message broker.
+
+Setting Up Apache ActiveMQ
+Download and Start ActiveMQ: Download Apache ActiveMQ here and follow the installation instructions.
+
+<dependencies>
+    <dependency>
+        <groupId>org.apache.activemq</groupId>
+        <artifactId>activemq-all</artifactId>
+        <version>5.16.3</version>
+    </dependency>
+</dependencies>
+
+With this setup, the MessageSender class sends messages to the "TEST_QUEUE" queue, and the MessageReceiver class listens for messages from the same queue. Running the main methods of each class separately will allow you to see the message being sent and received.
+
+Feel free to customize and expand this example to fit your specific needs! If you have any more questions or need further assistance, I'm here to help. 😊2

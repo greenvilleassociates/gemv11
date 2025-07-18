@@ -1,0 +1,1 @@
+In Unix, and Linux, Internet Apps not synch with repos. Usually this is a Version Home for your app. For example on Ubuntu, and Debian Releases you type apt-get upgrade fusionshell5.0 and it reviews the repo and upgrades the apps.

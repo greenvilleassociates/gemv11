@@ -1,0 +1,110 @@
+create table PROXIMITY.customers (
+    CustomerID int,
+    LastName varchar(255),
+    FirstName varchar(255),
+    Address varchar(255),
+    City varchar(255) );
+USE PROXIMITY;
+INSERT INTO customers (CustomerID, LastName, FirstName, Address, City)
+VALUES (5, 'Cisco Systems', 'John Chambers', '100 Main Street', 'San Jose');
+
+SELECT * from customers;
+DELETE FROM customers
+WHERE FirstName='Andrea C';
+create user 'coldfusionproximity2016'@'localhost' IDENTIFIED BY '*Columbia1';
+CREATE DATABASE PROXIMITY;
+USE PROXIMITY;
+GRANT ALL ON PROXIMITY.* TO 'coldfusionproximity'@'localhost' ;
+
+CREATE TABLE PROXIMITY.CUSTOMERS(
+CUS_ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+CUST_IDDYNAMICS VARCHAR(60),
+CUST_IDORACLE VARCHAR(60),
+CUST_IDSAP VARCHAR(60),
+CUST_IDOTHER VARCHAR(90),
+CUS_NAME VARCHAR(30),
+CUS_DOB DATE,
+CUS_ADDR VARCHAR(50),
+CUS_ADDR2 VARCHAR(50),
+CUS_REGIONSTATE VARCHAR(50),
+CUS_POSTALZIP VARCHAR(50),
+CUS_EMAIL VARCHAR(30),
+CUS_TEL VARCHAR(20),
+CUS_PW VARCHAR(30),
+CUS_JOINDATE DATETIME,
+CUS_LASTACCESS DATE)
+
+SELECT * FROM PROXIMITY.CUSTOMERS;
+
+INSERT INTO CUSTOMERS (CUS_ID,CUS_NAME, CUS_EMAIL, CUS_TEL)
+VALUES (2,'GreenvilleAssociates', 'john@greenvilleassociates.us', '803.321.1234');
+INSERT INTO CUSTOMERS (CUS_ID,CUST_IDDYNAMICS, CUST_IDORACLE, CUST_IDSAP, CUST_IDOTHER, CUS_NAME, CUS_ADDR, CUS_ADDR2, CUS_REGIONSTATE, CUS_POSTALZIP, CUS_EMAIL, CUS_TEL)
+VALUES (4, '321', '123', 'STR123', 'STR321', 'Bank of America Technology', 'js@capitoltechnology.info', '4301 Hookbilled Kite', 'Suite2', 'Texas', '78738', '803.321.1234');
+
+CREATE TABLE PROXIMITY.LOCATION(
+CUS_ID INT NOT NULL,
+TIME1 TIME,
+ALT VARCHAR(50),
+LON VARCHAR(50),
+LAT VARCHAR(50),
+MACADDR1 VARCHAR(50),
+CLIENT_ID VARCHAR(50),
+IP_ADDR VARCHAR(100),
+CLLP_ADDR VARCHAR(100));
+DELETE * FROM PROXIMITY.LOCATION WHERE CUS_ID='2';
+INSERT INTO PROXIMITY.LOCATION (CUS_ID,TIME1, ALT, LON,LAT,MACADDR1,CLIENT_ID, IP_ADDR,CLLP_ADDR)
+VALUES (2,'2011-01-26 14:39:10', '100', '37.4316° N 78.6569° W' , '37.4316° N 78.6569° W', 'GOBBLYGOOK', '321BECHF', '75.75.1.1', '10.1.1.1');
+INSERT INTO PROXIMITY.LOCATION (CUS_ID,TIME1, ALT, LON,LAT,MACADDR1,CLIENT_ID, IP_ADDR,CLLP_ADDR)
+VALUES (2,'2011-01-26 14:42:10', '100', '37.4316° N 78.6569° W' , '37.4316° N 78.6569° W', 'GOBBLYGOOK', '321BECHF', '75.75.1.1', '10.1.1.1');
+INSERT INTO PROXIMITY.LOCATION (CUS_ID,TIME1, ALT, LON,LAT,MACADDR1,CLIENT_ID, IP_ADDR,CLLP_ADDR)
+VALUES (2,'2011-01-26 14:46:10', '100', '37.4316° N 78.6569° W' , '37.4316° N 78.6569° W', 'GOBBLYGOOK', '321BECHF', '75.75.1.1', '10.1.1.1');
+INSERT INTO PROXIMITY.LOCATION (CUS_ID,TIME1, ALT, LON,LAT,MACADDR1,CLIENT_ID, IP_ADDR,CLLP_ADDR)
+VALUES (2,'2011-01-26 14:42:10', '100', '37.9316° N 78.6569° W' , '37.4316° N 78.6569° W', 'GOBBLYGOOK', '321BECHF', '75.75.1.1', '10.1.1.1');
+INSERT INTO PROXIMITY.LOCATION (CUS_ID,TIME1, ALT, LON,LAT,MACADDR1,CLIENT_ID, IP_ADDR,CLLP_ADDR)
+VALUES (2,'2011-01-26 14:42:10', '100', '37.9416° N 78.6569° W' , '37.4316° N 78.6569° W', 'GOBBLYGOOK', '321BECHF', '75.75.1.1', '10.1.1.1');
+INSERT INTO PROXIMITY.LOCATION (CUS_ID,TIME1, ALT, LON,LAT,MACADDR1,CLIENT_ID, IP_ADDR,CLLP_ADDR)
+
+INSERT INTO PROXIMITY.LOCATION (CUS_ID,TIME1, ALT, LON,LAT,MACADDR1,CLIENT_ID, IP_ADDR,CLLP_ADDR)
+VALUES (3,'2011-01-26 14:42:10', '100', '37.9416° N' , '78.6569° W', 'GOBBLYGOOK', '321BECHF', '75.75.1.1', '10.1.1.1');
+INSERT INTO PROXIMITY.LOCATION (CUS_ID,TIME1, ALT, LON,LAT,MACADDR1,CLIENT_ID, IP_ADDR,CLLP_ADDR)
+VALUES ('3','2011-04-28 14:42:10', '100', '33.839416° N', '-81.1637245 ° W' , 'GOBBLYGOOK', '321BECHF', '75.75.1.1', '10.1.1.1');
+
+CREATE TABLE PROXIMITY.CUSTOMERS(
+CUS_ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+CUST_IDDYNAMICS VARCHAR(60),
+CUST_IDORACLE VARCHAR(60),
+CUST_IDSAP VARCHAR(60),
+CUST_IDOTHER VARCHAR(90),
+CUS_NAME VARCHAR(30),
+CUS_DOB DATE,
+CUS_ADDR VARCHAR(50),
+CUS_ADDR2 VARCHAR(50),
+CUS_REGIONSTATE VARCHAR(50),
+CUS_POSTALZIP VARCHAR(50),
+CUS_EMAIL VARCHAR(30),
+CUS_TEL VARCHAR(20),
+CUS_PW VARCHAR(30),
+CUS_JOINDATE DATETIME,
+CUS_LASTACCESS DATE,
+PASSPORT_ID VARCHAR(30),
+LICENSE_ID VARCHAR(30))
+
+create table casemgr (case_id int not null primary key, cus_id int not null, date1 datetime, description varchar(150), ip1 varchar(50), lat varchar(50), lon varchar(50), alt varchar(50));
+
+create table socialmeta (cus_id int not null primary key, date1 datetime, socialsite varchar(50), ip1 varchar(50), lat varchar(50), lon varchar(50), alt varchar(50));
+create table acccessmeta (cus_id int not null primary key, date1 datetime, site_id varchar(50), reader_id varchar(50), readertype varchar(50), ip1 varchar(50), lat varchar(50), lon varchar(50), alt varchar(50));
+create table videoacccessmeta (cus_id int not null primary key, date1 datetime, site_id varchar(50), video_id varchar(50), videotype varchar(50), ip1 varchar(50), lat varchar(50), lon varchar(50), alt varchar(50));
+create table financialmeta (cus_id int not null primary key, date1 datetime, bank_id varchar(50), branch_id varchar(50), vendor_id varchar(50), vendor_site_id varchar(50), transtype varchar(50), ip1 varchar(50), lat varchar(50), lon varchar(50), alt varchar(50));
+create table sitelocation (cus_id int not null primary key, site_id varchar(50), addr1 varchar(50), addr2 varchar(50), city varchar(50), state varchar(50), zip varchar(50));
+drop table sitelocation;
+drop table acccessmeta;
+
+SELECT * FROM PROXIMITY.LOCATION;
+ALTER TABLE PROXIMITY.CUSTOMERS
+ADD PASSPORT_ID varchar(50);
+
+DELETE FROM PROXIMITY.LOCATION WHERE LOCATION.CUS_ID = 3;
+
+SELECT * FROM PROXIMITY.CUSTOMERS, PROXIMITY.LOCATION WHERE LOCATION.CUS_ID = CUSTOMERS.CUS_ID AND LOCATION.CUS_ID=3;
+
+SELECT * FROM CASEMGR;

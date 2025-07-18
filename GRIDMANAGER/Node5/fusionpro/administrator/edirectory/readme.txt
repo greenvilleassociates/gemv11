@@ -1,0 +1,1 @@
+If you dont have Active Directory... you are probably a Microfocus/Novell Directory shop...its called eDirectory now...and its required for fancy enterprises or to do directory based application permissions.

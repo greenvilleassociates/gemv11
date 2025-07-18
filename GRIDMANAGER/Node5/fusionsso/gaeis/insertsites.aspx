@@ -1,0 +1,133 @@
+<html>
+<head><title>CockyResumeManager</title>
+<style type="text/css">
+.auto-style1 {
+	text-align: center;
+}
+</style>
+</head>
+<body>
+<div align="center">
+<form id="form1" runat="server">
+	<div class="auto-style1">
+		<br>
+		<asp:Image id="Image1" runat="server" ImageUrl="./cocky590.png" Height="96px" Width="98px" />
+		<br><br>COCKY ENTERPRISES<br>ENGINEERING SITE MAINTENANCE<br>
+		<div class="auto-style1">
+		</div>
+	</div>
+	<div align="center">
+	<asp:SqlDataSource id="SqlDataSource1" runat="server" ConflictDetection="CompareAllValues" ConnectionString="Dsn=GEMPROD" DeleteCommand="DELETE FROM [gsites] WHERE [id] = ? AND (([siteid] = ?) OR ([siteid] IS NULL AND ? IS NULL)) AND (([sitedescription] = ?) OR ([sitedescription] IS NULL AND ? IS NULL)) AND (([siteclli] = ?) OR ([siteclli] IS NULL AND ? IS NULL)) AND (([address1] = ?) OR ([address1] IS NULL AND ? IS NULL)) AND (([address2] = ?) OR ([address2] IS NULL AND ? IS NULL)) AND (([stateregion] = ?) OR ([stateregion] IS NULL AND ? IS NULL)) AND (([postal] = ?) OR ([postal] IS NULL AND ? IS NULL)) AND (([phone] = ?) OR ([phone] IS NULL AND ? IS NULL)) AND (([fax] = ?) OR ([fax] IS NULL AND ? IS NULL)) AND (([sitecontactid] = ?) OR ([sitecontactid] IS NULL AND ? IS NULL)) AND (([cllicode] = ?) OR ([cllicode] IS NULL AND ? IS NULL))" InsertCommand="INSERT INTO [gsites] ([siteid], [sitedescription], [siteclli], [address1], [address2], [stateregion], [postal], [phone], [fax], [sitecontactid], [cllicode]) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)" OldValuesParameterFormatString="original_{0}" ProviderName="System.Data.Odbc" SelectCommand="SELECT * FROM [gsites]" UpdateCommand="UPDATE [gsites] SET [siteid] = ?, [sitedescription] = ?, [siteclli] = ?, [address1] = ?, [address2] = ?, [stateregion] = ?, [postal] = ?, [phone] = ?, [fax] = ?, [sitecontactid] = ?, [cllicode] = ? WHERE [id] = ? AND (([siteid] = ?) OR ([siteid] IS NULL AND ? IS NULL)) AND (([sitedescription] = ?) OR ([sitedescription] IS NULL AND ? IS NULL)) AND (([siteclli] = ?) OR ([siteclli] IS NULL AND ? IS NULL)) AND (([address1] = ?) OR ([address1] IS NULL AND ? IS NULL)) AND (([address2] = ?) OR ([address2] IS NULL AND ? IS NULL)) AND (([stateregion] = ?) OR ([stateregion] IS NULL AND ? IS NULL)) AND (([postal] = ?) OR ([postal] IS NULL AND ? IS NULL)) AND (([phone] = ?) OR ([phone] IS NULL AND ? IS NULL)) AND (([fax] = ?) OR ([fax] IS NULL AND ? IS NULL)) AND (([sitecontactid] = ?) OR ([sitecontactid] IS NULL AND ? IS NULL)) AND (([cllicode] = ?) OR ([cllicode] IS NULL AND ? IS NULL))">
+		<DeleteParameters>
+			<asp:Parameter Name="original_id" Type="Int32" />
+			<asp:Parameter Name="original_siteid" Type="String" />
+			<asp:Parameter Name="original_siteid" Type="String" />
+			<asp:Parameter Name="original_sitedescription" Type="String" />
+			<asp:Parameter Name="original_sitedescription" Type="String" />
+			<asp:Parameter Name="original_siteclli" Type="String" />
+			<asp:Parameter Name="original_siteclli" Type="String" />
+			<asp:Parameter Name="original_address1" Type="String" />
+			<asp:Parameter Name="original_address1" Type="String" />
+			<asp:Parameter Name="original_address2" Type="String" />
+			<asp:Parameter Name="original_address2" Type="String" />
+			<asp:Parameter Name="original_stateregion" Type="String" />
+			<asp:Parameter Name="original_stateregion" Type="String" />
+			<asp:Parameter Name="original_postal" Type="String" />
+			<asp:Parameter Name="original_postal" Type="String" />
+			<asp:Parameter Name="original_phone" Type="String" />
+			<asp:Parameter Name="original_phone" Type="String" />
+			<asp:Parameter Name="original_fax" Type="String" />
+			<asp:Parameter Name="original_fax" Type="String" />
+			<asp:Parameter Name="original_sitecontactid" Type="Int32" />
+			<asp:Parameter Name="original_sitecontactid" Type="Int32" />
+			<asp:Parameter Name="original_cllicode" Type="String" />
+			<asp:Parameter Name="original_cllicode" Type="String" />
+		</DeleteParameters>
+		<InsertParameters>
+			<asp:Parameter Name="siteid" Type="String" />
+			<asp:Parameter Name="sitedescription" Type="String" />
+			<asp:Parameter Name="siteclli" Type="String" />
+			<asp:Parameter Name="address1" Type="String" />
+			<asp:Parameter Name="address2" Type="String" />
+			<asp:Parameter Name="stateregion" Type="String" />
+			<asp:Parameter Name="postal" Type="String" />
+			<asp:Parameter Name="phone" Type="String" />
+			<asp:Parameter Name="fax" Type="String" />
+			<asp:Parameter Name="sitecontactid" Type="Int32" />
+			<asp:Parameter Name="cllicode" Type="String" />
+		</InsertParameters>
+		<UpdateParameters>
+			<asp:Parameter Name="siteid" Type="String" />
+			<asp:Parameter Name="sitedescription" Type="String" />
+			<asp:Parameter Name="siteclli" Type="String" />
+			<asp:Parameter Name="address1" Type="String" />
+			<asp:Parameter Name="address2" Type="String" />
+			<asp:Parameter Name="stateregion" Type="String" />
+			<asp:Parameter Name="postal" Type="String" />
+			<asp:Parameter Name="phone" Type="String" />
+			<asp:Parameter Name="fax" Type="String" />
+			<asp:Parameter Name="sitecontactid" Type="Int32" />
+			<asp:Parameter Name="cllicode" Type="String" />
+			<asp:Parameter Name="original_id" Type="Int32" />
+			<asp:Parameter Name="original_siteid" Type="String" />
+			<asp:Parameter Name="original_siteid" Type="String" />
+			<asp:Parameter Name="original_sitedescription" Type="String" />
+			<asp:Parameter Name="original_sitedescription" Type="String" />
+			<asp:Parameter Name="original_siteclli" Type="String" />
+			<asp:Parameter Name="original_siteclli" Type="String" />
+			<asp:Parameter Name="original_address1" Type="String" />
+			<asp:Parameter Name="original_address1" Type="String" />
+			<asp:Parameter Name="original_address2" Type="String" />
+			<asp:Parameter Name="original_address2" Type="String" />
+			<asp:Parameter Name="original_stateregion" Type="String" />
+			<asp:Parameter Name="original_stateregion" Type="String" />
+			<asp:Parameter Name="original_postal" Type="String" />
+			<asp:Parameter Name="original_postal" Type="String" />
+			<asp:Parameter Name="original_phone" Type="String" />
+			<asp:Parameter Name="original_phone" Type="String" />
+			<asp:Parameter Name="original_fax" Type="String" />
+			<asp:Parameter Name="original_fax" Type="String" />
+			<asp:Parameter Name="original_sitecontactid" Type="Int32" />
+			<asp:Parameter Name="original_sitecontactid" Type="Int32" />
+			<asp:Parameter Name="original_cllicode" Type="String" />
+			<asp:Parameter Name="original_cllicode" Type="String" />
+		</UpdateParameters>
+	</asp:SqlDataSource>
+	<p>
+	<asp:DetailsView id="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="id" DataSourceID="SqlDataSource1" Height="50px" Width="622px" AllowPaging="True">
+		<Fields>
+			<asp:BoundField DataField="id" HeaderText="id" ReadOnly="True" SortExpression="id">
+			</asp:BoundField>
+			<asp:BoundField DataField="siteid" HeaderText="siteid" SortExpression="siteid">
+			</asp:BoundField>
+			<asp:BoundField DataField="sitedescription" HeaderText="sitedescription" SortExpression="sitedescription">
+			</asp:BoundField>
+			<asp:BoundField DataField="siteclli" HeaderText="siteclli" SortExpression="siteclli">
+			</asp:BoundField>
+			<asp:BoundField DataField="address1" HeaderText="address1" SortExpression="address1">
+			</asp:BoundField>
+			<asp:BoundField DataField="address2" HeaderText="address2" SortExpression="address2">
+			</asp:BoundField>
+			<asp:BoundField DataField="stateregion" HeaderText="stateregion" SortExpression="stateregion">
+			</asp:BoundField>
+			<asp:BoundField DataField="postal" HeaderText="postal" SortExpression="postal">
+			</asp:BoundField>
+			<asp:BoundField DataField="phone" HeaderText="phone" SortExpression="phone">
+			</asp:BoundField>
+			<asp:BoundField DataField="fax" HeaderText="fax" SortExpression="fax">
+			</asp:BoundField>
+			<asp:BoundField DataField="sitecontactid" HeaderText="sitecontactid" SortExpression="sitecontactid">
+			</asp:BoundField>
+			<asp:BoundField DataField="cllicode" HeaderText="cllicode" SortExpression="cllicode">
+			</asp:BoundField>
+			<asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True">
+			</asp:CommandField>
+		</Fields>
+	</asp:DetailsView>
+	</p>
+</form>
+</div>
+<a href="managesites.aspx">Manage Sites</a>
+</div>
+</body>
+</html>

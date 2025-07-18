@@ -1,0 +1,14 @@
+{
+    "DatabaseLatency": [
+        { "IP": "10.144.0.100", "Latency": "32ms" },
+        { "IP": "10.144.1.100", "Latency": "28ms" },
+        { "IP": "10.144.2.100", "Latency": "30ms" },
+        { "IP": "10.144.3.100", "Latency": "31ms" }
+    ],
+    "WebServerLatency": [
+        { "IP": "10.144.0.152", "Latency": "27ms" },
+        { "IP": "10.144.1.151", "Latency": "26ms" },
+        { "IP": "10.144.2.151", "Latency": "29ms" },
+        { "IP": "10.144.3.151", "Latency": "31ms" }
+    ]
+}

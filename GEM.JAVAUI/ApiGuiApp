@@ -1,0 +1,199 @@
+import javax.swing.*;
+import java.awt.*;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.Scanner;
+
+public class ApiGuiApp extends JFrame {
+    private JTextArea outputArea;
+
+    public ApiGuiApp() {
+        setTitle("API Menu");
+        setSize(600, 500);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLayout(new FlowLayout());
+
+        outputArea = new JTextArea(15, 50);
+        outputArea.setEditable(false);
+        add(new JScrollPane(outputArea));
+
+        JButton fetchGappButton = new JButton("Fetch /api/Gapp");
+        JButton fetchGvendorButton = new JButton("Fetch /api/Gvendor");
+        JButton fetchGgridsButton = new JButton("Fetch /api/Ggrids");
+        JButton addNewAppButton = new JButton("Add New Application");
+        JButton updateAppButton = new JButton("Update an Application");
+
+        add(fetchGappButton);
+        add(fetchGvendorButton);
+        add(fetchGgridsButton);
+        add(addNewAppButton);
+        add(updateAppButton);
+
+        // Button actions
+        fetchGappButton.addActionListener(e -> fetchApiData("http://localhost:5033/api/Gapp"));
+        fetchGvendorButton.addActionListener(e -> fetchApiData("http://localhost:5033/api/Gvendor"));
+        fetchGgridsButton.addActionListener(e -> fetchApiData("http://localhost:5033/api/Ggrids"));
+        addNewAppButton.addActionListener(e -> addNewApp());
+        updateAppButton.addActionListener(e -> updateApplication());
+
+        setVisible(true);
+    }
+
+    private void fetchApiData(String apiUrl) {
+        try {
+            URL url = new URL(apiUrl);
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setRequestMethod("GET");
+            connection.setRequestProperty("Accept", "application/json");
+
+            int responseCode = connection.getResponseCode();
+            if (responseCode == 200) {
+                Scanner reader = new Scanner(connection.getInputStream()).useDelimiter("\\A");
+                String response = reader.hasNext() ? reader.next() : "";
+                reader.close();
+                outputArea.setText("Response:\n" + response);
+            } else {
+                outputArea.setText("Failed to fetch API data. Response Code: " + responseCode);
+            }
+
+            connection.disconnect();
+        } catch (Exception e) {
+            outputArea.setText("Error fetching API data: " + e.getMessage());
+        }
+    }
+
+    private void addNewApp() {
+        JTextField appDescriptionField = new JTextField();
+        JTextField appTypeField = new JTextField();
+        JTextField appRegionField = new JTextField();
+        JTextField dbmsTypeField = new JTextField();
+        JTextField dbmsVendorField = new JTextField();
+        JTextField dbmsTopologyField = new JTextField();
+
+        // Dropdown for GridID selection
+        String[] gridOptions = {"1 - North America", "2 - Campus", "3 - HiLine", "4 - EurAmerica"};
+        JComboBox<String> gridIdComboBox = new JComboBox<>(gridOptions);
+
+        // Create panel for input fields
+        JPanel panel = new JPanel(new GridLayout(8, 2, 5, 5));
+        panel.add(new JLabel("App Description:"));
+        panel.add(appDescriptionField);
+        panel.add(new JLabel("App Type:"));
+        panel.add(appTypeField);
+        panel.add(new JLabel("App Region:"));
+        panel.add(appRegionField);
+        panel.add(new JLabel("DBMS Type:"));
+        panel.add(dbmsTypeField);
+        panel.add(new JLabel("DBMS Vendor:"));
+        panel.add(dbmsVendorField);
+        panel.add(new JLabel("DBMS Topology:"));
+        panel.add(dbmsTopologyField);
+        panel.add(new JLabel("Grid ID:"));
+        panel.add(gridIdComboBox);
+
+        int option = JOptionPane.showConfirmDialog(null, panel, "Add New Application", JOptionPane.OK_CANCEL_OPTION);
+        if (option == JOptionPane.OK_OPTION) {
+            try {
+                int gridId = gridIdComboBox.getSelectedIndex() + 1;
+
+                String jsonPayload = String.format(
+                    "{\"appid\":null, \"appdescription\":\"%s\", \"apptype\":\"%s\", \"appregion\":\"%s\", \"dbmstype\":\"%s\", \"dbmsvendor\":\"%s\", \"dbmstopology\":\"%s\", \"gridid\":%d}",
+                    appDescriptionField.getText(), appTypeField.getText(), appRegionField.getText(),
+                    dbmsTypeField.getText(), dbmsVendorField.getText(), dbmsTopologyField.getText(), gridId
+                );
+
+                URL url = new URL("http://localhost:5033/api/Gapp");
+                HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+                connection.setRequestMethod("POST");
+                connection.setRequestProperty("Content-Type", "application/json");
+                connection.setDoOutput(true);
+
+                try (OutputStream os = connection.getOutputStream()) {
+                    byte[] input = jsonPayload.getBytes("utf-8");
+                    os.write(input, 0, input.length);
+                }
+
+                int responseCode = connection.getResponseCode();
+                outputArea.setText(responseCode == 201 || responseCode == 200
+                    ? "Successfully added application to the grid!"
+                    : "Failed to add application. Response Code: " + responseCode);
+
+                connection.disconnect();
+            } catch (Exception e) {
+                outputArea.setText("Error adding application: " + e.getMessage());
+            }
+        }
+    }
+
+    private void updateApplication() {
+        JTextField appIdField = new JTextField();
+        JTextField appDescriptionField = new JTextField();
+        JTextField appTypeField = new JTextField();
+        JTextField appRegionField = new JTextField();
+        JTextField dbmsTypeField = new JTextField();
+        JTextField dbmsVendorField = new JTextField();
+        JTextField dbmsTopologyField = new JTextField();
+
+        String[] gridOptions = {"1 - North America", "2 - Campus", "3 - HiLine", "4 - EurAmerica"};
+        JComboBox<String> gridIdComboBox = new JComboBox<>(gridOptions);
+
+        JPanel panel = new JPanel(new GridLayout(9, 2, 5, 5));
+        panel.add(new JLabel("Application ID:"));
+        panel.add(appIdField);
+        panel.add(new JLabel("App Description:"));
+        panel.add(appDescriptionField);
+        panel.add(new JLabel("App Type:"));
+        panel.add(appTypeField);
+        panel.add(new JLabel("App Region:"));
+        panel.add(appRegionField);
+        panel.add(new JLabel("DBMS Type:"));
+        panel.add(dbmsTypeField);
+        panel.add(new JLabel("DBMS Vendor:"));
+        panel.add(dbmsVendorField);
+        panel.add(new JLabel("DBMS Topology:"));
+        panel.add(dbmsTopologyField);
+        panel.add(new JLabel("Grid ID:"));
+        panel.add(gridIdComboBox);
+
+        int option = JOptionPane.showConfirmDialog(null, panel, "Update Application", JOptionPane.OK_CANCEL_OPTION);
+        if (option == JOptionPane.OK_OPTION) {
+            try {
+                int appId = Integer.parseInt(appIdField.getText());
+                int gridId = gridIdComboBox.getSelectedIndex() + 1;
+
+                String apiUrl = "http://localhost:5033/api/Gapp/" + appId;
+
+                String jsonPayload = String.format(
+                    "{\"appid\":%d, \"appdescription\":\"%s\", \"apptype\":\"%s\", \"appregion\":\"%s\", \"dbmstype\":\"%s\", \"dbmsvendor\":\"%s\", \"dbmstopology\":\"%s\", \"gridid\":%d}",
+                    appId, appDescriptionField.getText(), appTypeField.getText(), appRegionField.getText(),
+                    dbmsTypeField.getText(), dbmsVendorField.getText(), dbmsTopologyField.getText(), gridId
+                );
+
+                URL updateUrl = new URL(apiUrl);
+                HttpURLConnection updateConnection = (HttpURLConnection) updateUrl.openConnection();
+                updateConnection.setRequestMethod("PUT");
+                updateConnection.setRequestProperty("Content-Type", "application/json");
+                updateConnection.setDoOutput(true);
+
+                try (OutputStream os = updateConnection.getOutputStream()) {
+                    byte[] input = jsonPayload.getBytes("utf-8");
+                    os.write(input, 0, input.length);
+                }
+
+                outputArea.setText(updateConnection.getResponseCode() == 200
+                    ? "Application successfully updated!"
+                    : "Failed to update application.");
+
+                updateConnection.disconnect();
+            } catch (Exception e) {
+                outputArea.setText("Error updating application: " + e.getMessage());
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(ApiGuiApp::new);
+    }
+}
+

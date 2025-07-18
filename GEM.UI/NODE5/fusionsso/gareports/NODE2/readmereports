@@ -1,0 +1,1 @@
+URLS for each node are slightly different so they have their own report liibrarys. Need to discuss. If DBs are replicated they would be same. Decision on spoke addressing needs to be made.

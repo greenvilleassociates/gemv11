@@ -1,0 +1,145 @@
+/*using System;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using Newtonsoft.Json;
+using Azure.Messaging.ServiceBus;
+using GEMAPI.Models;
+using Microsoft.AspNetCore.Mvc;
+using Services;
+
+namespace Enterprise.Controllers;
+
+public static class LogCertificationEndpoints
+{
+    public static void MapLogCertificationEndpoints(this IEndpointRouteBuilder routes)
+    {
+        var group = routes.MapGroup("/api/Certification").WithTags(nameof(Certification));
+
+        //[HttpGet] Get All Certifications
+        group.MapGet("/", async ([FromServices] Gemcorp2Context context) =>
+        {
+            var certifications = await context.Certifications.ToListAsync();
+
+            LogApiCall(context, "Fetching all certifications", "/api/Certification", "Request for all certifications");
+
+            return certifications;
+        })
+        .WithName("GetAllCertifications")
+        .WithOpenApi();
+
+        //[HttpGet] Get Certification by ID
+        group.MapGet("/{id}", async (int id, [FromServices] Gemcorp2Context context) =>
+        {
+            var certification = await context.Certifications.Where(m => m.Id == id).ToListAsync();
+            if (certification == null || certification.Count == 0)
+                return TypedResults.NotFound("Certification not found");
+
+            LogApiCall(context, $"Fetching certification with ID {id}", $"/api/Certification/{id}", $"Requested Certification ID: {id}");
+
+            return TypedResults.Ok(certification);
+        })
+        .WithName("GetCertificationById")
+        .WithOpenApi();
+
+        //[HttpPut] Update Certification
+        group.MapPut("/{id}", async (int id, Certification input, [FromServices] Gemcorp2Context context, [FromServices] ServiceBusService serviceBusService) =>
+        {
+            var certification = await context.Certifications.FindAsync(id);
+            if (certification == null)
+                return TypedResults.NotFound("Certification not found");
+
+            context.Entry(certification).CurrentValues.SetValues(input);
+            await context.SaveChangesAsync();
+
+            LogApiCall(context, $"Updated certification with ID {id}", $"/api/Certification/{id}", JsonConvert.SerializeObject(input));
+
+            var messageObject = new
+            {
+                email = input.EmployeeEmail,
+                subject = $"Certification {input.Certname} has been updated!",
+                body = $"Certification {input.Certname} has been updated for {input.Fullname}!\n\n" +
+                       $"Certification Date: {input.Certdate}\n" +
+                       $"Expiration Date: {input.Revisedate}\n" +
+                       $"Certification Level: {input.Certlevel}\n"
+            };
+
+            string jsonMessage = JsonConvert.SerializeObject(messageObject);
+            await serviceBusService.SendMessageAsync(jsonMessage);
+
+            return TypedResults.Accepted($"Updated ID: {input.Id}");
+        })
+        .WithName("UpdateCertification")
+        .WithOpenApi();
+
+        //[HttpPost] Create Certification
+        group.MapPost("/", async (Certification input, [FromServices] Gemcorp2Context context) =>
+        {
+            context.Certifications.Add(input);
+            await context.SaveChangesAsync();
+
+            LogApiCall(context, "Created new certification", "/api/Certification", JsonConvert.SerializeObject(input));
+
+            return TypedResults.Created($"/api/Certification/{input.Id}", input);
+        })
+        .WithName("CreateCertification")
+        .WithOpenApi();
+
+        //[HttpPost] Create Certification & Notify
+        group.MapPost("/notify", async (Certification input, [FromServices] Gemcorp2Context context, [FromServices] ServiceBusService serviceBusService) =>
+        {
+            context.Certifications.Add(input);
+            await context.SaveChangesAsync();
+
+            LogApiCall(context, "Created new certification with notification", "/api/Certification/notify", JsonConvert.SerializeObject(input));
+
+            var messageObject = new
+            {
+                email = input.EmployeeEmail,
+                subject = $"Certification {input.Certname} has been created!",
+                body = $"Certification {input.Certname} has been created for {input.Fullname}!\n\n" +
+                       $"Certification Date: {input.Certdate}\n" +
+                       $"Expiration Date: {input.Revisedate}\n" +
+                       $"Certification Level: {input.Certlevel}\n"
+            };
+
+            string jsonMessage = JsonConvert.SerializeObject(messageObject);
+            await serviceBusService.SendMessageAsync(jsonMessage);
+
+            return TypedResults.Created($"/api/Certification/{input.Id}", input);
+        })
+        .WithName("CreateCertificationNotify")
+        .WithOpenApi();
+
+        //[HttpDelete] Delete Certification
+        group.MapDelete("/{id}", async (int id, [FromServices] Gemcorp2Context context) =>
+        {
+            var certification = await context.Certifications.FindAsync(id);
+            if (certification == null)
+                return TypedResults.NotFound("Certification not found");
+
+            context.Certifications.Remove(certification);
+            await context.SaveChangesAsync();
+
+            LogApiCall(context, $"Deleted certification with ID {id}", $"/api/Certification/{id}", $"Deleted Certification ID: {id}");
+
+            return TypedResults.Ok($"Deleted ID: {id}");
+        })
+        .WithName("DeleteCertification")
+        .WithOpenApi();
+    }
+
+    // Reusable API Logging Method
+    private static void LogApiCall(Gemcorp2Context context, string description, string url, string requestDetail)
+    {
+        var apiLog = new Apilog
+        {
+            Descr = description,
+            Logdate = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss"),
+            Apiurl = url,
+            Apirequestdetail = requestDetail
+        };
+
+        context.Apilogs.Add(apiLog);
+        context.SaveChanges();
+    }
+}*/

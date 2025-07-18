@@ -1,0 +1,1 @@
+AMPPS is kinda a big deal... it comes bundled with Softalicious App Delivery stack. If you arent on cPanel, or Siteground servers... you probaly need EITHER AMPPS or XAMPP... they will both install on the same server, but do the same thing, so pick ONE OR THE OTHER...AMPPS is recommended, and in 4X+ release state.

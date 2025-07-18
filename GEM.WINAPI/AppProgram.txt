@@ -1,0 +1,52 @@
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using Enterprise.Controllers;
+using Serilog;
+
+
+// Configure Serilog
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.File("c:/greenvillesoftware/logs/log.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+
+
+var builder = WebApplication.CreateBuilder(args);
+builder.Host.UseSerilog(); // Replace default logging with Serilog
+// Add services to the container.
+builder.Services.AddControllers(); // Add API controllers.
+builder.Services.AddEndpointsApiExplorer(); // Enable minimal APIs.
+builder.Services.AddSwaggerGen(); // Add Swagger for API documentation.
+
+var app = builder.Build();
+
+
+// Middleware configuration.
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API v1"));
+}
+
+app.UseHttpsRedirection();
+app.UseAuthorization();
+app.MapControllers();
+
+// Run as a Windows Service
+if (OperatingSystem.IsWindows())
+{
+    builder.Host.UseWindowsService(options =>
+    {
+        options.ServiceName = "GEMAPI"; // Set your service name here
+    });
+}
+app.MapGvendorEndpoints();
+app.MapGcircuittypeEndpoints();
+app.MapGhostvmEndpoints();
+app.Run();
+
+
+
+
+

@@ -1,0 +1,2034 @@
+[
+  {
+    "ContainingType": "Enterprise.Controllers.GaccountEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGaccountEndpoints\u003Eb__0_0",
+    "RelativePath": "api/Gaccount/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.Gaccount, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gaccount"
+    ],
+    "EndpointName": "GetAllGaccounts"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GaccountEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGaccountEndpoints\u003Eb__0_3",
+    "RelativePath": "api/Gaccount/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.Gaccount",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "Gaccount"
+    ],
+    "EndpointName": "CreateGaccount"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GaccountEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGaccountEndpoints\u003Eb__0_1",
+    "RelativePath": "api/Gaccount/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.Gaccount, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gaccount"
+    ],
+    "EndpointName": "GetGaccountById"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GaccountEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGaccountEndpoints\u003Eb__0_2",
+    "RelativePath": "api/Gaccount/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.Gaccount",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 202
+      }
+    ],
+    "Tags": [
+      "Gaccount"
+    ],
+    "EndpointName": "UpdateGaccount"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GaccountEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGaccountEndpoints\u003Eb__0_4",
+    "RelativePath": "api/Gaccount/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gaccount"
+    ],
+    "EndpointName": "DeleteGaccount"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GappEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGappEndpoints\u003Eb__0_0",
+    "RelativePath": "api/Gapp/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.Gapp, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gapp"
+    ],
+    "EndpointName": "GetAllGapps"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GappEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGappEndpoints\u003Eb__0_3",
+    "RelativePath": "api/Gapp/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.Gapp",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "Gapp"
+    ],
+    "EndpointName": "CreateGapp"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GappEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGappEndpoints\u003Eb__0_1",
+    "RelativePath": "api/Gapp/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.Gapp, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gapp"
+    ],
+    "EndpointName": "GetGappById"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GappEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGappEndpoints\u003Eb__0_2",
+    "RelativePath": "api/Gapp/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.Gapp",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 202
+      }
+    ],
+    "Tags": [
+      "Gapp"
+    ],
+    "EndpointName": "UpdateGapp"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GappEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGappEndpoints\u003Eb__0_4",
+    "RelativePath": "api/Gapp/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gapp"
+    ],
+    "EndpointName": "DeleteGapp"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GchangeEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGchangeEndpoints\u003Eb__0_0",
+    "RelativePath": "api/Gchange/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.Gchange, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gchange"
+    ],
+    "EndpointName": "GetAllGchanges"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GchangeEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGchangeEndpoints\u003Eb__0_3",
+    "RelativePath": "api/Gchange/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.Gchange",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "Gchange"
+    ],
+    "EndpointName": "CreateGchange"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GchangeEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGchangeEndpoints\u003Eb__0_1",
+    "RelativePath": "api/Gchange/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.Gchange, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gchange"
+    ],
+    "EndpointName": "GetGchangeById"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GchangeEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGchangeEndpoints\u003Eb__0_2",
+    "RelativePath": "api/Gchange/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.Gchange",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 202
+      }
+    ],
+    "Tags": [
+      "Gchange"
+    ],
+    "EndpointName": "UpdateGchange"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GchangeEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGchangeEndpoints\u003Eb__0_4",
+    "RelativePath": "api/Gchange/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gchange"
+    ],
+    "EndpointName": "DeleteGchange"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GcircuittypeEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGcircuittypeEndpoints\u003Eb__0_0",
+    "RelativePath": "api/Gcircuittype/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.Gcircuittype, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gcircuittype"
+    ],
+    "EndpointName": "GetAllGcircuittypes"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GcircuittypeEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGcircuittypeEndpoints\u003Eb__0_3",
+    "RelativePath": "api/Gcircuittype/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.Gcircuittype",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "Gcircuittype"
+    ],
+    "EndpointName": "CreateGcircuittype"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GcircuittypeEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGcircuittypeEndpoints\u003Eb__0_1",
+    "RelativePath": "api/Gcircuittype/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.Gcircuittype, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gcircuittype"
+    ],
+    "EndpointName": "GetGcircuittypeById"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GcircuittypeEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGcircuittypeEndpoints\u003Eb__0_2",
+    "RelativePath": "api/Gcircuittype/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.Gcircuittype",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 202
+      }
+    ],
+    "Tags": [
+      "Gcircuittype"
+    ],
+    "EndpointName": "UpdateGcircuittype"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GcircuittypeEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGcircuittypeEndpoints\u003Eb__0_4",
+    "RelativePath": "api/Gcircuittype/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gcircuittype"
+    ],
+    "EndpointName": "DeleteGcircuittype"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GcustomerEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGcustomerEndpoints\u003Eb__0_0",
+    "RelativePath": "api/Gcustomer/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.Gcustomer, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gcustomer"
+    ],
+    "EndpointName": "GetAllGcustomers"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GcustomerEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGcustomerEndpoints\u003Eb__0_3",
+    "RelativePath": "api/Gcustomer/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.Gcustomer",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "Gcustomer"
+    ],
+    "EndpointName": "CreateGcustomer"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GcustomerEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGcustomerEndpoints\u003Eb__0_1",
+    "RelativePath": "api/Gcustomer/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.Gcustomer, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gcustomer"
+    ],
+    "EndpointName": "GetGcustomerById"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GcustomerEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGcustomerEndpoints\u003Eb__0_2",
+    "RelativePath": "api/Gcustomer/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.Gcustomer",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 202
+      }
+    ],
+    "Tags": [
+      "Gcustomer"
+    ],
+    "EndpointName": "UpdateGcustomer"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GcustomerEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGcustomerEndpoints\u003Eb__0_4",
+    "RelativePath": "api/Gcustomer/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gcustomer"
+    ],
+    "EndpointName": "DeleteGcustomer"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GhostEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGhostEndpoints\u003Eb__0_0",
+    "RelativePath": "api/Ghost/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.Ghost, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Ghost"
+    ],
+    "EndpointName": "GetAllGhosts"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GhostEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGhostEndpoints\u003Eb__0_3",
+    "RelativePath": "api/Ghost/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.Ghost",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "Ghost"
+    ],
+    "EndpointName": "CreateGhost"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GhostEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGhostEndpoints\u003Eb__0_1",
+    "RelativePath": "api/Ghost/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.Ghost, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Ghost"
+    ],
+    "EndpointName": "GetGhostById"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GhostEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGhostEndpoints\u003Eb__0_2",
+    "RelativePath": "api/Ghost/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.Ghost",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 202
+      }
+    ],
+    "Tags": [
+      "Ghost"
+    ],
+    "EndpointName": "UpdateGhost"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GhostEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGhostEndpoints\u003Eb__0_4",
+    "RelativePath": "api/Ghost/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Ghost"
+    ],
+    "EndpointName": "DeleteGhost"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GhostimageEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGhostimageEndpoints\u003Eb__0_0",
+    "RelativePath": "api/Ghostimage/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.Ghostimage, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Ghostimage"
+    ],
+    "EndpointName": "GetAllGhostimages"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GhostimageEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGhostimageEndpoints\u003Eb__0_3",
+    "RelativePath": "api/Ghostimage/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.Ghostimage",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "Ghostimage"
+    ],
+    "EndpointName": "CreateGhostimage"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GhostimageEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGhostimageEndpoints\u003Eb__0_1",
+    "RelativePath": "api/Ghostimage/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.Ghostimage, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Ghostimage"
+    ],
+    "EndpointName": "GetGhostimageById"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GhostimageEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGhostimageEndpoints\u003Eb__0_2",
+    "RelativePath": "api/Ghostimage/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.Ghostimage",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 202
+      }
+    ],
+    "Tags": [
+      "Ghostimage"
+    ],
+    "EndpointName": "UpdateGhostimage"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GhostimageEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGhostimageEndpoints\u003Eb__0_4",
+    "RelativePath": "api/Ghostimage/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Ghostimage"
+    ],
+    "EndpointName": "DeleteGhostimage"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GhostvmEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGhostvmEndpoints\u003Eb__0_0",
+    "RelativePath": "api/Ghostvm/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.Ghostvm, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Ghostvm"
+    ],
+    "EndpointName": "GetAllGhostvms"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GhostvmEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGhostvmEndpoints\u003Eb__0_3",
+    "RelativePath": "api/Ghostvm/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.Ghostvm",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "Ghostvm"
+    ],
+    "EndpointName": "CreateGhostvm"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GhostvmEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGhostvmEndpoints\u003Eb__0_1",
+    "RelativePath": "api/Ghostvm/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.Ghostvm, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Ghostvm"
+    ],
+    "EndpointName": "GetGhostvmById"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GhostvmEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGhostvmEndpoints\u003Eb__0_2",
+    "RelativePath": "api/Ghostvm/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.Ghostvm",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 202
+      }
+    ],
+    "Tags": [
+      "Ghostvm"
+    ],
+    "EndpointName": "UpdateGhostvm"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GhostvmEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGhostvmEndpoints\u003Eb__0_4",
+    "RelativePath": "api/Ghostvm/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Ghostvm"
+    ],
+    "EndpointName": "DeleteGhostvm"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GitsmEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGitsmEndpoints\u003Eb__0_0",
+    "RelativePath": "api/Gitsm/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.Gitsm, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gitsm"
+    ],
+    "EndpointName": "GetAllGitsms"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GitsmEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGitsmEndpoints\u003Eb__0_3",
+    "RelativePath": "api/Gitsm/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.Gitsm",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "Gitsm"
+    ],
+    "EndpointName": "CreateGitsm"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GitsmEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGitsmEndpoints\u003Eb__0_1",
+    "RelativePath": "api/Gitsm/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.Gitsm, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gitsm"
+    ],
+    "EndpointName": "GetGitsmById"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GitsmEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGitsmEndpoints\u003Eb__0_2",
+    "RelativePath": "api/Gitsm/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.Gitsm",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 202
+      }
+    ],
+    "Tags": [
+      "Gitsm"
+    ],
+    "EndpointName": "UpdateGitsm"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GitsmEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGitsmEndpoints\u003Eb__0_4",
+    "RelativePath": "api/Gitsm/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gitsm"
+    ],
+    "EndpointName": "DeleteGitsm"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GmanagerEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGmanagerEndpoints\u003Eb__0_0",
+    "RelativePath": "api/Gmanager/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.Gmanager, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gmanager"
+    ],
+    "EndpointName": "GetAllGmanagers"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GmanagerEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGmanagerEndpoints\u003Eb__0_3",
+    "RelativePath": "api/Gmanager/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.Gmanager",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "Gmanager"
+    ],
+    "EndpointName": "CreateGmanager"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GmanagerEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGmanagerEndpoints\u003Eb__0_1",
+    "RelativePath": "api/Gmanager/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.Gmanager, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gmanager"
+    ],
+    "EndpointName": "GetGmanagerById"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GmanagerEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGmanagerEndpoints\u003Eb__0_2",
+    "RelativePath": "api/Gmanager/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.Gmanager",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 202
+      }
+    ],
+    "Tags": [
+      "Gmanager"
+    ],
+    "EndpointName": "UpdateGmanager"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GmanagerEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGmanagerEndpoints\u003Eb__0_4",
+    "RelativePath": "api/Gmanager/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gmanager"
+    ],
+    "EndpointName": "DeleteGmanager"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GrouterEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGrouterEndpoints\u003Eb__0_0",
+    "RelativePath": "api/Grouter/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.Grouter, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Grouter"
+    ],
+    "EndpointName": "GetAllGrouters"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GrouterEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGrouterEndpoints\u003Eb__0_3",
+    "RelativePath": "api/Grouter/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.Grouter",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "Grouter"
+    ],
+    "EndpointName": "CreateGrouter"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GrouterEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGrouterEndpoints\u003Eb__0_1",
+    "RelativePath": "api/Grouter/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.Grouter, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Grouter"
+    ],
+    "EndpointName": "GetGrouterById"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GrouterEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGrouterEndpoints\u003Eb__0_2",
+    "RelativePath": "api/Grouter/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.Grouter",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 202
+      }
+    ],
+    "Tags": [
+      "Grouter"
+    ],
+    "EndpointName": "UpdateGrouter"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GrouterEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGrouterEndpoints\u003Eb__0_4",
+    "RelativePath": "api/Grouter/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Grouter"
+    ],
+    "EndpointName": "DeleteGrouter"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GsiteEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGsiteEndpoints\u003Eb__0_0",
+    "RelativePath": "api/Gsite/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.Gsite, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gsite"
+    ],
+    "EndpointName": "GetAllGsites"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GsiteEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGsiteEndpoints\u003Eb__0_3",
+    "RelativePath": "api/Gsite/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.Gsite",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "Gsite"
+    ],
+    "EndpointName": "CreateGsite"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GsiteEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGsiteEndpoints\u003Eb__0_1",
+    "RelativePath": "api/Gsite/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.Gsite, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gsite"
+    ],
+    "EndpointName": "GetGsiteById"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GsiteEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGsiteEndpoints\u003Eb__0_2",
+    "RelativePath": "api/Gsite/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.Gsite",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 202
+      }
+    ],
+    "Tags": [
+      "Gsite"
+    ],
+    "EndpointName": "UpdateGsite"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GsiteEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGsiteEndpoints\u003Eb__0_4",
+    "RelativePath": "api/Gsite/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gsite"
+    ],
+    "EndpointName": "DeleteGsite"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GswitchEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGswitchEndpoints\u003Eb__0_0",
+    "RelativePath": "api/Gswitch/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.Gswitch, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gswitch"
+    ],
+    "EndpointName": "GetAllGswitchs"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GswitchEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGswitchEndpoints\u003Eb__0_3",
+    "RelativePath": "api/Gswitch/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.Gswitch",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "Gswitch"
+    ],
+    "EndpointName": "CreateGswitch"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GswitchEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGswitchEndpoints\u003Eb__0_1",
+    "RelativePath": "api/Gswitch/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.Gswitch, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gswitch"
+    ],
+    "EndpointName": "GetGswitchById"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GswitchEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGswitchEndpoints\u003Eb__0_2",
+    "RelativePath": "api/Gswitch/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.Gswitch",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 202
+      }
+    ],
+    "Tags": [
+      "Gswitch"
+    ],
+    "EndpointName": "UpdateGswitch"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GswitchEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGswitchEndpoints\u003Eb__0_4",
+    "RelativePath": "api/Gswitch/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gswitch"
+    ],
+    "EndpointName": "DeleteGswitch"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GvendorEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGvendorEndpoints\u003Eb__0_0",
+    "RelativePath": "api/Gvendor/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.Gvendor, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gvendor"
+    ],
+    "EndpointName": "GetAllGvendors"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GvendorEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGvendorEndpoints\u003Eb__0_3",
+    "RelativePath": "api/Gvendor/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.Gvendor",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "Gvendor"
+    ],
+    "EndpointName": "CreateGvendor"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GvendorEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGvendorEndpoints\u003Eb__0_1",
+    "RelativePath": "api/Gvendor/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.Gvendor, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gvendor"
+    ],
+    "EndpointName": "GetGvendorById"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GvendorEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGvendorEndpoints\u003Eb__0_2",
+    "RelativePath": "api/Gvendor/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.Gvendor",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 202
+      }
+    ],
+    "Tags": [
+      "Gvendor"
+    ],
+    "EndpointName": "UpdateGvendor"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.GvendorEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGvendorEndpoints\u003Eb__0_4",
+    "RelativePath": "api/Gvendor/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Gvendor"
+    ],
+    "EndpointName": "DeleteGvendor"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.HUserEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapHUserEndpoints\u003Eb__0_0",
+    "RelativePath": "api/HUser/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.HUser, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "HUser"
+    ],
+    "EndpointName": "GetAllHUsers"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.HUserEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapHUserEndpoints\u003Eb__0_3",
+    "RelativePath": "api/HUser/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.HUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "HUser"
+    ],
+    "EndpointName": "CreateHUser"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.HUserEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapHUserEndpoints\u003Eb__0_1",
+    "RelativePath": "api/HUser/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GEMAPI.Models.HUser, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "HUser"
+    ],
+    "EndpointName": "GetHUserById"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.HUserEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapHUserEndpoints\u003Eb__0_2",
+    "RelativePath": "api/HUser/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "input",
+        "Type": "GEMAPI.Models.HUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 202
+      }
+    ],
+    "Tags": [
+      "HUser"
+    ],
+    "EndpointName": "UpdateHUser"
+  },
+  {
+    "ContainingType": "Enterprise.Controllers.HUserEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapHUserEndpoints\u003Eb__0_4",
+    "RelativePath": "api/HUser/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "HUser"
+    ],
+    "EndpointName": "DeleteHUser"
+  },
+  {
+    "ContainingType": "ConsoleController",
+    "Method": "GetSystemInfo",
+    "RelativePath": "Console/{option}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "option",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.WeatherForecast, GEMAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

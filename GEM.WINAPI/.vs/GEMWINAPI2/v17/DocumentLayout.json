@@ -1,0 +1,65 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\498DEVOPS\\498-LINUXSVC\\GEM.WINAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMWINAPI2.csproj|c:\\498devops\\498-linuxsvc\\gem.winapi\\gemwinapi2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMWINAPI2.csproj|solutionrelative:gemwinapi2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMWINAPI2.csproj|c:\\498devops\\498-linuxsvc\\gem.winapi\\gemwinapi2.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMWINAPI2.csproj|solutionrelative:gemwinapi2.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GEMWINAPI2",
+              "DocumentMoniker": "C:\\498DEVOPS\\498-LINUXSVC\\GEM.WINAPI\\GEMWINAPI2.csproj",
+              "RelativeDocumentMoniker": "GEMWINAPI2.csproj",
+              "ToolTip": "C:\\498DEVOPS\\498-LINUXSVC\\GEM.WINAPI\\GEMWINAPI2.csproj",
+              "RelativeToolTip": "GEMWINAPI2.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-05T14:37:05.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GEMWINAPI2",
+              "DocumentMoniker": "C:\\498DEVOPS\\498-LINUXSVC\\GEM.WINAPI\\GEMWINAPI2.csproj",
+              "RelativeDocumentMoniker": "GEMWINAPI2.csproj",
+              "ToolTip": "C:\\498DEVOPS\\498-LINUXSVC\\GEM.WINAPI\\GEMWINAPI2.csproj",
+              "RelativeToolTip": "GEMWINAPI2.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-05T14:37:08.774Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

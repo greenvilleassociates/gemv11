@@ -1,0 +1,96 @@
+
+
+insert into gvoiceplatforms (description) VALUES ('1');
+insert into gvoiceplatformtype (description) VALUES('1');
+insert into gservers (description) VALUES ('1');
+insert into gfirewalls (description) VALUES ('1');
+insert into gfirewallcontexts (description) VALUES ('1');
+insert into grouters (description) VALUES ('1');
+insert into gswitches (description) VALUES ('1');
+insert into gvoicegateway (description) VALUES ('1');
+insert into ghosts (description) VALUES ('1');
+insert into ghostlpars (description) VALUES ('1');
+insert into ghostvms (description) VALUES ('1');
+insert into ghostimages (description) VALUES ('1');
+insert into ggateways (description) VALUES ('1');
+insert into ggatewaytype (description) VALUES ('1');
+insert into gsitetype (description) VALUES ('1');
+insert into gvoicetrunks (description) VALUES ('1');
+insert into gvoicetrunktype (description) VALUES ('1');
+insert into gcircuits (description) VALUES ('1');
+insert into gcircuittype (description) VALUES ('1');
+insert into gnetworks (description) VALUES ('1');
+insert into gnetworktype (description) VALUES ('1');
+insert into gnetworksplicebox (description) VALUES ('1');
+insert into gvendor(vendorname) VALUES ('1');
+insert into gcpeother (description) VALUES ('1');
+insert into gfax (description) VALUES ('1');
+insert into gphones (description) VALUES ('1');
+insert into ghdvideo (description) VALUES ('1');
+insert into gsecvideo (description) VALUES ('1');
+insert into gcustomer (description) VALUES ('1');
+insert into gdisk (description) VALUES ('1');
+insert into gdisktype (description) VALUES ('1');
+insert into gopticalring (description) VALUES ('1');
+insert into gopttype(description) VALUES ('1');
+insert into gcomputer (description) VALUES ('1');
+insert into gvolumes (description) VALUES ('1');
+insert into gconduits (description) VALUES ('1');
+insert into grightofway (description) VALUES ('1');
+insert into gtelephonenumber (description) VALUES ('1');
+insert into gcountry (description) VALUES ('1');
+insert into gphysicalpar (description) VALUES ('1');
+insert into gvoiceservices (description) VALUES ('1');
+insert into gdataservices (description) VALUES ('1');
+insert into gcircuittype (description) VALUES ('1');
+insert into gtrunktype (description) VALUES ('1');
+insert into gdservicetype (description) VALUES ('1');
+insert into gvservicetype (description) VALUES ('1');
+insert into gcpetype (description) VALUES ('1');
+insert into gsitetype (description) VALUES ('1');
+insert into gopticalsegments (description) VALUES ('1');
+insert into gvpns (description) VALUES ('1');
+insert into gvpntype (description) VALUES ('1');
+insert into gchannels (description) VALUES ('1');
+insert into gchanneltype (description) VALUES ('1');
+alter table gcpeother add inventoryid varchar(100);
+alter table gfax add inventoryid varchar(100);
+alter table gphones add inventoryid varchar(100);
+alter table ghdvideo add inventoryid varchar(100);
+alter table gsecvideo add inventoryid varchar(100);
+alter table gcustomer add inventoryid varchar(100);
+alter table gdisk add inventoryid varchar(100);
+alter table gopticalring add inventoryid varchar(100);
+alter table gcomputer add inventoryid varchar(100);
+alter table gvolumes add inventoryid varchar(100);
+alter table gconduits add inventoryid varchar(100);
+alter table grightofway add inventoryid varchar(100);
+alter table gtelephonenumber add inventoryid varchar(100);
+alter table gphysicalpar add inventoryid varchar(100);
+alter table gvoiceservices add inventoryid varchar(100);
+alter table gdataservices add inventoryid varchar(100);
+alter table gopticalsegments add inventoryid varchar(100);
+alter table gvpns add inventoryid varchar(100);
+alter table gchannels add inventoryid varchar(100);
+alter table gvoiceplatforms add inventoryid varchar(100);
+alter table gservers add inventoryid varchar(100);
+alter table gfirewalls add inventoryid varchar(100);
+alter table gfirewallcontexts add inventoryid varchar(100);
+alter table grouters add inventoryid varchar(100);
+alter table gswitches add inventoryid varchar(100);
+alter table gvoicegateway add inventoryid varchar(100);
+alter table ghosts add inventoryid varchar(100);
+alter table ghostlpars add inventoryid varchar(100);
+alter table ghostvms add inventoryid varchar(100);
+alter table ghostimages add inventoryid varchar(100);
+alter table ggateways add inventoryid varchar(100);
+alter table gvoicetrunks add inventoryid varchar(100);
+alter table gcircuits add inventoryid varchar(100);
+alter table gnetworks add inventoryid varchar(100);
+alter table gnetworksplicebox add inventoryid varchar(100);
+
+
+
+x-no-links: 1
+Content-type: text/html
+

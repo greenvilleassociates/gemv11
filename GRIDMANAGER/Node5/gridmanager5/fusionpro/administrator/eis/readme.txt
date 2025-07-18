@@ -1,0 +1,1 @@
+Executive Information systems are used to provide system througput information on a per component basis. IE how many posts, how many subposts, etc, users, backups, etc. These are usually sub-apps in themselves on a big system like a TellerManagement System.

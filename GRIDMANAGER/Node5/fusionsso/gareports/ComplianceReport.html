@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grid Compliance Report</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Sample API response
+            let apps = [
+                { "id": 1, "appid": "3", "iscompliant": 1 },
+                { "id": 2, "appid": "4", "iscompliant": 0 },
+                { "id": 3, "appid": "5", "iscompliant": 1 },
+                { "id": 4, "appid": "6", "iscompliant": 0 }
+            ];
+
+            let compliantApps = apps.filter(app => app.iscompliant === 1);
+            let noncompliantApps = apps.filter(app => app.iscompliant === 0);
+            let totalApps = apps.length;
+
+            document.getElementById("compliant-count").innerText = `${compliantApps.length} Compliant Apps`;
+            document.getElementById("noncompliant-count").innerText = `${noncompliantApps.length} Noncompliant Apps`;
+
+            document.getElementById("compliant-bar").style.width = `${(compliantApps.length / totalApps) * 100}%`;
+            document.getElementById("noncompliant-bar").style.width = `${(noncompliantApps.length / totalApps) * 100}%`;
+
+            let compliantList = document.getElementById("compliant-list");
+            let noncompliantList = document.getElementById("noncompliant-list");
+
+            compliantApps.forEach(app => {
+                let li = document.createElement("li");
+                li.className = "list-group-item";
+                li.innerText = `App ID: ${app.appid}`;
+                compliantList.appendChild(li);
+            });
+
+            noncompliantApps.forEach(app => {
+                let li = document.createElement("li");
+                li.className = "list-group-item";
+                li.innerText = `App ID: ${app.appid}`;
+                noncompliantList.appendChild(li);
+            });
+        });
+    </script>
+</head>
+<body class="container mt-4">
+    <h2 class="text-center">Grid Compliance Report</h2>
+
+    <div class="my-4">
+        <h4>Compliant Apps</h4>
+        <div class="progress">
+            <div id="compliant-bar" class="progress-bar bg-success" role="progressbar"></div>
+        </div>
+        <p id="compliant-count"></p>
+        <ul id="compliant-list" class="list-group mt-3"></ul>
+    </div>
+
+    <div class="my-4">
+        <h4>Noncompliant Apps</h4>
+        <div class="progress">
+            <div id="noncompliant-bar" class="progress-bar bg-danger" role="progressbar"></div>
+        </div>
+        <p id="noncompliant-count"></p>
+        <ul id="noncompliant-list" class="list-group mt-3"></ul>
+    </div>
+
+</body>
+</html>

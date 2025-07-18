@@ -1,0 +1,43 @@
+﻿<html>
+<head>
+<script src="chart.js"></script>
+<style>
+.300
+{
+max-width:300px;	
+}
+
+
+</style>
+
+</head>
+
+<body>
+<div class="300">
+  <canvas id="myChart" style="position: relative; height:30vh; width:60vw"></canvas>
+</div>
+
+<script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+</body>
+</html>

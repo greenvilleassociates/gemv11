@@ -1,0 +1,92 @@
+﻿using System;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using Microsoft.AspNetCore.Http;
+using System.Net.Mail;
+using GEMAPI.Models;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OpenApi;
+using Microsoft.AspNetCore.Http;
+namespace Enterprise.Controllers;
+
+public static class GserviceorderEndpoints
+{
+
+    public static async void MapGserviceorderEndpoints(this IEndpointRouteBuilder routes)
+    {
+        var group = routes.MapGroup("/api/Gserviceorder").WithTags(nameof(Gserviceorder));
+
+        //[HttpGet]
+        group.MapGet("/", () =>
+        {
+            using (var context = new GemContext())
+            {
+                return context.Gserviceorders.ToList();
+            }
+
+        })
+        .WithName("GetAllGserviceorders")
+        .WithOpenApi();
+
+        //[HttpGet]
+        group.MapGet("/{id}", (int id) =>
+        {
+            using (var context = new GemContext())
+            {
+                return context.Gserviceorders.Where(m => m.Id == id).ToList();
+            }
+        })
+        .WithName("GetGserviceorderById")
+        .WithOpenApi();
+
+        //[HttpPut]
+        group.MapPut("/{id}", (int id, Gserviceorder input) =>
+        {
+            using (var context = new GemContext())
+            {
+                Gserviceorder[] someGserviceorder = context.Gserviceorders.Where(m => m.Id == id).ToArray();
+                context.Gserviceorders.Attach(someGserviceorder[0]);
+                someGserviceorder[0].Regiondescription = input.Regiondescription;
+                context.SaveChanges();
+                return TypedResults.Accepted("Updated ID:" + input.Id);
+            }
+
+
+        })
+        .WithName("UpdateGserviceorder")
+        .WithOpenApi();
+
+        group.MapPost("/", async (Gserviceorder input) =>
+        {
+            using (var context = new GemContext())
+            {
+                Random rnd = new Random();
+                int dice = rnd.Next(1000, 10000000);
+                //input.Id = dice;
+                context.Gserviceorders.Add(input);
+                await context.SaveChangesAsync();
+                return TypedResults.Created("Created ID:" + input.Id);
+            }
+
+        })
+        .WithName("CreateGserviceorder")
+        .WithOpenApi();
+
+        group.MapDelete("/{id}", async (int id) =>
+        {
+            using (var context = new GemContext())
+            {
+                //context.Gserviceorders.Add(std);
+                Gserviceorder[] someGserviceorders = context.Gserviceorders.Where(m => m.Id == id).ToArray();
+                context.Gserviceorders.Attach(someGserviceorders[0]);
+                context.Gserviceorders.Remove(someGserviceorders[0]);
+                context.SaveChanges();
+            }
+
+        })
+        .WithName("DeleteGserviceorder")
+        .WithOpenApi();
+    }
+}
+

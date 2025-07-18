@@ -1,0 +1,12 @@
+/*//EF Migrations should only be used to install the schema on a new machine with the caveat we are adding an installer to the controller with option 99.
+//Ef migrations require the project be building without errors.
+
+dotnet ef migrations add InitialCreate
+dotnet ef database update
+
+//Note that after this build, Joomla still needs to be reinstalled with erase parameters.... which will create the files which will be unkown to the controller
+//up until the controller attempts to use the system.
+
+//AFTER the database is built delete the EF Migrations table in a DB First model its especially dangerous. and also the EF Migrations Directory which it creates in the project
+//as if you synch this you will have problems to the end of time.
+*/
