@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using Microsoft.AspNetCore.Http;
@@ -11,23 +11,23 @@ using Microsoft.AspNetCore.Http;
 using GEMAPI.ModelsCORP;
 namespace Enterprise.Controllers;
 
-public static class CompanyeventsEndpoints
+public static class CompanyannouncementsEndpoints
 {
 
-    public static async void MapCompanyeventsEndpoints(this IEndpointRouteBuilder routes)
+    public static async void MapCompanyannouncementsEndpoints(this IEndpointRouteBuilder routes)
     {
-        var group = routes.MapGroup("/api/Companyevents").WithTags(nameof(Companyevent));
+        var group = routes.MapGroup("/api/Companyannouncements").WithTags(nameof(Companyevent));
 
         //[HttpGet]
         group.MapGet("/", () =>
         {
             using (var context = new Gemcorp2Context())
             {
-                return context.Companyevents.ToList();
+                return context.Companyannouncements.ToList();
             }
 
         })
-        .WithName("GetAllCompanyevents")
+        .WithName("GetAllCompanyannouncements")
         .WithOpenApi();
 
         //[HttpGet]
@@ -35,7 +35,7 @@ public static class CompanyeventsEndpoints
         {
             using (var context = new Gemcorp2Context())
             {
-                return context.Companyevents.Where(m => m.Id == id).ToList();
+                return context.Companyannouncements.Where(m => m.Id == id).ToList();
             }
         })
         .WithName("GetCompanyeventById")
@@ -46,16 +46,16 @@ public static class CompanyeventsEndpoints
         {
             using (var context = new Gemcorp2Context())
             {
-                Companyevent[] someCompanyevents = context.Companyevents.Where(m => m.Id == id).ToArray();
-                context.Companyevents.Attach(someCompanyevents[0]);
-                someCompanyevents[0].Description = input.Description;
+                Companyevent[] someCompanyannouncements = context.Companyannouncements.Where(m => m.Id == id).ToArray();
+                context.Companyannouncements.Attach(someCompanyannouncements[0]);
+                someCompanyannouncements[0].Description = input.Description;
                 context.SaveChanges();
                 return TypedResults.Accepted("Updated ID:" + input.Id);
             }
 
 
         })
-        .WithName("UpdateCompanyevents")
+        .WithName("UpdateCompanyannouncements")
         .WithOpenApi();
 
         group.MapPost("/", async (Companyevent input) =>
@@ -65,28 +65,28 @@ public static class CompanyeventsEndpoints
                 Random rnd = new Random();
                 int dice = rnd.Next(1000, 10000000);
                 //input.Id = dice;
-                context.Companyevents.Add(input);
+                context.Companyannouncements.Add(input);
                 await context.SaveChangesAsync();
                 return TypedResults.Created("Created ID:" + input.Id);
             }
 
         })
-        .WithName("CreateCompanyevents")
+        .WithName("CreateCompanyannouncements")
         .WithOpenApi();
 
         group.MapDelete("/{id}", async (int id) =>
         {
             using (var context = new Gemcorp2Context())
             {
-                //context.Companyevents.Add(std);
-                Companyevent[] someCompanyevents = context.Companyevents.Where(m => m.Id == id).ToArray();
-                context.Companyevents.Attach(someCompanyevents[0]);
-                context.Companyevents.Remove(someCompanyevents[0]);
+                //context.Companyannouncements.Add(std);
+                Companyevent[] someCompanyannouncements = context.Companyannouncements.Where(m => m.Id == id).ToArray();
+                context.Companyannouncements.Attach(someCompanyannouncements[0]);
+                context.Companyannouncements.Remove(someCompanyannouncements[0]);
                 context.SaveChanges();
             }
 
         })
-        .WithName("DeleteCompanyevents")
+        .WithName("DeleteCompanyannouncements")
         .WithOpenApi();
     }
 }
