@@ -16,7 +16,7 @@ public static class CompanyannouncementsEndpoints
 
     public static async void MapCompanyannouncementsEndpoints(this IEndpointRouteBuilder routes)
     {
-        var group = routes.MapGroup("/api/Companyannouncements").WithTags(nameof(Companyevent));
+        var group = routes.MapGroup("/api/Companyannouncements").WithTags(nameof(Companyannouncements));
 
         //[HttpGet]
         group.MapGet("/", () =>
@@ -38,15 +38,15 @@ public static class CompanyannouncementsEndpoints
                 return context.Companyannouncements.Where(m => m.Id == id).ToList();
             }
         })
-        .WithName("GetCompanyeventById")
+        .WithName("GetCompanyannouncementsById")
         .WithOpenApi();
 
         //[HttpPut]
-        group.MapPut("/{id}", (int id, Companyevent input) =>
+        group.MapPut("/{id}", (int id, Companyannouncements input) =>
         {
             using (var context = new Gemcorp2Context())
             {
-                Companyevent[] someCompanyannouncements = context.Companyannouncements.Where(m => m.Id == id).ToArray();
+                Companyannouncement[] someCompanyannouncements = context.Companyannouncements.Where(m => m.Id == id).ToArray();
                 context.Companyannouncements.Attach(someCompanyannouncements[0]);
                 someCompanyannouncements[0].Description = input.Description;
                 context.SaveChanges();
@@ -58,7 +58,7 @@ public static class CompanyannouncementsEndpoints
         .WithName("UpdateCompanyannouncements")
         .WithOpenApi();
 
-        group.MapPost("/", async (Companyevent input) =>
+        group.MapPost("/", async (Companyannouncement input) =>
         {
             using (var context = new Gemcorp2Context())
             {
@@ -79,7 +79,7 @@ public static class CompanyannouncementsEndpoints
             using (var context = new Gemcorp2Context())
             {
                 //context.Companyannouncements.Add(std);
-                Companyevent[] someCompanyannouncements = context.Companyannouncements.Where(m => m.Id == id).ToArray();
+                Companyannouncement[] someCompanyannouncements = context.Companyannouncements.Where(m => m.Id == id).ToArray();
                 context.Companyannouncements.Attach(someCompanyannouncements[0]);
                 context.Companyannouncements.Remove(someCompanyannouncements[0]);
                 context.SaveChanges();

@@ -86,6 +86,4 @@ public partial class Employee
     public string? Lastname { get; set; }
 
     public string? Username { get; set; }
-
-    //public string? Employeeemail { get; set; }
 }

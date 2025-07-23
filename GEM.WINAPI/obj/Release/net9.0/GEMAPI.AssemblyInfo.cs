@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GEMAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2dfa0569b7c3f2665551953001fa19dec402426f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93ac46e46694e1105e3799355307ac63611da399")]
 [assembly: System.Reflection.AssemblyProductAttribute("GEMAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GEMAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

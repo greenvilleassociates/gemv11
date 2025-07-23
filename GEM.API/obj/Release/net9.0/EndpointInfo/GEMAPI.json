@@ -1310,6 +1310,151 @@
         }
       }
     },
+    "/api/Companyannouncements": {
+      "get": {
+        "tags": [
+          "Companyannouncements"
+        ],
+        "operationId": "GetAllCompanyannouncements",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Companyannouncement"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Companyannouncements"
+        ],
+        "operationId": "CreateCompanyannouncements",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Companyannouncement"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": { }
+            }
+          },
+          "201": {
+            "description": "Created"
+          }
+        }
+      }
+    },
+    "/api/Companyannouncements/{id}": {
+      "get": {
+        "tags": [
+          "Companyannouncements"
+        ],
+        "operationId": "GetCompanyannouncementsById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Companyannouncement"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Companyannouncements"
+        ],
+        "operationId": "UpdateCompanyannouncements",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Companyannouncements"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "202": {
+            "description": "Accepted"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Companyannouncements"
+        ],
+        "operationId": "DeleteCompanyannouncements",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Companyevents": {
       "get": {
         "tags": [
@@ -13417,170 +13562,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Int32StringStringStringStringStringStringStringStringStringStringStringStringStringStringStringStringStringStringStringStringStringString<>f__AnonymousType1"
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/LogUsers": {
-      "get": {
-        "tags": [
-          "User"
-        ],
-        "operationId": "LogGetAllUsers",
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/User"
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "User"
-        ],
-        "operationId": "LogCreateUser",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/User"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": { }
-            }
-          },
-          "201": {
-            "description": "Created"
-          }
-        }
-      }
-    },
-    "/api/LogUsers/{id}": {
-      "get": {
-        "tags": [
-          "User"
-        ],
-        "operationId": "LogGetUserById",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/User"
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      "delete": {
-        "tags": [
-          "User"
-        ],
-        "operationId": "LogDeleteUser",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/LogUsers/{userid}": {
-      "put": {
-        "tags": [
-          "User"
-        ],
-        "operationId": "LogUpdateUser",
-        "parameters": [
-          {
-            "name": "userid",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/User"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "202": {
-            "description": "Accepted"
-          }
-        }
-      }
-    },
-    "/api/LogUsers/userjoin": {
-      "get": {
-        "tags": [
-          "User"
-        ],
-        "operationId": "LogGetUserJoin",
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Int32StringStringStringStringStringStringStringStringStringStringString<>f__AnonymousType0"
+                    "$ref": "#/components/schemas/Int32StringStringStringStringStringStringStringStringStringStringStringStringStringStringStringStringStringStringStringStringStringString<>f__AnonymousType0"
                   }
                 }
               }
@@ -14718,6 +14700,11 @@
             "type": "number",
             "format": "double",
             "nullable": true
+          },
+          "qty": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -15033,8 +15020,72 @@
             "type": "string",
             "nullable": true
           },
-          "certAuthority": {
+          "certauthority": {
             "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Companyannouncement": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "annid": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "startdate": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "enddate": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "eventurl": {
+            "type": "string",
+            "nullable": true
+          },
+          "eventbloburl": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Companyannouncements": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "annid": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "startdate": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "enddate": {
+            "type": "string",
+            "format": "date",
             "nullable": true
           }
         },
@@ -15063,6 +15114,14 @@
           "enddate": {
             "type": "string",
             "format": "date",
+            "nullable": true
+          },
+          "eventurl": {
+            "type": "string",
+            "nullable": true
+          },
+          "eventbloburl": {
+            "type": "string",
             "nullable": true
           }
         },
@@ -15483,6 +15542,10 @@
           "legalcontactid": {
             "type": "integer",
             "format": "int32",
+            "nullable": true
+          },
+          "whynoncompliant": {
+            "type": "string",
             "nullable": true
           }
         },
@@ -16457,6 +16520,18 @@
           "inventoryid": {
             "type": "string",
             "nullable": true
+          },
+          "region": {
+            "type": "string",
+            "nullable": true
+          },
+          "switchid2": {
+            "type": "string",
+            "nullable": true
+          },
+          "siteid": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -16533,6 +16608,14 @@
           "inventoryid": {
             "type": "string",
             "nullable": true
+          },
+          "region": {
+            "type": "string",
+            "nullable": true
+          },
+          "siteid": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -16569,6 +16652,18 @@
             "nullable": true
           },
           "inventoryid": {
+            "type": "string",
+            "nullable": true
+          },
+          "archelement": {
+            "type": "string",
+            "nullable": true
+          },
+          "siteid": {
+            "type": "string",
+            "nullable": true
+          },
+          "region": {
             "type": "string",
             "nullable": true
           }
@@ -16614,6 +16709,10 @@
             "nullable": true
           },
           "serialnumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "region": {
             "type": "string",
             "nullable": true
           }
@@ -16970,6 +17069,14 @@
           "inventoryid": {
             "type": "string",
             "nullable": true
+          },
+          "region": {
+            "type": "string",
+            "nullable": true
+          },
+          "rackid": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -17053,6 +17160,14 @@
             "nullable": true
           },
           "inventoryid": {
+            "type": "string",
+            "nullable": true
+          },
+          "region": {
+            "type": "string",
+            "nullable": true
+          },
+          "siteid": {
             "type": "string",
             "nullable": true
           }
@@ -17307,6 +17422,14 @@
             "nullable": true
           },
           "inventoryid": {
+            "type": "string",
+            "nullable": true
+          },
+          "siteid": {
+            "type": "string",
+            "nullable": true
+          },
+          "region": {
             "type": "string",
             "nullable": true
           }
@@ -17951,7 +18074,8 @@
           },
           "block": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "sendEmail": {
             "type": "integer",
@@ -17960,7 +18084,8 @@
           },
           "registerDate": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "lastvisitDate": {
             "type": "string",
@@ -17998,61 +18123,7 @@
         },
         "additionalProperties": false
       },
-      "Int32StringStringStringStringStringStringStringStringStringStringString<>f__AnonymousType0": {
-        "type": "object",
-        "properties": {
-          "userId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "username": {
-            "type": "string",
-            "nullable": true
-          },
-          "fullname": {
-            "type": "string",
-            "nullable": true
-          },
-          "email": {
-            "type": "string",
-            "nullable": true
-          },
-          "role": {
-            "type": "string",
-            "nullable": true
-          },
-          "profileUrl": {
-            "type": "string",
-            "nullable": true
-          },
-          "address1": {
-            "type": "string",
-            "nullable": true
-          },
-          "city": {
-            "type": "string",
-            "nullable": true
-          },
-          "stateRegion": {
-            "type": "string",
-            "nullable": true
-          },
-          "country": {
-            "type": "string",
-            "nullable": true
-          },
-          "phone": {
-            "type": "string",
-            "nullable": true
-          },
-          "linkedinUrl": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "Int32StringStringStringStringStringStringStringStringStringStringStringStringStringStringStringStringStringStringStringStringStringString<>f__AnonymousType1": {
+      "Int32StringStringStringStringStringStringStringStringStringStringStringStringStringStringStringStringStringStringStringStringStringString<>f__AnonymousType0": {
         "type": "object",
         "properties": {
           "userId": {
@@ -18210,6 +18281,10 @@
             "nullable": true
           },
           "fullname": {
+            "type": "string",
+            "nullable": true
+          },
+          "emplid": {
             "type": "string",
             "nullable": true
           }
@@ -18422,6 +18497,10 @@
             "nullable": true
           },
           "fullname": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
             "type": "string",
             "nullable": true
           }
@@ -18669,6 +18748,10 @@
             "nullable": true
           },
           "groupid5": {
+            "type": "string",
+            "nullable": true
+          },
+          "somerole": {
             "type": "string",
             "nullable": true
           }

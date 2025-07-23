@@ -44,6 +44,4 @@ public partial class Certification
     public int? Managerid { get; set; }
 
     public int? Branchid { get; set; }
-
-    //public string? Employeeemail { get; set; }
 }

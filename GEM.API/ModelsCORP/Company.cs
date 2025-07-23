@@ -15,7 +15,5 @@ public partial class Company
 
     public string? Oracleid { get; set; }
 
-    public string? CertAuthority { get; set; }
-
-    //public string? Certauthority { get; set; }
+    public string? Certauthority { get; set; }
 }

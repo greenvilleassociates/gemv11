@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="../build/GEMAPI.props" />
+  <Import Project="..\build\GEMAPI.props" />
 </Project>

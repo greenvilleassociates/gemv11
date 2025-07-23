@@ -1,4 +1,5 @@
 using Enterprise.Controllers;
+using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -41,7 +42,7 @@ app.MapCompanyEndpoints();
 app.MapActivitydetailsEndpoints();
 app.MapSkillsdetailEndpoints();
 app.MapCertcomplianceEndpoints();
-app.MapLogUserEndpoints();
+//app.MapLogUserEndpoints();
 app.MapProclassesdetailEndpoints();
 app.MapCompanyeventsEndpoints();
 app.MapUsergroupsEndpoints();
@@ -120,4 +121,5 @@ app.MapGvservicetypeEndpoints();
 app.MapGwholesalerEndpoints();
 app.MapGworkorderEndpoints();
 app.MapHUserEndpoints();
+app.MapCompanyannouncementsEndpoints();
 app.Run();

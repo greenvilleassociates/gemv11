@@ -38,6 +38,8 @@ public partial class Gemcorp2Context : DbContext
 
     public virtual DbSet<Company> Companies { get; set; }
 
+    public virtual DbSet<Companyannouncement> Companyannouncements { get; set; }
+
     public virtual DbSet<Companyevent> Companyevents { get; set; }
 
     public virtual DbSet<Employee> Employees { get; set; }
@@ -231,6 +233,8 @@ public partial class Gemcorp2Context : DbContext
 
             entity.ToTable("certcalogue");
 
+            entity.HasIndex(e => e.Id, "primary").IsUnique();
+
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Certlevel)
                 .HasMaxLength(100)
@@ -334,9 +338,6 @@ public partial class Gemcorp2Context : DbContext
                 .HasColumnName("companyid");
             entity.Property(e => e.Employee).HasColumnName("employee");
             entity.Property(e => e.EmployeeEmail).HasMaxLength(150);
-            //entity.Property(e => e.Employeeemail)
-              //  .HasMaxLength(150)
-              //  .HasColumnName("employeeemail");
             entity.Property(e => e.Employeeid)
                 .HasMaxLength(100)
                 .HasColumnName("employeeid");
@@ -392,10 +393,9 @@ public partial class Gemcorp2Context : DbContext
             entity.ToTable("company");
 
             entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.CertAuthority).HasMaxLength(150);
-            //entity.Property(e => e.Certauthority)
-              //  .HasMaxLength(150)
-              //  .HasColumnName("certauthority");
+            entity.Property(e => e.Certauthority)
+                .HasMaxLength(150)
+                .HasColumnName("certauthority");
             entity.Property(e => e.Companyname)
                 .HasMaxLength(100)
                 .HasColumnName("companyname");
@@ -410,6 +410,31 @@ public partial class Gemcorp2Context : DbContext
                 .HasColumnName("oracleid");
         });
 
+        modelBuilder.Entity<Companyannouncement>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("companyannouncements_pkey");
+
+            entity.ToTable("companyannouncements");
+
+            entity.Property(e => e.Id)
+                .UseIdentityAlwaysColumn()
+                .HasColumnName("id");
+            entity.Property(e => e.Annid)
+                .HasMaxLength(150)
+                .HasColumnName("annid");
+            entity.Property(e => e.Description)
+                .HasMaxLength(150)
+                .HasColumnName("description");
+            entity.Property(e => e.Enddate).HasColumnName("enddate");
+            entity.Property(e => e.Eventbloburl)
+                .HasMaxLength(150)
+                .HasColumnName("eventbloburl");
+            entity.Property(e => e.Eventurl)
+                .HasMaxLength(150)
+                .HasColumnName("eventurl");
+            entity.Property(e => e.Startdate).HasColumnName("startdate");
+        });
+
         modelBuilder.Entity<Companyevent>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__companye__3213E83F3D031F56");
@@ -421,9 +446,15 @@ public partial class Gemcorp2Context : DbContext
                 .HasMaxLength(150)
                 .HasColumnName("description");
             entity.Property(e => e.Enddate).HasColumnName("enddate");
+            entity.Property(e => e.Eventbloburl)
+                .HasMaxLength(150)
+                .HasColumnName("eventbloburl");
             entity.Property(e => e.Eventid)
                 .HasMaxLength(150)
                 .HasColumnName("eventid");
+            entity.Property(e => e.Eventurl)
+                .HasMaxLength(150)
+                .HasColumnName("eventurl");
             entity.Property(e => e.Startdate).HasColumnName("startdate");
         });
 
@@ -450,9 +481,6 @@ public partial class Gemcorp2Context : DbContext
             entity.Property(e => e.Employee1).HasColumnName("employee");
             entity.Property(e => e.EmployeeEmail).HasMaxLength(150);
             entity.Property(e => e.EmployeeReturndate).HasColumnName("employee_returndate");
-            //entity.Property(e => e.Employeeemail)
-              //  .HasMaxLength(150)
-              //  .HasColumnName("employeeemail");
             entity.Property(e => e.Employeeid)
                 .HasMaxLength(100)
                 .HasColumnName("employeeid");

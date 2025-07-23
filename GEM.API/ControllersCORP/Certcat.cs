@@ -11,23 +11,23 @@ using Microsoft.AspNetCore.Http;
 using GEMAPI.ModelsCORP;
 namespace Enterprise.Controllers;
 
-public static class CertcatEndpoints
+public static class CertcaloguesEndpoints
 {
 
-    public static async void MapCertcatEndpoints(this IEndpointRouteBuilder routes)
+    public static async void MapCertcalogueEndpoints(this IEndpointRouteBuilder routes)
     {
-        var group = routes.MapGroup("/api/Certcat").WithTags(nameof(Certcat));
+        var group = routes.MapGroup("/api/Certcalogue").WithTags(nameof(Certcalogue));
 
         //[HttpGet]
         group.MapGet("/", () =>
         {
             using (var context = new Gemcorp2Context())
             {
-                return context.Certcats.ToList();
+                return context.Certcalogues.ToList();
             }
 
         })
-        .WithName("GetAllCertcats")
+        .WithName("GetAllCertcalogue")
         .WithOpenApi();
 
         //[HttpGet]
@@ -35,58 +35,58 @@ public static class CertcatEndpoints
         {
             using (var context = new Gemcorp2Context())
             {
-                return context.Certcats.Where(m => m.Id == id).ToList();
+                return context.Certcalogues.Where(m => m.Id == id).ToList();
             }
         })
-        .WithName("GetCertcatById")
+        .WithName("GetCertcalogueById")
         .WithOpenApi();
 
         //[HttpPut]
-        group.MapPut("/{id}", (int id, Certcat input) =>
+        group.MapPut("/{id}", (int id, Certcalogue input) =>
         {
             using (var context = new Gemcorp2Context())
             {
-                Certcat[] someCertcat = context.Certcats.Where(m => m.Id == id).ToArray();
-                context.Certcats.Attach(someCertcat[0]);
-                someCertcat[0].Certname = input.Certname;
+                Certcalogue[] someCertcalogue = context.Certcalogues.Where(m => m.Id == id).ToArray();
+                context.Certcalogues.Attach(someCertcalogue[0]);
+                someCertcalogue[0].Description = input.Description;
                 context.SaveChanges();
                 return TypedResults.Accepted("Updated ID:" + input.Id);
             }
 
 
         })
-        .WithName("UpdateCertcat")
+        .WithName("UpdateCertcalogue")
         .WithOpenApi();
 
-        group.MapPost("/", async (Certcat input) =>
+        group.MapPost("/", async (Certcalogue input) =>
         {
             using (var context = new Gemcorp2Context())
             {
                 Random rnd = new Random();
                 int dice = rnd.Next(1000, 10000000);
                 //input.Id = dice;
-                context.Certcats.Add(input);
+                context.Certcalogues.Add(input);
                 await context.SaveChangesAsync();
                 return TypedResults.Created("Created ID:" + input.Id);
             }
 
         })
-        .WithName("CreateCertcat")
+        .WithName("CreateCertcalogue")
         .WithOpenApi();
 
         group.MapDelete("/{id}", async (int id) =>
         {
             using (var context = new Gemcorp2Context())
             {
-                //context.Certcats.Add(std);
-                Certcat[] someCertcats = context.Certcats.Where(m => m.Id == id).ToArray();
-                context.Certcats.Attach(someCertcats[0]);
-                context.Certcats.Remove(someCertcats[0]);
+                //context.Certcalogue.Add(std);
+                Certcalogue[] someCertcalogue = context.Certcalogues.Where(m => m.Id == id).ToArray();
+                context.Certcalogues.Attach(someCertcalogue[0]);
+                context.Certcalogues.Remove(someCertcalogue[0]);
                 context.SaveChanges();
             }
 
         })
-        .WithName("DeleteCertcat")
+        .WithName("DeleteCertcalogue")
         .WithOpenApi();
     }
 }

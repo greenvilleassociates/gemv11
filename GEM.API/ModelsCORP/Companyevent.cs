@@ -14,4 +14,8 @@ public partial class Companyevent
     public DateOnly? Startdate { get; set; }
 
     public DateOnly? Enddate { get; set; }
+
+    public string? Eventurl { get; set; }
+
+    public string? Eventbloburl { get; set; }
 }
