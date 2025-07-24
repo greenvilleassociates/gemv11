@@ -31,15 +31,31 @@ public static class LearndetailEndpoints
         .WithOpenApi();
 
         //[HttpGet]
-        group.MapGet("/{id}", (int id) =>
+        group.MapGet("/userid/{userid}", (int userid) =>
+        {
+            using (var context = new Gemcorp2Context())
+            {
+                return context.Learndetails.Where(m => m.Userid == userid).ToList();
+            }
+        })
+        .WithName("GetLearndetailByUserId")
+        .WithOpenApi();
+
+        //[HttpGet]
+        group.MapGet("/id/{id}", (int id) =>
         {
             using (var context = new Gemcorp2Context())
             {
                 return context.Learndetails.Where(m => m.Id == id).ToList();
             }
         })
-        .WithName("GetLearndetailById")
+        .WithName("GetLearndetailByLearnLogId")
         .WithOpenApi();
+
+
+
+
+
 
         //[HttpPut]
         group.MapPut("/{id}", (int id, Learndetail input) =>

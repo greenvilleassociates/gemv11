@@ -12380,12 +12380,46 @@
         }
       }
     },
-    "/api/Learndetail/{id}": {
+    "/api/Learndetail/userid/{userid}": {
       "get": {
         "tags": [
           "Learndetail"
         ],
-        "operationId": "GetLearndetailById",
+        "operationId": "GetLearndetailByUserId",
+        "parameters": [
+          {
+            "name": "userid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Learndetail"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Learndetail/id/{id}": {
+      "get": {
+        "tags": [
+          "Learndetail"
+        ],
+        "operationId": "GetLearndetailByLearnLogId",
         "parameters": [
           {
             "name": "id",
@@ -12412,7 +12446,9 @@
             }
           }
         }
-      },
+      }
+    },
+    "/api/Learndetail/{id}": {
       "put": {
         "tags": [
           "Learndetail"
@@ -14289,6 +14325,40 @@
               "text/plain": {
                 "schema": {
                   "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Userlog/userid/{userid}": {
+      "get": {
+        "tags": [
+          "Userlog"
+        ],
+        "operationId": "GetUserlogByUserId",
+        "parameters": [
+          {
+            "name": "userid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Userlog"
+                  }
                 }
               }
             }

@@ -35,10 +35,21 @@ public static class UserlogEndpoints
         {
             using (var context = new Gemcorp2Context())
             {
-                return context.Userlogs.Where(m => m.Userid == id).ToList();
+                return context.Userlogs.Where(m => m.Id == id).ToList();
             }
         })
         .WithName("GetUserlogById")
+        .WithOpenApi();
+
+        //[HttpGet]
+        group.MapGet("/userid/{userid}", (int userid) =>
+        {
+            using (var context = new Gemcorp2Context())
+            {
+                return context.Userlogs.Where(m => m.Userid == userid).ToList();
+            }
+        })
+        .WithName("GetUserlogByUserId")
         .WithOpenApi();
 
         //[HttpPut]
