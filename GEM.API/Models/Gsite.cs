@@ -28,4 +28,8 @@ public partial class Gsite
     public int? Sitecontactid { get; set; }
 
     public string? Cllicode { get; set; }
+
+    public string? Instanceid { get; set; }
+
+    public string? Custid { get; set; }
 }

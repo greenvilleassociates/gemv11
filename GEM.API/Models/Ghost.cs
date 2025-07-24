@@ -32,4 +32,10 @@ public partial class Ghost
     public string? Switchid2 { get; set; }
 
     public string? Siteid { get; set; }
+
+    public int? Instanceid { get; set; }
+
+    public int? Custid { get; set; }
+
+    public string? Serialnumber { get; set; }
 }

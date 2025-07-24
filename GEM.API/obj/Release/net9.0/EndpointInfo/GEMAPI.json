@@ -1600,6 +1600,151 @@
         }
       }
     },
+    "/api/Ctssnmpv5": {
+      "get": {
+        "tags": [
+          "Ctssnmpv5"
+        ],
+        "operationId": "GetAllCtssnmpv5s",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Ctssnmpv5"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Ctssnmpv5"
+        ],
+        "operationId": "CreateCtssnmpv5",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Ctssnmpv5"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": { }
+            }
+          },
+          "201": {
+            "description": "Created"
+          }
+        }
+      }
+    },
+    "/api/Ctssnmpv5/{id}": {
+      "get": {
+        "tags": [
+          "Ctssnmpv5"
+        ],
+        "operationId": "GetCtssnmpv5ById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Ctssnmpv5"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Ctssnmpv5"
+        ],
+        "operationId": "UpdateCtssnmpv5",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Ctssnmpv5"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "202": {
+            "description": "Accepted"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Ctssnmpv5"
+        ],
+        "operationId": "DeleteCtssnmpv5",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Employees": {
       "get": {
         "tags": [
@@ -15127,6 +15272,98 @@
         },
         "additionalProperties": false
       },
+      "Ctssnmpv5": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "trapId": {
+            "type": "string",
+            "nullable": true
+          },
+          "timestamp": {
+            "type": "string",
+            "nullable": true
+          },
+          "sourceIp": {
+            "type": "string",
+            "nullable": true
+          },
+          "communityString": {
+            "type": "string",
+            "nullable": true
+          },
+          "snmpVersion": {
+            "type": "string",
+            "nullable": true
+          },
+          "enterpriseOid": {
+            "type": "string",
+            "nullable": true
+          },
+          "genericTrapType": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "specificTrapCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "agentAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "varbinds": {
+            "type": "string",
+            "nullable": true
+          },
+          "lat": {
+            "type": "string",
+            "nullable": true
+          },
+          "long": {
+            "type": "string",
+            "nullable": true
+          },
+          "ctsfulllocation": {
+            "type": "string",
+            "nullable": true
+          },
+          "vpnid": {
+            "type": "string",
+            "nullable": true
+          },
+          "user1": {
+            "type": "string",
+            "nullable": true
+          },
+          "user2": {
+            "type": "string",
+            "nullable": true
+          },
+          "user3": {
+            "type": "string",
+            "nullable": true
+          },
+          "user4": {
+            "type": "string",
+            "nullable": true
+          },
+          "user5": {
+            "type": "string",
+            "nullable": true
+          },
+          "loopbackSourceIp": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "Employee": {
         "type": "object",
         "properties": {
@@ -16196,6 +16433,30 @@
           "inventoryid": {
             "type": "string",
             "nullable": true
+          },
+          "instanceid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "custid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "serialnumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "regionid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "siteid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -16532,6 +16793,20 @@
           "siteid": {
             "type": "string",
             "nullable": true
+          },
+          "instanceid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "custid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "serialnumber": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -16616,6 +16891,20 @@
           "siteid": {
             "type": "string",
             "nullable": true
+          },
+          "instanceid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "custid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "serialnumber": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -16666,6 +16955,20 @@
           "region": {
             "type": "string",
             "nullable": true
+          },
+          "instanceid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "custid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "serialnumber": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -16713,6 +17016,88 @@
             "nullable": true
           },
           "region": {
+            "type": "string",
+            "nullable": true
+          },
+          "insertdate": {
+            "type": "string",
+            "nullable": true
+          },
+          "instanceid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "custid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "siteid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "qtyonhand": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "qtyonorder": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "qtybackordered": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "oracleinvid": {
+            "type": "string",
+            "nullable": true
+          },
+          "dynamicsinvid": {
+            "type": "string",
+            "nullable": true
+          },
+          "ncrinvid": {
+            "type": "string",
+            "nullable": true
+          },
+          "mgdContractid": {
+            "type": "string",
+            "nullable": true
+          },
+          "mgdVendor": {
+            "type": "string",
+            "nullable": true
+          },
+          "mgdActivestatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "mgdBillingclass": {
+            "type": "string",
+            "nullable": true
+          },
+          "mgdStartdate": {
+            "type": "string",
+            "nullable": true
+          },
+          "mgdEnddate": {
+            "type": "string",
+            "nullable": true
+          },
+          "mgdWarningdate": {
+            "type": "string",
+            "nullable": true
+          },
+          "mgdNotifyEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "mgdNotifySms": {
             "type": "string",
             "nullable": true
           }
@@ -17077,6 +17462,20 @@
           "rackid": {
             "type": "string",
             "nullable": true
+          },
+          "instanceid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "custid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "serialnumber": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -17168,6 +17567,20 @@
             "nullable": true
           },
           "siteid": {
+            "type": "string",
+            "nullable": true
+          },
+          "instanceid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "custid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "serialnumber": {
             "type": "string",
             "nullable": true
           }
@@ -17367,6 +17780,14 @@
           "cllicode": {
             "type": "string",
             "nullable": true
+          },
+          "instanceid": {
+            "type": "string",
+            "nullable": true
+          },
+          "custid": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -17430,6 +17851,20 @@
             "nullable": true
           },
           "region": {
+            "type": "string",
+            "nullable": true
+          },
+          "instanceid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "custid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "serialnumber": {
             "type": "string",
             "nullable": true
           }

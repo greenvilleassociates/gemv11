@@ -22,4 +22,14 @@ public partial class Gfirewallcontext
     public string? Vpnid2 { get; set; }
 
     public string? Inventoryid { get; set; }
+
+    public int? Instanceid { get; set; }
+
+    public int? Custid { get; set; }
+
+    public string? Serialnumber { get; set; }
+
+    public int? Regionid { get; set; }
+
+    public int? Siteid { get; set; }
 }

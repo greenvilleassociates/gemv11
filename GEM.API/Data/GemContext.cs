@@ -101,6 +101,8 @@ public partial class GemContext : DbContext
 
     public virtual DbSet<Ghregion> Ghregions { get; set; }
 
+    public virtual DbSet<Ginstance> Ginstances { get; set; }
+
     public virtual DbSet<Ginventory> Ginventories { get; set; }
 
     public virtual DbSet<Ginventorytype> Ginventorytypes { get; set; }
@@ -168,6 +170,8 @@ public partial class GemContext : DbContext
     public virtual DbSet<Guser> Gusers { get; set; }
 
     public virtual DbSet<Gusergroup> Gusergroups { get; set; }
+
+    public virtual DbSet<Guserprofile> Guserprofiles { get; set; }
 
     public virtual DbSet<GusersCard> GusersCards { get; set; }
 
@@ -359,7 +363,7 @@ public partial class GemContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseNpgsql("Host=127.0.0.1;Port=5434;Username=gridsa;Password=test12345;Database=gem");
+        => optionsBuilder.UseNpgsql("Host=gliops.glocation.info;Port=5434;Username=gridsa;Password=test12345;Database=gem");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -1028,18 +1032,25 @@ public partial class GemContext : DbContext
             entity.ToTable("gfirewalls");
 
             entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Custid).HasColumnName("custid");
             entity.Property(e => e.Description)
                 .HasMaxLength(150)
                 .HasColumnName("description");
             entity.Property(e => e.Firewallid)
                 .HasMaxLength(150)
                 .HasColumnName("firewallid");
+            entity.Property(e => e.Instanceid).HasColumnName("instanceid");
             entity.Property(e => e.Inventoryid)
                 .HasMaxLength(100)
                 .HasColumnName("inventoryid");
             entity.Property(e => e.Ipaddress)
                 .HasMaxLength(50)
                 .HasColumnName("ipaddress");
+            entity.Property(e => e.Regionid).HasColumnName("regionid");
+            entity.Property(e => e.Serialnumber)
+                .HasMaxLength(150)
+                .HasColumnName("serialnumber");
+            entity.Property(e => e.Siteid).HasColumnName("siteid");
             entity.Property(e => e.Telemetryipaddress)
                 .HasMaxLength(50)
                 .HasColumnName("telemetryipaddress");
@@ -1061,18 +1072,25 @@ public partial class GemContext : DbContext
             entity.Property(e => e.Contextid)
                 .HasMaxLength(150)
                 .HasColumnName("contextid");
+            entity.Property(e => e.Custid).HasColumnName("custid");
             entity.Property(e => e.Description)
                 .HasMaxLength(150)
                 .HasColumnName("description");
             entity.Property(e => e.Firewallid)
                 .HasMaxLength(150)
                 .HasColumnName("firewallid");
+            entity.Property(e => e.Instanceid).HasColumnName("instanceid");
             entity.Property(e => e.Inventoryid)
                 .HasMaxLength(100)
                 .HasColumnName("inventoryid");
             entity.Property(e => e.Ipaddress)
                 .HasMaxLength(50)
                 .HasColumnName("ipaddress");
+            entity.Property(e => e.Regionid).HasColumnName("regionid");
+            entity.Property(e => e.Serialnumber)
+                .HasMaxLength(150)
+                .HasColumnName("serialnumber");
+            entity.Property(e => e.Siteid).HasColumnName("siteid");
             entity.Property(e => e.Telemetryipaddress)
                 .HasMaxLength(50)
                 .HasColumnName("telemetryipaddress");
@@ -1275,12 +1293,14 @@ public partial class GemContext : DbContext
             entity.ToTable("ghosts");
 
             entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Custid).HasColumnName("custid");
             entity.Property(e => e.Description)
                 .HasMaxLength(150)
                 .HasColumnName("description");
             entity.Property(e => e.Imageid)
                 .HasMaxLength(100)
                 .HasColumnName("imageid");
+            entity.Property(e => e.Instanceid).HasColumnName("instanceid");
             entity.Property(e => e.Inventoryid)
                 .HasMaxLength(100)
                 .HasColumnName("inventoryid");
@@ -1291,6 +1311,9 @@ public partial class GemContext : DbContext
             entity.Property(e => e.Region)
                 .HasMaxLength(50)
                 .HasColumnName("region");
+            entity.Property(e => e.Serialnumber)
+                .HasMaxLength(150)
+                .HasColumnName("serialnumber");
             entity.Property(e => e.Serverid)
                 .HasMaxLength(150)
                 .HasColumnName("serverid");
@@ -1351,9 +1374,11 @@ public partial class GemContext : DbContext
             entity.ToTable("ghostlpars");
 
             entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Custid).HasColumnName("custid");
             entity.Property(e => e.Description)
                 .HasMaxLength(150)
                 .HasColumnName("description");
+            entity.Property(e => e.Instanceid).HasColumnName("instanceid");
             entity.Property(e => e.Inventoryid)
                 .HasMaxLength(100)
                 .HasColumnName("inventoryid");
@@ -1366,6 +1391,9 @@ public partial class GemContext : DbContext
             entity.Property(e => e.Region)
                 .HasMaxLength(50)
                 .HasColumnName("region");
+            entity.Property(e => e.Serialnumber)
+                .HasMaxLength(150)
+                .HasColumnName("serialnumber");
             entity.Property(e => e.Siteid)
                 .HasMaxLength(50)
                 .HasColumnName("siteid");
@@ -1390,9 +1418,11 @@ public partial class GemContext : DbContext
             entity.Property(e => e.Archelement)
                 .HasMaxLength(150)
                 .HasColumnName("archelement");
+            entity.Property(e => e.Custid).HasColumnName("custid");
             entity.Property(e => e.Description)
                 .HasMaxLength(150)
                 .HasColumnName("description");
+            entity.Property(e => e.Instanceid).HasColumnName("instanceid");
             entity.Property(e => e.Inventoryid)
                 .HasMaxLength(100)
                 .HasColumnName("inventoryid");
@@ -1402,6 +1432,9 @@ public partial class GemContext : DbContext
             entity.Property(e => e.Region)
                 .HasMaxLength(50)
                 .HasColumnName("region");
+            entity.Property(e => e.Serialnumber)
+                .HasMaxLength(150)
+                .HasColumnName("serialnumber");
             entity.Property(e => e.Siteid)
                 .HasMaxLength(50)
                 .HasColumnName("siteid");
@@ -1434,6 +1467,36 @@ public partial class GemContext : DbContext
                 .HasColumnName("regionid");
         });
 
+        modelBuilder.Entity<Ginstance>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("ginstances_pkey");
+
+            entity.ToTable("ginstances");
+
+            entity.Property(e => e.Id)
+                .UseIdentityAlwaysColumn()
+                .HasColumnName("id");
+            entity.Property(e => e.Buscontactid).HasColumnName("buscontactid");
+            entity.Property(e => e.Custid)
+                .HasMaxLength(100)
+                .HasColumnName("custid");
+            entity.Property(e => e.Dynamicsid)
+                .HasMaxLength(100)
+                .HasColumnName("dynamicsid");
+            entity.Property(e => e.Ncrid)
+                .HasMaxLength(100)
+                .HasColumnName("ncrid");
+            entity.Property(e => e.Oracleid)
+                .HasMaxLength(100)
+                .HasColumnName("oracleid");
+            entity.Property(e => e.Techcontactemail)
+                .HasMaxLength(150)
+                .HasColumnName("techcontactemail");
+            entity.Property(e => e.Techcontactid)
+                .HasMaxLength(150)
+                .HasColumnName("techcontactid");
+        });
+
         modelBuilder.Entity<Ginventory>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("inventory_pkey");
@@ -1441,19 +1504,64 @@ public partial class GemContext : DbContext
             entity.ToTable("ginventory");
 
             entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Custid).HasColumnName("custid");
             entity.Property(e => e.Description)
                 .HasMaxLength(200)
                 .HasColumnName("description");
+            entity.Property(e => e.Dynamicsinvid)
+                .HasMaxLength(150)
+                .HasColumnName("dynamicsinvid");
+            entity.Property(e => e.Insertdate)
+                .HasMaxLength(50)
+                .HasColumnName("insertdate");
+            entity.Property(e => e.Instanceid).HasColumnName("instanceid");
             entity.Property(e => e.Inventoryid)
                 .HasMaxLength(100)
                 .HasColumnName("inventoryid");
             entity.Property(e => e.Inventorytype).HasColumnName("inventorytype");
+            entity.Property(e => e.MgdActivestatus)
+                .HasMaxLength(2)
+                .HasColumnName("mgd_activestatus");
+            entity.Property(e => e.MgdBillingclass)
+                .HasMaxLength(50)
+                .HasColumnName("mgd_billingclass");
+            entity.Property(e => e.MgdContractid)
+                .HasMaxLength(50)
+                .HasColumnName("mgd_contractid");
+            entity.Property(e => e.MgdEnddate)
+                .HasMaxLength(20)
+                .HasColumnName("mgd_enddate");
+            entity.Property(e => e.MgdNotifyEmail)
+                .HasMaxLength(150)
+                .HasColumnName("mgd_notify_email");
+            entity.Property(e => e.MgdNotifySms)
+                .HasMaxLength(50)
+                .HasColumnName("mgd_notify_sms");
+            entity.Property(e => e.MgdStartdate)
+                .HasMaxLength(20)
+                .HasColumnName("mgd_startdate");
+            entity.Property(e => e.MgdVendor)
+                .HasMaxLength(50)
+                .HasColumnName("mgd_vendor");
+            entity.Property(e => e.MgdWarningdate)
+                .HasMaxLength(20)
+                .HasColumnName("mgd_warningdate");
+            entity.Property(e => e.Ncrinvid)
+                .HasMaxLength(150)
+                .HasColumnName("ncrinvid");
+            entity.Property(e => e.Oracleinvid)
+                .HasMaxLength(150)
+                .HasColumnName("oracleinvid");
+            entity.Property(e => e.Qtybackordered).HasColumnName("qtybackordered");
+            entity.Property(e => e.Qtyonhand).HasColumnName("qtyonhand");
+            entity.Property(e => e.Qtyonorder).HasColumnName("qtyonorder");
             entity.Property(e => e.Region)
                 .HasMaxLength(150)
                 .HasColumnName("region");
             entity.Property(e => e.Serialnumber)
                 .HasMaxLength(200)
                 .HasColumnName("serialnumber");
+            entity.Property(e => e.Siteid).HasColumnName("siteid");
         });
 
         modelBuilder.Entity<Ginventorytype>(entity =>
@@ -1780,9 +1888,11 @@ public partial class GemContext : DbContext
             entity.ToTable("gphysicalpar");
 
             entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Custid).HasColumnName("custid");
             entity.Property(e => e.Description)
                 .HasMaxLength(150)
                 .HasColumnName("description");
+            entity.Property(e => e.Instanceid).HasColumnName("instanceid");
             entity.Property(e => e.Inventoryid)
                 .HasMaxLength(100)
                 .HasColumnName("inventoryid");
@@ -1792,6 +1902,9 @@ public partial class GemContext : DbContext
             entity.Property(e => e.Region)
                 .HasMaxLength(50)
                 .HasColumnName("region");
+            entity.Property(e => e.Serialnumber)
+                .HasMaxLength(150)
+                .HasColumnName("serialnumber");
             entity.Property(e => e.Siteid).HasColumnName("siteid");
         });
 
@@ -1846,12 +1959,18 @@ public partial class GemContext : DbContext
             entity.Property(e => e.Id)
                 .ValueGeneratedNever()
                 .HasColumnName("id");
+            entity.Property(e => e.Custid)
+                .HasMaxLength(50)
+                .HasColumnName("custid");
             entity.Property(e => e.Description)
                 .HasMaxLength(50)
                 .HasColumnName("description");
             entity.Property(e => e.Floor)
                 .HasMaxLength(50)
                 .HasColumnName("floor");
+            entity.Property(e => e.Instanceid)
+                .HasMaxLength(50)
+                .HasColumnName("instanceid");
             entity.Property(e => e.Region)
                 .HasMaxLength(50)
                 .HasColumnName("region");
@@ -1904,9 +2023,11 @@ public partial class GemContext : DbContext
             entity.ToTable("grouters");
 
             entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Custid).HasColumnName("custid");
             entity.Property(e => e.Description)
                 .HasMaxLength(150)
                 .HasColumnName("description");
+            entity.Property(e => e.Instanceid).HasColumnName("instanceid");
             entity.Property(e => e.Inventoryid)
                 .HasMaxLength(100)
                 .HasColumnName("inventoryid");
@@ -1919,6 +2040,9 @@ public partial class GemContext : DbContext
             entity.Property(e => e.Routerid)
                 .HasMaxLength(150)
                 .HasColumnName("routerid");
+            entity.Property(e => e.Serialnumber)
+                .HasMaxLength(150)
+                .HasColumnName("serialnumber");
             entity.Property(e => e.Siteid)
                 .HasMaxLength(50)
                 .HasColumnName("siteid");
@@ -2070,9 +2194,15 @@ public partial class GemContext : DbContext
             entity.Property(e => e.Cllicode)
                 .HasMaxLength(50)
                 .HasColumnName("cllicode");
+            entity.Property(e => e.Custid)
+                .HasMaxLength(50)
+                .HasColumnName("custid");
             entity.Property(e => e.Fax)
                 .HasMaxLength(100)
                 .HasColumnName("fax");
+            entity.Property(e => e.Instanceid)
+                .HasMaxLength(50)
+                .HasColumnName("instanceid");
             entity.Property(e => e.Phone)
                 .HasMaxLength(100)
                 .HasColumnName("phone");
@@ -2140,9 +2270,11 @@ public partial class GemContext : DbContext
             entity.ToTable("gswitches");
 
             entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Custid).HasColumnName("custid");
             entity.Property(e => e.Description)
                 .HasMaxLength(150)
                 .HasColumnName("description");
+            entity.Property(e => e.Instanceid).HasColumnName("instanceid");
             entity.Property(e => e.Inventoryid)
                 .HasMaxLength(100)
                 .HasColumnName("inventoryid");
@@ -2152,6 +2284,9 @@ public partial class GemContext : DbContext
             entity.Property(e => e.Region)
                 .HasMaxLength(50)
                 .HasColumnName("region");
+            entity.Property(e => e.Serialnumber)
+                .HasMaxLength(150)
+                .HasColumnName("serialnumber");
             entity.Property(e => e.Siteid)
                 .HasMaxLength(50)
                 .HasColumnName("siteid");
@@ -2335,6 +2470,69 @@ public partial class GemContext : DbContext
             entity.Property(e => e.Groupname)
                 .HasMaxLength(250)
                 .HasColumnName("groupname");
+        });
+
+        modelBuilder.Entity<Guserprofile>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("guserprofile_pkey");
+
+            entity.ToTable("guserprofile");
+
+            entity.Property(e => e.Id)
+                .UseIdentityAlwaysColumn()
+                .HasColumnName("id");
+            entity.Property(e => e.Address1)
+                .HasMaxLength(150)
+                .HasColumnName("address1");
+            entity.Property(e => e.Address2)
+                .HasMaxLength(150)
+                .HasColumnName("address2");
+            entity.Property(e => e.Cellphone)
+                .HasMaxLength(150)
+                .HasColumnName("cellphone");
+            entity.Property(e => e.City)
+                .HasMaxLength(100)
+                .HasColumnName("city");
+            entity.Property(e => e.Country)
+                .HasMaxLength(150)
+                .HasColumnName("country");
+            entity.Property(e => e.Email)
+                .HasMaxLength(150)
+                .HasColumnName("email");
+            entity.Property(e => e.Facebookurl)
+                .HasMaxLength(150)
+                .HasColumnName("facebookurl");
+            entity.Property(e => e.Googleurl)
+                .HasMaxLength(150)
+                .HasColumnName("googleurl");
+            entity.Property(e => e.Instagramurl)
+                .HasMaxLength(150)
+                .HasColumnName("instagramurl");
+            entity.Property(e => e.Linkedinurl)
+                .HasMaxLength(150)
+                .HasColumnName("linkedinurl");
+            entity.Property(e => e.Maritalstatus)
+                .HasMaxLength(100)
+                .HasColumnName("maritalstatus");
+            entity.Property(e => e.Phone)
+                .HasMaxLength(150)
+                .HasColumnName("phone");
+            entity.Property(e => e.Sms).HasColumnName("sms");
+            entity.Property(e => e.Stateregion)
+                .HasMaxLength(150)
+                .HasColumnName("stateregion");
+            entity.Property(e => e.University1)
+                .HasMaxLength(150)
+                .HasColumnName("university1");
+            entity.Property(e => e.University2)
+                .HasMaxLength(150)
+                .HasColumnName("university2");
+            entity.Property(e => e.Userid)
+                .HasMaxLength(50)
+                .HasColumnName("userid");
+            entity.Property(e => e.Vimeourl)
+                .HasMaxLength(150)
+                .HasColumnName("vimeourl");
         });
 
         modelBuilder.Entity<GusersCard>(entity =>

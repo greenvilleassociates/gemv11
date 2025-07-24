@@ -42,6 +42,8 @@ public partial class Gemcorp2Context : DbContext
 
     public virtual DbSet<Companyevent> Companyevents { get; set; }
 
+    public virtual DbSet<Ctssnmpv5> Ctssnmpv5s { get; set; }
+
     public virtual DbSet<Employee> Employees { get; set; }
 
     public virtual DbSet<EmployeeReview> EmployeeReviews { get; set; }
@@ -456,6 +458,73 @@ public partial class Gemcorp2Context : DbContext
                 .HasMaxLength(150)
                 .HasColumnName("eventurl");
             entity.Property(e => e.Startdate).HasColumnName("startdate");
+        });
+
+        modelBuilder.Entity<Ctssnmpv5>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("ctssnmpv5_pkey");
+
+            entity.ToTable("ctssnmpv5");
+
+            entity.Property(e => e.Id)
+                .UseIdentityAlwaysColumn()
+                .HasColumnName("id");
+            entity.Property(e => e.AgentAddress)
+                .HasMaxLength(150)
+                .HasColumnName("agent_address");
+            entity.Property(e => e.CommunityString)
+                .HasMaxLength(100)
+                .HasColumnName("community_string");
+            entity.Property(e => e.Ctsfulllocation)
+                .HasMaxLength(150)
+                .HasColumnName("ctsfulllocation");
+            entity.Property(e => e.EnterpriseOid)
+                .HasMaxLength(150)
+                .HasColumnName("enterprise_oid");
+            entity.Property(e => e.GenericTrapType).HasColumnName("generic_trap_type");
+            entity.Property(e => e.Lat)
+                .HasMaxLength(50)
+                .HasColumnName("lat");
+            entity.Property(e => e.Long)
+                .HasMaxLength(50)
+                .HasColumnName("long");
+            entity.Property(e => e.LoopbackSourceIp)
+                .HasMaxLength(150)
+                .HasColumnName("loopback_source_ip");
+            entity.Property(e => e.SnmpVersion)
+                .HasMaxLength(100)
+                .HasColumnName("snmp_version");
+            entity.Property(e => e.SourceIp)
+                .HasMaxLength(45)
+                .HasColumnName("source_ip");
+            entity.Property(e => e.SpecificTrapCode).HasColumnName("specific_trap_code");
+            entity.Property(e => e.Timestamp)
+                .HasMaxLength(100)
+                .HasColumnName("timestamp");
+            entity.Property(e => e.TrapId)
+                .HasMaxLength(50)
+                .HasColumnName("trap_id");
+            entity.Property(e => e.User1)
+                .HasMaxLength(150)
+                .HasColumnName("user1");
+            entity.Property(e => e.User2)
+                .HasMaxLength(150)
+                .HasColumnName("user2");
+            entity.Property(e => e.User3)
+                .HasMaxLength(150)
+                .HasColumnName("user3");
+            entity.Property(e => e.User4)
+                .HasMaxLength(150)
+                .HasColumnName("user4");
+            entity.Property(e => e.User5)
+                .HasMaxLength(150)
+                .HasColumnName("user5");
+            entity.Property(e => e.Varbinds)
+                .HasColumnType("jsonb")
+                .HasColumnName("varbinds");
+            entity.Property(e => e.Vpnid)
+                .HasMaxLength(50)
+                .HasColumnName("vpnid");
         });
 
         modelBuilder.Entity<Employee>(entity =>

@@ -16,4 +16,10 @@ public partial class Gphysicalpar
     public string? Region { get; set; }
 
     public string? Rackid { get; set; }
+
+    public int? Instanceid { get; set; }
+
+    public int? Custid { get; set; }
+
+    public string? Serialnumber { get; set; }
 }

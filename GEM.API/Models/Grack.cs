@@ -16,4 +16,8 @@ public partial class Grack
     public string? Description { get; set; }
 
     public string? Suite { get; set; }
+
+    public string? Instanceid { get; set; }
+
+    public string? Custid { get; set; }
 }

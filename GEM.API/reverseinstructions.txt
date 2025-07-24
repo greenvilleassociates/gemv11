@@ -4,7 +4,7 @@ dotnet ef dbcontext scaffold "Host=dbserver.590team1.info;Username=postgres;Pass
 
 // SPOCK INSTRUCTIONS ON DIFFERENT PORT AND DIFFERENT CREDENTIALS.
 
-dotnet ef dbcontext scaffold "Host=127.0.0.1;Port=5434;Username=gridsa;Password=test12345;Database=gemcorp" Npgsql.EntityFrameworkCore
+dotnet ef dbcontext scaffold "Host=127.0.0.1;Port=5434;Username=gridsa;Password=test12345;Database=gemcorp2" Npgsql.EntityFrameworkCore
 .PostgreSQL --context-namespace Enterprise.Models -o ModelsCORP -f --no-build --context-dir Data
 
 dotnet ef dbcontext scaffold "Host=127.0.0.1;Port=5434;Username=gridsa;Password=test12345;Database=gem" Npgsql.EntityFrameworkCore

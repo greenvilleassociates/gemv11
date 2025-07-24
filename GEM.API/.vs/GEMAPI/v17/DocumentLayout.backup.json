@@ -7,75 +7,12 @@
       "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|c:\\users\\stritzj\\documents\\567\\api\\gemv9\\gem.api\\controllerscorp\\companyannouncements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|solutionrelative:controllerscorp\\companyannouncements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|c:\\users\\stritzj\\documents\\567\\api\\gemv9\\gem.api\\controllerscorp\\ctssnmpv5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|solutionrelative:controllerscorp\\ctssnmpv5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\stritzj\\AppData\\Local\\Temp\\.vsdbgsrc\\c5f66c9186cd7b9be0c04261635f25aac1492fc81b2ca968cce80e6faa22ede9\\ThrowHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|c:\\users\\stritzj\\documents\\567\\api\\gemv9\\gem.api\\modelscorp\\employeeprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|solutionrelative:modelscorp\\employeeprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|c:\\users\\stritzj\\documents\\567\\api\\gemv9\\gem.api\\data\\gemcorp2context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|solutionrelative:data\\gemcorp2context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|c:\\users\\stritzj\\documents\\567\\api\\gemv9\\gem.api\\modelscorp\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|solutionrelative:modelscorp\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|c:\\users\\stritzj\\documents\\567\\api\\gemv9\\gem.api\\controllerscorp\\certcat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|solutionrelative:controllerscorp\\certcat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|c:\\users\\stritzj\\documents\\567\\api\\gemv9\\gem.api\\modelscorp\\certcat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|solutionrelative:modelscorp\\certcat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|c:\\users\\stritzj\\documents\\567\\api\\gemv9\\gem.api\\modelscorp\\certcalogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|solutionrelative:modelscorp\\certcalogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|c:\\users\\stritzj\\documents\\567\\api\\gemv9\\gem.api\\modelscorp\\companyannouncements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|solutionrelative:modelscorp\\companyannouncements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|c:\\users\\stritzj\\documents\\567\\api\\gemv9\\gem.api\\controllerscorp\\batch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|solutionrelative:controllerscorp\\batch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|c:\\users\\stritzj\\documents\\567\\api\\gemv9\\gem.api\\modelscorp\\batch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|solutionrelative:modelscorp\\batch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|c:\\users\\stritzj\\documents\\567\\api\\gemv9\\gem.api\\controllerscorp\\logusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|solutionrelative:controllerscorp\\logusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|c:\\users\\stritzj\\documents\\567\\api\\gemv9\\gem.api\\controllerscorp\\userlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|solutionrelative:controllerscorp\\userlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|c:\\users\\stritzj\\documents\\567\\api\\gemv9\\gem.api\\reverseinstructions.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|solutionrelative:reverseinstructions.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|c:\\users\\stritzj\\documents\\567\\api\\gemv9\\gem.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|c:\\users\\stritzj\\documents\\567\\api\\gemv9\\gem.api\\gemapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|solutionrelative:gemapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|c:\\users\\stritzj\\documents\\567\\api\\gemv9\\gem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|c:\\users\\stritzj\\documents\\567\\api\\gemv9\\gem.api\\oldprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|solutionrelative:oldprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|c:\\users\\stritzj\\documents\\567\\api\\gemv9\\gem.api\\modelscorp\\ctssnmpv5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|solutionrelative:modelscorp\\ctssnmpv5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -85,8 +22,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAHwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T14:49:45.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Ctssnmpv5.cs",
+              "DocumentMoniker": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ModelsCORP\\Ctssnmpv5.cs",
+              "RelativeDocumentMoniker": "ModelsCORP\\Ctssnmpv5.cs",
+              "ToolTip": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ModelsCORP\\Ctssnmpv5.cs",
+              "RelativeToolTip": "ModelsCORP\\Ctssnmpv5.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T14:39:28.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Ctssnmpv5.cs",
+              "DocumentMoniker": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ControllersCORP\\Ctssnmpv5.cs",
+              "RelativeDocumentMoniker": "ControllersCORP\\Ctssnmpv5.cs",
+              "ToolTip": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ControllersCORP\\Ctssnmpv5.cs",
+              "RelativeToolTip": "ControllersCORP\\Ctssnmpv5.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwBAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T14:37:43.651Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -98,249 +74,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ModelsCORP\\Employee.cs",
-              "RelativeDocumentMoniker": "ModelsCORP\\Employee.cs",
-              "ToolTip": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ModelsCORP\\Employee.cs",
-              "RelativeToolTip": "ModelsCORP\\Employee.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAgwFgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T11:53:44.715Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ThrowHelper.cs",
-              "DocumentMoniker": "C:\\Users\\stritzj\\AppData\\Local\\Temp\\.vsdbgsrc\\c5f66c9186cd7b9be0c04261635f25aac1492fc81b2ca968cce80e6faa22ede9\\ThrowHelper.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\c5f66c9186cd7b9be0c04261635f25aac1492fc81b2ca968cce80e6faa22ede9\\ThrowHelper.cs",
-              "ToolTip": "C:\\Users\\stritzj\\AppData\\Local\\Temp\\.vsdbgsrc\\c5f66c9186cd7b9be0c04261635f25aac1492fc81b2ca968cce80e6faa22ede9\\ThrowHelper.cs [Read Only]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\c5f66c9186cd7b9be0c04261635f25aac1492fc81b2ca968cce80e6faa22ede9\\ThrowHelper.cs [Read Only]",
-              "ViewState": "AgIAAM0DAAAAAAAAAAAEwOEDAAACAAAAAQAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T11:45:12.932Z",
-              "EditorCaption": " [Read Only]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Companyannouncements.cs",
-              "DocumentMoniker": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ControllersCORP\\Companyannouncements.cs",
-              "RelativeDocumentMoniker": "ControllersCORP\\Companyannouncements.cs",
-              "ToolTip": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ControllersCORP\\Companyannouncements.cs",
-              "RelativeToolTip": "ControllersCORP\\Companyannouncements.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAIAwwBAAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T11:25:25.342Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Certcat.cs",
-              "DocumentMoniker": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ModelsCORP\\Certcat.cs",
-              "RelativeDocumentMoniker": "ModelsCORP\\Certcat.cs",
-              "ToolTip": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ModelsCORP\\Certcat.cs",
-              "RelativeToolTip": "ModelsCORP\\Certcat.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAwwBYAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T11:19:49.742Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Certcat.cs",
-              "DocumentMoniker": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ControllersCORP\\Certcat.cs",
-              "RelativeDocumentMoniker": "ControllersCORP\\Certcat.cs",
-              "ToolTip": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ControllersCORP\\Certcat.cs",
-              "RelativeToolTip": "ControllersCORP\\Certcat.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAgwFMAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T11:19:13.924Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Gemcorp2Context.cs",
-              "DocumentMoniker": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\Data\\Gemcorp2Context.cs",
-              "RelativeDocumentMoniker": "Data\\Gemcorp2Context.cs",
-              "ToolTip": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\Data\\Gemcorp2Context.cs",
-              "RelativeToolTip": "Data\\Gemcorp2Context.cs",
-              "ViewState": "AgIAAM0BAAAAAAAAAAAUwOMBAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T11:20:54.397Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAAAHsAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T11:18:54.237Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Employeeprofile.cs",
-              "DocumentMoniker": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ModelsCORP\\Employeeprofile.cs",
-              "RelativeDocumentMoniker": "ModelsCORP\\Employeeprofile.cs",
-              "ToolTip": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ModelsCORP\\Employeeprofile.cs",
-              "RelativeToolTip": "ModelsCORP\\Employeeprofile.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T11:53:52.667Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Companyannouncements.cs",
-              "DocumentMoniker": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ModelsCORP\\Companyannouncements.cs",
-              "RelativeDocumentMoniker": "ModelsCORP\\Companyannouncements.cs",
-              "ToolTip": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ModelsCORP\\Companyannouncements.cs",
-              "RelativeToolTip": "ModelsCORP\\Companyannouncements.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T11:25:35.133Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Certcalogue.cs",
-              "DocumentMoniker": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ModelsCORP\\Certcalogue.cs",
-              "RelativeDocumentMoniker": "ModelsCORP\\Certcalogue.cs",
-              "ToolTip": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ModelsCORP\\Certcalogue.cs",
-              "RelativeToolTip": "ModelsCORP\\Certcalogue.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T11:37:10.723Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Batch.cs",
-              "DocumentMoniker": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ControllersCORP\\Batch.cs",
-              "RelativeDocumentMoniker": "ControllersCORP\\Batch.cs",
-              "ToolTip": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ControllersCORP\\Batch.cs",
-              "RelativeToolTip": "ControllersCORP\\Batch.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAewDgAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T11:23:16.085Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Batch.cs",
-              "DocumentMoniker": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ModelsCORP\\Batch.cs",
-              "RelativeDocumentMoniker": "ModelsCORP\\Batch.cs",
-              "ToolTip": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ModelsCORP\\Batch.cs",
-              "RelativeToolTip": "ModelsCORP\\Batch.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T11:30:40.879Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "LogUsers.cs",
-              "DocumentMoniker": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ControllersCORP\\LogUsers.cs",
-              "RelativeDocumentMoniker": "ControllersCORP\\LogUsers.cs",
-              "ToolTip": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ControllersCORP\\LogUsers.cs",
-              "RelativeToolTip": "ControllersCORP\\LogUsers.cs",
-              "ViewState": "AgIAAJ0AAAAAAAAAAAAgwNMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T11:29:35.342Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Userlog.cs",
-              "DocumentMoniker": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ControllersCORP\\Userlog.cs",
-              "RelativeDocumentMoniker": "ControllersCORP\\Userlog.cs",
-              "ToolTip": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ControllersCORP\\Userlog.cs",
-              "RelativeToolTip": "ControllersCORP\\Userlog.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T11:29:29.437Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "reverseinstructions.txt",
-              "DocumentMoniker": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\reverseinstructions.txt",
-              "RelativeDocumentMoniker": "reverseinstructions.txt",
-              "ToolTip": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\reverseinstructions.txt",
-              "RelativeToolTip": "reverseinstructions.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-07-23T11:21:36.795Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-23T11:18:54.223Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "GEMAPI",
-              "DocumentMoniker": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\GEMAPI.csproj",
-              "RelativeDocumentMoniker": "GEMAPI.csproj",
-              "ToolTip": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\GEMAPI.csproj",
-              "RelativeToolTip": "GEMAPI.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-23T11:18:54.231Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-23T11:18:54.233Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "OLDProgram.cs",
-              "DocumentMoniker": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\OLDProgram.cs",
-              "RelativeDocumentMoniker": "OLDProgram.cs",
-              "ToolTip": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\OLDProgram.cs",
-              "RelativeToolTip": "OLDProgram.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAJoAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T11:18:54.235Z"
             }
           ]
         }

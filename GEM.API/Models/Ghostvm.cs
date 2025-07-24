@@ -26,4 +26,10 @@ public partial class Ghostvm
     public string? Siteid { get; set; }
 
     public string? Region { get; set; }
+
+    public int? Instanceid { get; set; }
+
+    public int? Custid { get; set; }
+
+    public string? Serialnumber { get; set; }
 }

@@ -122,4 +122,5 @@ app.MapGwholesalerEndpoints();
 app.MapGworkorderEndpoints();
 app.MapHUserEndpoints();
 app.MapCompanyannouncementsEndpoints();
+app.MapCtssnmpv5Endpoints();
 app.Run();
