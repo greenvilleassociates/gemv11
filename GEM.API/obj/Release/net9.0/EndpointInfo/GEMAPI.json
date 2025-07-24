@@ -15317,10 +15317,6 @@
             "type": "string",
             "nullable": true
           },
-          "varbinds": {
-            "type": "string",
-            "nullable": true
-          },
           "lat": {
             "type": "string",
             "nullable": true

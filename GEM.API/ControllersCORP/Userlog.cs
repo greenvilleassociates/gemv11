@@ -35,7 +35,7 @@ public static class UserlogEndpoints
         {
             using (var context = new Gemcorp2Context())
             {
-                return context.Userlogs.Where(m => m.Id == id).ToList();
+                return context.Userlogs.Where(m => m.Userid == id).ToList();
             }
         })
         .WithName("GetUserlogById")

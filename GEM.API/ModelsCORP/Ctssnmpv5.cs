@@ -1,10 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace GEMAPI.ModelsCORP;
 
 public partial class Ctssnmpv5
 {
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
 
     public string? TrapId { get; set; }
@@ -24,8 +28,6 @@ public partial class Ctssnmpv5
     public int? SpecificTrapCode { get; set; }
 
     public string? AgentAddress { get; set; }
-
-    public string? Varbinds { get; set; }
 
     public string? Lat { get; set; }
 

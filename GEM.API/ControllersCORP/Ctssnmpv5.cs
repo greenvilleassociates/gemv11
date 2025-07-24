@@ -65,7 +65,6 @@ public static class Ctssnmpv5Endpoints
                 someCtssnmpv5[0].Lat = input.Lat;
                 someCtssnmpv5[0].Long = input.Long;
                 someCtssnmpv5[0].Ctsfulllocation = input.Ctsfulllocation;
-                someCtssnmpv5[0].Varbinds = input.Varbinds;
                 someCtssnmpv5[0].AgentAddress = input.AgentAddress;
                 someCtssnmpv5[0].SpecificTrapCode = input.SpecificTrapCode;
                 context.SaveChanges();

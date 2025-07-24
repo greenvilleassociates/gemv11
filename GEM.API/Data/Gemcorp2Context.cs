@@ -519,9 +519,6 @@ public partial class Gemcorp2Context : DbContext
             entity.Property(e => e.User5)
                 .HasMaxLength(150)
                 .HasColumnName("user5");
-            entity.Property(e => e.Varbinds)
-                .HasColumnType("jsonb")
-                .HasColumnName("varbinds");
             entity.Property(e => e.Vpnid)
                 .HasMaxLength(50)
                 .HasColumnName("vpnid");

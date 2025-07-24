@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|c:\\users\\stritzj\\documents\\567\\api\\gemv9\\gem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|c:\\users\\stritzj\\documents\\567\\api\\gemv9\\gem.api\\controllerscorp\\userlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|solutionrelative:controllerscorp\\userlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|c:\\users\\stritzj\\documents\\567\\api\\gemv9\\gem.api\\controllerscorp\\userhelp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|solutionrelative:controllerscorp\\userhelp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|c:\\users\\stritzj\\documents\\567\\api\\gemv9\\gem.api\\modelscorp\\ctssnmpv5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|solutionrelative:modelscorp\\ctssnmpv5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|c:\\users\\stritzj\\documents\\567\\api\\gemv9\\gem.api\\controllerscorp\\ctssnmpv5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|solutionrelative:controllerscorp\\ctssnmpv5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|c:\\users\\stritzj\\documents\\567\\api\\gemv9\\gem.api\\modelscorp\\ctssnmpv5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|solutionrelative:modelscorp\\ctssnmpv5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|c:\\users\\stritzj\\documents\\567\\api\\gemv9\\gem.api\\data\\gemcorp2context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|solutionrelative:data\\gemcorp2context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|c:\\users\\stritzj\\documents\\567\\api\\gemv9\\gem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8E7E4B4-7637-4F28-88FE-C1E6037585A8}|GEMAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,15 +50,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAAAHwAAAAcAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Userhelp.cs",
+              "DocumentMoniker": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ControllersCORP\\Userhelp.cs",
+              "RelativeDocumentMoniker": "ControllersCORP\\Userhelp.cs",
+              "ToolTip": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ControllersCORP\\Userhelp.cs",
+              "RelativeToolTip": "ControllersCORP\\Userhelp.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T14:49:45.634Z",
+              "WhenOpened": "2025-07-24T15:14:51.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Userlog.cs",
+              "DocumentMoniker": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ControllersCORP\\Userlog.cs",
+              "RelativeDocumentMoniker": "ControllersCORP\\Userlog.cs",
+              "ToolTip": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ControllersCORP\\Userlog.cs",
+              "RelativeToolTip": "ControllersCORP\\Userlog.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAADwvyUAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T15:13:52.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Ctssnmpv5.cs",
+              "DocumentMoniker": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ControllersCORP\\Ctssnmpv5.cs",
+              "RelativeDocumentMoniker": "ControllersCORP\\Ctssnmpv5.cs",
+              "ToolTip": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ControllersCORP\\Ctssnmpv5.cs",
+              "RelativeToolTip": "ControllersCORP\\Ctssnmpv5.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAewEMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T15:11:02.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Gemcorp2Context.cs",
+              "DocumentMoniker": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\Data\\Gemcorp2Context.cs",
+              "RelativeDocumentMoniker": "Data\\Gemcorp2Context.cs",
+              "ToolTip": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\Data\\Gemcorp2Context.cs",
+              "RelativeToolTip": "Data\\Gemcorp2Context.cs",
+              "ViewState": "AgIAAE4EAAAAAAAAAAAwwF4EAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T15:08:20.249Z",
               "EditorCaption": ""
             },
             {
@@ -57,22 +108,22 @@
               "RelativeDocumentMoniker": "ModelsCORP\\Ctssnmpv5.cs",
               "ToolTip": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ModelsCORP\\Ctssnmpv5.cs",
               "RelativeToolTip": "ModelsCORP\\Ctssnmpv5.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAADgvx8AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T14:39:28.815Z",
+              "WhenOpened": "2025-07-24T15:08:07.206Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Ctssnmpv5.cs",
-              "DocumentMoniker": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ControllersCORP\\Ctssnmpv5.cs",
-              "RelativeDocumentMoniker": "ControllersCORP\\Ctssnmpv5.cs",
-              "ToolTip": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\ControllersCORP\\Ctssnmpv5.cs",
-              "RelativeToolTip": "ControllersCORP\\Ctssnmpv5.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAiwBAAAAAdAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAHwAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T14:37:43.651Z",
+              "WhenOpened": "2025-07-24T14:49:45.634Z",
               "EditorCaption": ""
             }
           ]
