@@ -1,0 +1,9 @@
+gitpullinstructions.txt
+
+git fetch --all
+Backup your current branch (e.g. main):
+
+git branch backup-main
+Jump to the latest commit on origin/main and checkout those files:
+
+git reset --hard origin/main
