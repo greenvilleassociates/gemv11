@@ -38,11 +38,11 @@ public static class UserEndpoints
         .WithOpenApi();
         
         //[HttpGet]
-        group.MapGet("/userid/{userid}", (int userid) =>
+        group.MapGet("/Userid/{Userid}", (int Userid) =>
         {
             using (var context = new Gemcorp2Context())
             {
-                return context.Users.Where(m => m.Userid == userid).ToList();
+                return context.Users.Where(m => m.Userid == Userid).ToList();
             }
         })
         .WithName("GetUserByUserId")
