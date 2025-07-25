@@ -36,6 +36,17 @@ public static class UserEndpoints
         })
         .WithName("GetUserById")
         .WithOpenApi();
+        
+        //[HttpGet]
+        group.MapGet("/userid/{userid}", (int userid) =>
+        {
+            using (var context = new Gemcorp2Context())
+            {
+                return context.Users.Where(m => m.Userid == userid).ToList();
+            }
+        })
+        .WithName("GetUserByUserId")
+        .WithOpenApi();
 
         //[HttpPut]
         group.MapPut("/{id}", (int id, User input) =>
