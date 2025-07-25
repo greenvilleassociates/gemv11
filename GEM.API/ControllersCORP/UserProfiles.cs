@@ -41,7 +41,7 @@ public static class UserprofileEndpoints
         .WithName("GetUserprofileById")
         .WithOpenApi();
 
-        group.MapGet("/uid/{Userid}", (int Userid) =>
+        group.MapGet("/userid/{Userid}", (int Userid) =>
         {
             using (var context = new Gemcorp2Context())
             {
