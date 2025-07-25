@@ -74,7 +74,7 @@ public static class UserEndpoints
                 someUser[0].Fullname = input.Fullname;
                 someUser[0].Resettoken = input.Resettoken;
                 someUser[0].Resettokenexpiration = input.Resettokenexpiration;
-                someUser[0].Userid = input.userid;
+                someUser[0].Userid = input.Userid;
                 context.SaveChanges();
                 return TypedResults.Accepted("Updated ID:" + input.Id);
             }
