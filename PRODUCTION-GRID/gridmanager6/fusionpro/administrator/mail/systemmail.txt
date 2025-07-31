@@ -1,0 +1,3 @@
+Space Age Financial Apps now run their own INTERNAL MAIL SYSTEM... for example ACMEBANK deposits receipts can be routed to internal mail and not your personal email. Internal Mail can only be used
+by using the Apps usually. IE ACMEBANK internal mail can only be accessed from ACMEBANK.com, or ACMEBANK Mobile Apps. This directory allows for systemmail apps to be implemented and has nothing to
+do with wells fargo.

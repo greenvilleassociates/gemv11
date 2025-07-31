@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extended Grid Compliance Charts</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .chart-container { padding: 20px; }
+    </style>
+</head>
+<body>
+<div align="center"><span align="center"><img src="cocky590.png" width="100px" height="100px"></span></div>   
+    <div class="container mt-4">
+        <h2 class="mb-4">Compliance Charts by Grid ID</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">Grid ID 1</div>
+                    <div class="card-body">
+                        <canvas id="chartGrid1"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-success text-white">Grid ID 2</div>
+                    <div class="card-body">
+                        <canvas id="chartGrid2"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-secondary text-white">Grid ID 3</div>
+                    <div class="card-body">
+                        <canvas id="chartGrid3"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-info text-white">Grid ID 4</div>
+                    <div class="card-body">
+                        <canvas id="chartGrid4"></canvas>
+                    </div>
+                </div>
+            </div>
+            <!-- Additional Graph for NULL Grid ID -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-warning text-dark">Grid ID: NULL</div>
+                    <div class="card-body">
+                        <canvas id="chartGridNull"></canvas>
+                    </div>
+                </div>
+            </div>
+            <!-- Chart for Total Counts -->
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header bg-dark text-white">Total Apps by Grid ID</div>
+                    <div class="card-body">
+                        <canvas id="chartTotal"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function fetchAppData() {
+            try {
+                const response = await fetch("https://10.44.40.100:5033/api/Gapp");
+                const data = await response.json();
+                const gridIds = [1, 2, 3, 4, null];
+
+                let totalCounts = {};
+                gridIds.forEach(gridId => {
+                    let compliantApps = data.filter(app => app.gridid === gridId && app.iscompliant === 1).length;
+                    let nonCompliantApps = data.filter(app => app.gridid === gridId && app.iscompliant === 0).length;
+                    let totalApps = compliantApps + nonCompliantApps;
+
+                    totalCounts[gridId] = totalApps;
+                    renderChart(`chartGrid${gridId === null ? 'Null' : gridId}`, gridId, compliantApps, nonCompliantApps);
+                });
+
+                // Render total counts chart
+                renderTotalChart(totalCounts);
+
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            }
+        }
+
+        function renderChart(canvasId, gridId, compliant, nonCompliant) {
+            const ctx = document.getElementById(canvasId).getContext("2d");
+
+            new Chart(ctx, {
+                type: "bar",
+                data: {
+                    labels: ["Compliant", "Non-Compliant"],
+                    datasets: [{
+                        label: `Grid ID ${gridId === 0 ? 'NULL' : gridId}`,
+                        data: [compliant, nonCompliant],
+                        backgroundColor: ["#4CAF50", "#F44336"]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 10
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderTotalChart(totalCounts) {
+            const ctx = document.getElementById("chartTotal").getContext("2d");
+
+            new Chart(ctx, {
+                type: "bar",
+                data: {
+                    labels: Object.keys(totalCounts).map(id => id === "0" ? "NULL" : `Grid ID ${id}`),
+                    datasets: [{
+                        label: "Total Apps per Grid ID",
+                        data: Object.values(totalCounts),
+                        backgroundColor: ["#FF5733", "#FFC300", "#DAF7A6", "#C70039", "#900C3F"]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+
+        fetchAppData();
+    </script>
+
+</body>
+</html>
+

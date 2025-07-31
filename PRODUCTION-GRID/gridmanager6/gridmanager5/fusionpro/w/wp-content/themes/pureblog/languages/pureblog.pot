@@ -1,0 +1,1163 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: PureBlog\n"
+"POT-Creation-Date: 2019-04-04 13:59-0700\n"
+"PO-Revision-Date: 2018-08-03 14:27-0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:13
+msgid "Error 404"
+msgstr ""
+
+#: 404.php:14
+msgid "Page Not Found."
+msgstr ""
+
+#: 404.php:15
+msgid ""
+"The page you were looking for cannot be found, it may have been moved or no "
+"longer exists. You may want to navigate back to the homepage."
+msgstr ""
+
+#: author-bio.php:19
+msgid "Published by "
+msgstr ""
+
+#. translators: %s: author.
+#: author-bio.php:26
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: comments.php:21
+msgid "Reader Comments"
+msgstr ""
+
+#: comments.php:46
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:45
+msgid "Footer Social Links Menu"
+msgstr ""
+
+#: functions.php:69
+msgid "Header Menu"
+msgstr ""
+
+#: functions.php:70
+msgid "Social Menu"
+msgstr ""
+
+#: functions.php:71
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:181
+msgctxt "Lato font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:186
+msgctxt "Raleway font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:191
+msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
+msgid "no-subset"
+msgstr ""
+
+#: functions.php:276
+msgid "Expand child menu"
+msgstr ""
+
+#: functions.php:277
+msgid "Collapse child menu"
+msgstr ""
+
+#: header.php:21
+msgid "Skip to content"
+msgstr ""
+
+#: image.php:49
+msgid "Previous Image"
+msgstr ""
+
+#: image.php:50
+msgid "Next Image"
+msgstr ""
+
+#. translators: %s: version number
+#: inc/back-compat.php:31 inc/back-compat.php:43 inc/back-compat.php:58
+#, php-format
+msgid ""
+"PureBlog requires at least WordPress version 4.1. You are running version "
+"%s. Please upgrade and try again."
+msgstr ""
+
+#: inc/custom-header.php:40
+msgid "Default Header Image"
+msgstr ""
+
+#: inc/customizer.php:53
+msgid "PureBlog Pro"
+msgstr ""
+
+#: inc/customizer.php:55
+msgid ""
+"If you decide to upgrade to the pro version of this theme, use this discount "
+"code on checkout."
+msgstr ""
+
+#: inc/customizer.php:56
+msgid "Upgrade to Pro (Save $5)"
+msgstr ""
+
+#: inc/customizer.php:56
+msgid "Use Code:"
+msgstr ""
+
+#: inc/customizer.php:56 inc/theme-info/pureblog-info.php:41
+msgid "SAVEFIVE"
+msgstr ""
+
+#: inc/customizer.php:57
+msgid "Get the Pro - Save $5"
+msgstr ""
+
+#: inc/customizer.php:59
+msgid "Pro Features:"
+msgstr ""
+
+#: inc/customizer.php:61
+msgid "&bull; 9 Blog Styles"
+msgstr ""
+
+#: inc/customizer.php:62
+msgid "&bull; 15 Dynamic Sidebar Positions"
+msgstr ""
+
+#: inc/customizer.php:63
+msgid "&bull; Thumbnail Creation for the Blogs"
+msgstr ""
+
+#: inc/customizer.php:64
+msgid "&bull; An Author Info Widget with Social Icons"
+msgstr ""
+
+#: inc/customizer.php:65
+msgid "&bull; A Recent Posts Widget with Thumbnails"
+msgstr ""
+
+#: inc/customizer.php:66
+msgid "&bull; Related Posts with Thumbnails on Posts"
+msgstr ""
+
+#: inc/customizer.php:67
+msgid "&bull; Add a Video to Front Page Banner  Header"
+msgstr ""
+
+#: inc/customizer.php:68
+msgid "&bull; Custom MailChimp Styles for an Optional Plugin"
+msgstr ""
+
+#: inc/customizer.php:69
+msgid "&bull; FontAwesome v5 Icons"
+msgstr ""
+
+#: inc/customizer.php:70
+msgid "&bull; Add More Google Fonts"
+msgstr ""
+
+#: inc/customizer.php:71
+msgid "&bull; Typography Options"
+msgstr ""
+
+#: inc/customizer.php:72
+msgid "&bull; Featured Image Captions for Posts"
+msgstr ""
+
+#: inc/customizer.php:73
+msgid "&bull; Blog Home Page with Customizable Title and Intro"
+msgstr ""
+
+#: inc/customizer.php:74
+msgid "&bull; Custom Archive Page Headings"
+msgstr ""
+
+#: inc/customizer.php:75
+msgid "&bull; Custom Widget Style"
+msgstr ""
+
+#: inc/customizer.php:76
+msgid "&bull; Premium Support"
+msgstr ""
+
+#: inc/customizer.php:87
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: inc/customizer.php:97
+msgid "Get The Pro Version:"
+msgstr ""
+
+#: inc/customizer.php:119
+msgid "Color Scheme"
+msgstr ""
+
+#: inc/customizer.php:121
+msgid "Default"
+msgstr ""
+
+#: inc/customizer.php:122
+msgid "Dark"
+msgstr ""
+
+#: inc/customizer.php:123
+msgid "Custom"
+msgstr ""
+
+#: inc/customizer.php:138 inc/theme-info/pureblog-info.php:198
+msgid "Theme Options"
+msgstr ""
+
+#: inc/customizer.php:149
+msgid "Blog Layout"
+msgstr ""
+
+#: inc/customizer.php:152
+msgid "Standard With Right Sidebar"
+msgstr ""
+
+#: inc/customizer.php:153
+msgid "Standard With Left Sidebar"
+msgstr ""
+
+#: inc/customizer.php:154
+msgid "Centered With No Sidebar"
+msgstr ""
+
+#: inc/customizer.php:164
+msgid "Full Post Layout"
+msgstr ""
+
+#: inc/customizer.php:167
+msgid "Single With Right Sidebar"
+msgstr ""
+
+#: inc/customizer.php:168
+msgid "Single With Left Sidebar"
+msgstr ""
+
+#: inc/customizer.php:169
+msgid "Single With No Sidebars"
+msgstr ""
+
+#: inc/customizer.php:181
+msgid "Page Container Width"
+msgstr ""
+
+#: inc/customizer.php:182
+msgid ""
+"Control the maximum width of your page containers. Default is 1260 pixels "
+"but you can go down to 960px. You can reduce this with increments of 10 "
+"pixels."
+msgstr ""
+
+#: inc/customizer.php:199
+msgid "Site Branding Height"
+msgstr ""
+
+#: inc/customizer.php:200
+msgid ""
+"Control the height for the site branding area where the site title is with "
+"increments of 5 pixels."
+msgstr ""
+
+#: inc/customizer.php:214
+msgid "Footer Logo"
+msgstr ""
+
+#: inc/customizer.php:215
+msgid "Add a footer logo."
+msgstr ""
+
+#: inc/customizer.php:229
+msgid "Use Excerpts"
+msgstr ""
+
+#: inc/customizer.php:230
+msgid ""
+"Use excerpts for your blog post summaries or uncheck the box to use the "
+"standard Read More tag."
+msgstr ""
+
+#: inc/customizer.php:242
+msgid "Excerpt Size"
+msgstr ""
+
+#: inc/customizer.php:243
+msgid ""
+"You can change the size of your blog summary excerpts with increments of 5 "
+"words."
+msgstr ""
+
+#: inc/customizer.php:258
+msgid "Use FontAwesome Icons"
+msgstr ""
+
+#: inc/customizer.php:259
+msgid ""
+"You can disable Font Awesome icons from the theme if you are using a plugin "
+"instead."
+msgstr ""
+
+#: inc/customizer.php:270
+msgid "Show the Continue Reading Link"
+msgstr ""
+
+#: inc/customizer.php:271
+msgid ""
+"This lets you show the blog excerpt Continue Reading link on blog related "
+"posts."
+msgstr ""
+
+#: inc/customizer.php:282
+msgid "Show the Summary Category"
+msgstr ""
+
+#: inc/customizer.php:283
+msgid "This lets you show the category name for the post summary."
+msgstr ""
+
+#: inc/customizer.php:294
+msgid "Show the Post Format"
+msgstr ""
+
+#: inc/customizer.php:295
+msgid ""
+"This lets you show the post format linked tag in the meta info group for the "
+"summary."
+msgstr ""
+
+#: inc/customizer.php:306
+msgid "Show the Post Date"
+msgstr ""
+
+#: inc/customizer.php:307
+msgid ""
+"This lets you show the post date in the meta info group for the summary."
+msgstr ""
+
+#: inc/customizer.php:318
+msgid "Show the Post Author"
+msgstr ""
+
+#: inc/customizer.php:319
+msgid ""
+"This lets you show the post author in the meta info group for the summary."
+msgstr ""
+
+#: inc/customizer.php:330
+msgid "Show the Post Comment Link"
+msgstr ""
+
+#: inc/customizer.php:331
+msgid ""
+"This lets you show the post comment link in the meta info group for the "
+"summary."
+msgstr ""
+
+#: inc/customizer.php:342
+msgid "Show the Edit Link"
+msgstr ""
+
+#: inc/customizer.php:343
+msgid ""
+"This lets you show or hide the front-end edit link on pages. When enabled, "
+"only you will see it."
+msgstr ""
+
+#: inc/customizer.php:354
+msgid "Show the Author Bio"
+msgstr ""
+
+#: inc/customizer.php:355
+msgid ""
+"This lets you show the author bio information at the bottom of any post "
+"whenever you have more than one author."
+msgstr ""
+
+#: inc/customizer.php:366
+msgid "Show the Post Categories"
+msgstr ""
+
+#: inc/customizer.php:367
+msgid "This lets you show the post list of categories"
+msgstr ""
+
+#: inc/customizer.php:378
+msgid "Show the Post Tags"
+msgstr ""
+
+#: inc/customizer.php:379
+msgid "This lets you show the post list of tags."
+msgstr ""
+
+#: inc/customizer.php:390
+msgid "Show Full Post Navigation"
+msgstr ""
+
+#: inc/customizer.php:391
+msgid ""
+"This lets you show the post previous and next navigation when viewing the "
+"full article."
+msgstr ""
+
+#: inc/customizer.php:402
+msgid "Show Featured Label"
+msgstr ""
+
+#: inc/customizer.php:403
+msgid "This lets you show the post featured label."
+msgstr ""
+
+#: inc/customizer.php:414
+msgid "Show Powered By WordPress"
+msgstr ""
+
+#: inc/customizer.php:415
+msgid "This lets you show the Powered By WordPress link in the site footer."
+msgstr ""
+
+#: inc/customizer.php:426
+msgid "Show Image Attachment Page Comments"
+msgstr ""
+
+#: inc/customizer.php:427
+msgid ""
+"If you are using a WP gallery shortcode and want to showcase your images on "
+"the custom attachment page, you can enable or disable comments for images."
+msgstr ""
+
+#: inc/customizer.php:437
+msgid "Your Copyright Name"
+msgstr ""
+
+#: inc/customizer.php:445
+msgid "Thumbnail Options"
+msgstr ""
+
+#: inc/customizer.php:456
+msgid "Enable Blog Standard Thumbnail Creation"
+msgstr ""
+
+#: inc/customizer.php:457
+msgid ""
+"When enabled, a custom thumbnail will be created for the Standard blog "
+"layout with Right\" or \"Left Sidebar\". Images will be 750x475 pixels."
+msgstr ""
+
+#: inc/customizer.php:467
+msgid "Enable Blog Centered Thumbnail Creation"
+msgstr ""
+
+#: inc/customizer.php:468
+msgid ""
+"When enabled, a custom thumbnail will be created for the Centered layout. "
+"Images will be 1140x625."
+msgstr ""
+
+#: inc/customizer.php:479
+msgid "Enable Full Post Thumbnail Creation"
+msgstr ""
+
+#: inc/customizer.php:480
+msgid ""
+"When enabled, a custom thumbnail will be created for the Single Style 5 "
+"featured image. (Images will be 1130x450 pixels."
+msgstr ""
+
+#: inc/customizer.php:493
+msgid "Post Tag Background"
+msgstr ""
+
+#: inc/customizer.php:494
+msgid "This is for the background colour to the full post tags list."
+msgstr ""
+
+#: inc/customizer.php:505
+msgid "Post Tag Text"
+msgstr ""
+
+#: inc/customizer.php:506
+msgid "This is for the text colour to the full post tags list."
+msgstr ""
+
+#: inc/customizer.php:517
+msgid "Post Tag Hover Background"
+msgstr ""
+
+#: inc/customizer.php:518
+msgid "This is for the hover background colour to the full post tags list."
+msgstr ""
+
+#: inc/customizer.php:529
+msgid "Post Tag Hover Text"
+msgstr ""
+
+#: inc/customizer.php:530
+msgid "This is for the text hover colour to the full post tags list."
+msgstr ""
+
+#: inc/customizer.php:550
+msgid "Front Page Header Image Height"
+msgstr ""
+
+#: inc/customizer.php:551
+msgid ""
+"You can adjust the height of your front page custom header image in "
+"percentage values and 5% increments. Go as low as 25 to 100 percent."
+msgstr ""
+
+#: inc/customizer.php:562
+msgid "Typography Settings"
+msgstr ""
+
+#: inc/customizer.php:570
+msgid ""
+"This theme has a couple Google Fonts included. If you choose to use a plugin "
+"for different fonts, you can disable them."
+msgstr ""
+
+#: inc/customizer.php:575
+msgid "Enable the Default Google Fonts"
+msgstr ""
+
+#: inc/customizer.php:586
+msgid "First Google Font URL"
+msgstr ""
+
+#: inc/customizer.php:590
+msgid "Insert first"
+msgstr ""
+
+#: inc/customizer.php:592 inc/customizer.php:608
+msgid "Google Font URL"
+msgstr ""
+
+#: inc/customizer.php:593 inc/customizer.php:609
+msgid "for embed fonts."
+msgstr ""
+
+#: inc/customizer.php:602
+msgid "Second Google Font URL"
+msgstr ""
+
+#: inc/customizer.php:606
+msgid "Insert second"
+msgstr ""
+
+#: inc/customizer.php:619
+msgid "Font Family for the Body"
+msgstr ""
+
+#: inc/customizer.php:622
+msgid ""
+"Insert Font Family for the main body text by name and separate additional "
+"fonts with a comma."
+msgstr ""
+
+#: inc/customizer.php:630
+msgid "Font Family for Headings"
+msgstr ""
+
+#: inc/customizer.php:633
+msgid ""
+"Insert Font Family for the headings (and site title) by name and separate "
+"additional fonts with a comma."
+msgstr ""
+
+#: inc/customizer.php:644
+msgid "Show Full Post Dropcap"
+msgstr ""
+
+#: inc/customizer.php:645
+msgid ""
+"This lets you show the drop cap style on the first letter of the first "
+"paragraph."
+msgstr ""
+
+#: inc/sidebars.php:11
+msgid "Blog Right Sidebar"
+msgstr ""
+
+#: inc/sidebars.php:13
+msgid "Right sidebar for the blog"
+msgstr ""
+
+#: inc/sidebars.php:20
+msgid "Blog Left Sidebar"
+msgstr ""
+
+#: inc/sidebars.php:22
+msgid "Left sidebar for the blog"
+msgstr ""
+
+#: inc/sidebars.php:29
+msgid "Page Right Sidebar"
+msgstr ""
+
+#: inc/sidebars.php:31
+msgid "Right sidebar for pages"
+msgstr ""
+
+#: inc/sidebars.php:38
+msgid "Page Left Sidebar"
+msgstr ""
+
+#: inc/sidebars.php:40
+msgid "Left sidebar for pages"
+msgstr ""
+
+#: inc/sidebars.php:48
+msgid "Banner"
+msgstr ""
+
+#: inc/sidebars.php:50
+msgid "For Images and Sliders."
+msgstr ""
+
+#: inc/sidebars.php:58
+msgid "Breadcrumbs"
+msgstr ""
+
+#: inc/sidebars.php:60
+msgid ""
+"For adding breadcrumb navigation if using a plugin, or you can add content "
+"here."
+msgstr ""
+
+#: inc/sidebars.php:68
+msgid "Bottom 1"
+msgstr ""
+
+#: inc/sidebars.php:70
+msgid "Bottom 1 position"
+msgstr ""
+
+#: inc/sidebars.php:77
+msgid "Bottom 2"
+msgstr ""
+
+#: inc/sidebars.php:79
+msgid "Bottom 2 position"
+msgstr ""
+
+#: inc/sidebars.php:86
+msgid "Bottom 3"
+msgstr ""
+
+#: inc/sidebars.php:88
+msgid "Bottom 3 position"
+msgstr ""
+
+#: inc/sidebars.php:95
+msgid "Bottom 4"
+msgstr ""
+
+#: inc/sidebars.php:97
+msgid "Bottom 4 position"
+msgstr ""
+
+#: inc/template-functions.php:75
+msgid "Read More"
+msgstr ""
+
+#. translators: %s: post date.
+#: inc/template-tags.php:41
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#. translators: %s: post author.
+#: inc/template-tags.php:53
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. translators: %s: post title
+#: inc/template-tags.php:69
+#, php-format
+msgid "Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:98 inc/template-tags.php:129
+msgid ", "
+msgstr ""
+
+#. translators: 1: list of categories.
+#: inc/template-tags.php:101
+#, php-format
+msgid "In %1$s"
+msgstr ""
+
+#: inc/template-tags.php:148
+msgid "Categories: "
+msgstr ""
+
+#: inc/template-tags.php:152
+msgid "Tags: "
+msgstr ""
+
+#. translators: %s: Name of current post
+#: inc/template-tags.php:177
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: inc/theme-info/pureblog-info-class-about.php:155
+msgid "Dismiss this notice."
+msgstr ""
+
+#: inc/theme-info/pureblog-info-class-about.php:497
+msgid "Action failed. Please refresh the page and retry."
+msgstr ""
+
+#: inc/theme-info/pureblog-info-class-about.php:500
+msgid "You do not have the necessary permission to perform this action."
+msgstr ""
+
+#. translators: %1$s: menu title under appearance
+#. translators: %1$s: page name
+#: inc/theme-info/pureblog-info.php:23 inc/theme-info/pureblog-info.php:25
+#, php-format
+msgid "About %1$s"
+msgstr ""
+
+#. translators: %1$s: welcome title
+#: inc/theme-info/pureblog-info.php:27
+#, php-format
+msgid "Welcome to %1$s - v"
+msgstr ""
+
+#. translators: %1$s: welcome content
+#: inc/theme-info/pureblog-info.php:29
+msgid ""
+"%1$ is a unique design concept where retro and modern merged into a vibrant "
+"and dynamic theme designed for bloggers that love to tell stories and "
+"express words to capture attention. With a choice of   many blog layouts, "
+"full post layouts, dynamic width sidebars, a flexible featured post slider, "
+"unlimited colours, and a ton of customization settings; PureBlog provides "
+"all you need to quickly and easily create a stunning blog that you and your "
+"readers will love."
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:39
+msgid "Upgrade and Save $5"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:40
+msgid "Use coupon at checkout."
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:42
+msgid "Get the Pro"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:45
+msgid "Getting Started"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:46 inc/theme-info/pureblog-info.php:207
+msgid "Support"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:47 inc/theme-info/pureblog-info.php:86
+msgid "Changelog"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:48
+msgid "Free VS PRO"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:53
+msgid "Setup Documentation"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:54
+msgid ""
+"To help you get started with the initial setup of this theme and to learn "
+"about the various features, you can check out detailed setup documentation."
+msgstr ""
+
+#. translators: %1$s: theme name
+#: inc/theme-info/pureblog-info.php:56
+#, php-format
+msgid "View %1$s Tutorials"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:63 inc/theme-info/pureblog-info.php:65
+msgid "Go to Customizer"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:64
+msgid ""
+"Using the WordPress Customizer you can easily customize every aspect of the "
+"theme."
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:73
+msgid "Using a Child Theme"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:74
+msgid ""
+"If you plan to customize this theme, I recommend looking into using a child "
+"theme. To learn more about child themes and why it's important to use one, "
+"check out the WordPress documentation."
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:75
+msgid "Child Themes"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:87
+msgid ""
+"I generally recommend you always read the CHANGELOG before updating so that "
+"you can see what was fixed, changed, deleted, or added to the theme."
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:97
+msgid "Free Support"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:99
+msgid ""
+"If you experience any problems, please post your questions to support and we "
+"will be more than happy to help you out."
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:100
+msgid "Get Free Support"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:106
+msgid "Common Problems"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:108
+msgid ""
+"For quick answers to the most common problems, you can check out the "
+"tutorials which can provide instant solutions and answers."
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:109
+msgid "Get Answers"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+#: inc/theme-info/pureblog-info.php:119
+msgid "PureBlog"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:121
+msgid "Get PureBlog"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:124
+msgid "Mobile Friendly"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:133
+msgid "Unlimited Colours"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:142
+msgid "Built-In Social Menu"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:151
+msgid "Show or Hide Elements"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:160
+msgid "Custom Error Page"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:170
+msgid "Blog Styles"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:179
+msgid "Sidebar Positions"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:188
+msgid "Page Templates"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:217
+msgid "Custom Blog Title &amp; Introduction"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:218
+msgid ""
+"WordPress does not have this, but we have added a customizable blog title "
+"and intro option."
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:226
+msgid "Blog Thumbnail Creation"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:227
+msgid ""
+"Automatically have post featured images cropped when uploading for up to 14 "
+"blog styled layouts."
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:235
+msgid "Author Widget"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:236
+msgid "We included a custom widget for an author photo plus social links."
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:244
+msgid "Recent Posts Widget with Thumbnails"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:253
+msgid "Related Posts with Thumbnails"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:263
+msgid "MailChimp Widget Styling"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:264
+msgid "We included custom styling for an optional MailChimp widget."
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:272
+msgid "Video Front Page Header"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:273
+msgid ""
+"Add a video to your front page header banner area instead of a static image."
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:281
+msgid "Add Google Fonts"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:282
+msgid "Add up to 2 more Google Fonts."
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:290
+msgid "FontAwesome 5"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:291
+msgid ""
+"Although the free version includes FontAwesome 4, the Pro includes the "
+"option of FontAwesome 5."
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:299
+msgid "Typography Options"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:300
+msgid ""
+"Includes several settings for the main elements of your web page like "
+"headings, content, and more."
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:308
+msgid "Custom Widget Style"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:309
+msgid ""
+"You get the option to enable a custom widget style for the left and right "
+"sidebar positions."
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:317
+msgid "Custom Styled Archive Titles"
+msgstr ""
+
+#: inc/theme-info/pureblog-info.php:318
+msgid "We customized the style of archive titles for tags, categories, etc."
+msgstr ""
+
+#. translators: %s: Your keywords.
+#: search.php:19
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: search.php:21 template-parts/post/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: search.php:35 template-parts/navigation/navigation-blog.php:10
+msgid "Previous page"
+msgstr ""
+
+#: search.php:36 template-parts/navigation/navigation-blog.php:11
+msgid "Next page"
+msgstr ""
+
+#: search.php:37 template-parts/navigation/navigation-blog.php:12
+#: template-parts/post/content.php:95
+msgid "Page"
+msgstr ""
+
+#: search.php:42
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: searchform.php:14
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:16
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: searchform.php:17
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: template-parts/footer/site-info.php:10
+msgid "Copyright &copy;"
+msgstr ""
+
+#: template-parts/footer/site-info.php:11
+msgid "Y"
+msgstr ""
+
+#: template-parts/footer/site-info.php:12
+msgid "All rights reserved."
+msgstr ""
+
+#: template-parts/footer/site-info.php:16
+msgid "https://wordpress.org/"
+msgstr ""
+
+#. translators: %s: WordPress.
+#: template-parts/footer/site-info.php:19
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: template-parts/navigation/navigation-post.php:9
+msgid "Next Post - "
+msgstr ""
+
+#: template-parts/navigation/navigation-post.php:10
+msgid "Next post:"
+msgstr ""
+
+#: template-parts/navigation/navigation-post.php:12
+msgid "Previous Post - "
+msgstr ""
+
+#: template-parts/navigation/navigation-post.php:13
+msgid "Previous post:"
+msgstr ""
+
+#: template-parts/navigation/navigation-top.php:8
+msgid "Top Menu"
+msgstr ""
+
+#: template-parts/navigation/navigation-top.php:11
+msgid "Menu"
+msgstr ""
+
+#: template-parts/page-headings.php:11
+msgid "Posts"
+msgstr ""
+
+#: template-parts/page/content-page.php:33 template-parts/post/content.php:91
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s: Link.
+#: template-parts/post/content-none.php:22
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/post/content-none.php:26
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/post/content.php:40 template-parts/post/content.php:45
+msgid "Featured"
+msgstr ""
+
+#. translators: %s: Name of current post
+#: template-parts/post/content.php:82
+#, php-format
+msgid "Read More<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://www.bloggingthemestyles.com/free-wordpress-themes/pureblog"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"PureBlog is simple, yet modern & stylish for personal blogging. We made "
+"PureBlog with features from the ever popular WordPress theme called Twenty "
+"Seventeen, but with a lot more features to give your readers a immersive "
+"browsing experience. PureBlog is a polished & beautifully balanced concept "
+"that makes it perfect for almost any type of blog. PureBlog comes with an "
+"array of features that let you choose your blog styled layouts, show or hide "
+"various page elements, choose excerpts for blog summaries, adjust your "
+"banner height, colour options, and a whole lot more! Be sure to read more "
+"about the PureBlog theme under the Appearance admin menu."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "BloggingThemeStyles.com"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.bloggingthemestyles.com/"
+msgstr ""

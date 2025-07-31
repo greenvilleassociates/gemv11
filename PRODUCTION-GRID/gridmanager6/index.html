@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta http-equiv="refresh" content="1;url=https://gridmanager6.capitoltechnology.net/secure.html" />
+<title>Glocation.Info Information Services</title>
+</head>
+<body onload="getLocation()">
+Moving to secure Redirect.
+<p id="locationdemo"></p>
+</body>
+</html>
+<script>
+
+function getLocation() {
+  var outputlocation = document.getElementById("locationdemo");
+  //alert("getting location");
+  var js = "1";
+  if (js == "1") 
+  {
+    //alert("location is enabled");
+    navigator.geolocation.getCurrentPosition(showPosition);
+    
+  } 
+  else if (js == "2") 
+  { 
+    //alert("nolocation");
+    outputlocation.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  var xx = document.getElementById("locationdemo");
+  xx.innerHTML = "<br>User Location is:<br> Latitude: &nbsp&nbsp" + position.coords.latitude + "&nbsp&nbspLongitude: &nbsp&nbsp " + position.coords.longitude;
+  alert("showing position");
+  var locationstring = position.coords.latitude + "," + position.coords.longitude;
+  localStorage.setItem("userlocation", locationstring);
+  var now = new Date();
+  localStorage.setItem("userlocationsampletime", now);
+  writelocation(position.coords.latitude, position.coords.longitude);
+  alert(now);
+}
+
+function writelocation(lat, long)
+{
+joomlaid = localStorage.getItem("jid");
+var stringurl = "https://gl1.glocation.info/sso/glcode/location25.php?id=" + joomlaid + "&label=" + parameterline;
+window.open(stringurl, 'leftmain');
+alert(lat);
+alert(long);
+}
+
+</script>

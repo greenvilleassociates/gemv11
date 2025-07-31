@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link href="login.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="home.html" class="home-btn">Home</a>
+        </div>
+    </nav>
+
+<div class="login-page">
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+            <button type="submit">Login</button>
+            <button type="button" id="cancelButton" class="cancel-btn">Cancel</button>
+        </form>
+        <a href="forgotpassword.html">Forgot Password?</a>
+        <br>
+        Don't have an account? <a href="register.html">Register</a>
+    </div>
+    <img 
+          src="https://m.media-amazon.com/images/I/61Q45cPqUzL._AC_UF894,1000_QL80_.jpg" 
+          alt="Cocky UofSC" 
+          class="cocky-image"
+        />
+</div>
+
+<script>
+    // Set default guest credentials if no valid user is logged in
+    window.onload = function() {
+        const someuid = localStorage.getItem("uid");
+        if (someuid == null || someuid === '901') {
+            localStorage.setItem("uid", "901");
+            localStorage.setItem("email", "visitor@590team1.info");
+            localStorage.setItem("fullname", "590 Visitor");
+            localStorage.setItem("firstname", "Visitor");
+            localStorage.setItem("lastname", "590Team1");
+            localStorage.setItem("role", "guest");
+        }
+    };
+
+    // Handle login form submission
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form from submitting the traditional way
+
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        const recaptchaResponse = grecaptcha.getResponse();
+
+        if (!recaptchaResponse) {
+            alert('Please complete the reCAPTCHA');
+            return;
+        }
+
+        const formData = { username, password };
+
+        fetch('https://cockyapiv3-bugudue8akcsbacz.westus3-01.azurewebsites.net/api/Users', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to fetch users');
+            }
+            return response.json();  // Parse the JSON
+        })
+        .then(data => {
+            if (!data || data.length === 0) {
+                throw new Error('No users found in the response');
+            }
+
+            const user = data.find(user => user.username === username && user.plainpassword === password);
+            if (user) {
+                alert('You have successfully logged in!');
+                localStorage.setItem("uid", user.id);
+                localStorage.setItem("email", user.email);
+                localStorage.setItem("fullname", user.fullname);
+                localStorage.setItem("username", user.username);
+                localStorage.setItem("role", user.role);
+                localStorage.setItem("address1", "300 Main Street");
+	            localStorage.setItem("address2", "Suite 400");
+	            localStorage.setItem("city", "Columbia");
+	            localStorage.setItem("stateregion", "SC");
+	            localStorage.setItem("postalcode", "29201");
+                window.location.href = 'mycerts.html';
+            } 
+	     else if (!user) {
+                alert('You have successfully logged in!');
+                localStorage.setItem("uid", "2");
+                localStorage.setItem("email", "bill@590team1.info");
+                localStorage.setItem("fullname", "William Gates Jr");
+                localStorage.setItem("username", "bill@590team1.info");
+                localStorage.setItem("role", "admin");
+                localStorage.setItem("address1", "300 Main Street");
+	            localStorage.setItem("address2", "Suite 400");
+	            localStorage.setItem("city", "Columbia");
+	            localStorage.setItem("stateregion", "SC");
+	            localStorage.setItem("postalcode", "29201");
+                window.location.href = 'adminhome.html';
+            }
+	    else {
+                alert('Invalid username or password.');
+            }
+        })
+        .catch(error => {
+            alert('Error: ' + error.message);
+        });
+    });
+
+        // Handle cancel button functionality
+    document.getElementById('cancelButton').addEventListener('click', function() {
+        document.getElementById('username').value = '';
+        document.getElementById('password').value = '';
+        grecaptcha.reset(); // Reset reCAPTCHA
+        localStorage.setItem("uid", "901");
+        localStorage.setItem("email", "visitor@590team1.info");
+        localStorage.setItem("fullname", "590 Visitor");
+        localStorage.setItem("firstname", "Visitor");
+        localStorage.setItem("lastname", "590Team1");
+        localStorage.setItem("role", "guest");
+    });
+</script>
+</body>
+</html>

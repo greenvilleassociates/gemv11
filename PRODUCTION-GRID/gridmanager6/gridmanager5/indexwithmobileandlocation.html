@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>GLI Secure Redirect</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+.smallprint
+{
+    font-size: 8px;
+    text-align: center;
+    color: white;
+
+}
+.blackborder
+{
+    border-color: transparent;
+}
+</style>
+</head>
+<body bgcolor="black" onload="setuser(), getLocation(), detectMobile()">
+Moving to secure Redirect.
+<p id="locationdemo"></p>
+<div class="blackborder"><span><p id="locationtag" align="center" class="smallprint"></p></span>
+<p id="locinfo" class="2smallprint"></p>
+<p id="jqpostresults"></p>
+</body>
+<script>
+
+function setuser()
+{
+//alert("settinguserbasics");
+//set initial user to guest.
+localStorage.setItem("jid","901");
+localStorage.setItem("jname","Visitor");
+localStorage.setItem("jemail","visitor@glocation.info");
+localStorage.setItem("userlocation", "-83.689428, 67.327035");
+localStorage.setItem("locationsource", "root index.html");
+}  
+//<meta http-equiv="refresh" content="15;url=https://www.glocation.info/fusionpro/" />
+
+function getLocation() {
+  //alert("locationcall");
+   if (navigator.geolocation) 
+    {
+    navigator.geolocation.getCurrentPosition(showPosition);
+    var now3 = new Date();
+    localStorage.setItem("userlocationsampletime", now3);
+    //stringurl3 = "The Time is:" + now3;
+    //alert(stringurl3);
+    } 
+    else 
+    { 
+    document.getElementById("locationdemo").innerHTML = "Geolocation is not supported by this browser.";
+    }
+
+}
+
+function showPosition(position) {
+  const x = document.getElementById("locinfo");
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+  stringurl = position.coords.latitude + "," + position.coords.longitude;
+  alert(stringurl);
+  localStorage.setItem("userlocation", stringurl);
+  locationinformation = stringurl;
+  var jtime = new Date();
+  var totalstring = "Location Information: " + locationinformation + "&nbsp&nbsp&nbsp&nbspLogin Time:&nbsp&nbsp" + jtime;
+  document.getElementById("locationtag").innerHTML = totalstring; 
+  }
+
+
+function detectMobile() {
+    //alert("mobiledetection");
+    let device = '';
+    
+    if (navigator.userAgent.match(/Android/i)
+        || navigator.userAgent.match(/webOS/i)
+        || navigator.userAgent.match(/iPhone/i)
+        || navigator.userAgent.match(/iPad/i)
+        || navigator.userAgent.match(/iPod/i)
+        || navigator.userAgent.match(/BlackBerry/i)
+        || navigator.userAgent.match(/Windows Phone/i)) {
+        device = true;
+        var stringurl = "https://www.glocation.info/fusionpro/mobile/index.html" 
+        window.open(stringurl, '_self');
+        //alert("mobile browser");
+    } else {
+        device = false;
+        var stringurl2 = "https://www.glocation.info/fusionpro/index.html" 
+        window.open(stringurl2, '_self');
+        //alert("not a mobile browser");
+    }
+    console.log(device);
+}
+ 
+
+</script>
+</html>
