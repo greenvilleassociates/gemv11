@@ -32,4 +32,6 @@ public partial class Gsite
     public string? Instanceid { get; set; }
 
     public string? Custid { get; set; }
+
+    public int? Region { get; set; }
 }

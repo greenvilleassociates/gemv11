@@ -10,4 +10,6 @@ public partial class Gusergroup
     public string? Groupname { get; set; }
 
     public string? Groupid { get; set; }
+
+    public int? Region { get; set; }
 }

@@ -20,4 +20,6 @@ public partial class Ginstance
     public string? Techcontactid { get; set; }
 
     public string? Techcontactemail { get; set; }
+
+    public string? Region { get; set; }
 }

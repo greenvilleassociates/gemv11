@@ -14,4 +14,8 @@ public partial class Gcompany
     public string? Oracleid { get; set; }
 
     public string? Alohaid { get; set; }
+
+    public int? Region { get; set; }
+
+    public int? Sitehq { get; set; }
 }
