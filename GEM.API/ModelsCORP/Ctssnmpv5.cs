@@ -1,14 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
 
 namespace GEMAPI.ModelsCORP;
 
 public partial class Ctssnmpv5
 {
-    [Key]
-    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
 
     public string? TrapId { get; set; }
@@ -48,4 +44,26 @@ public partial class Ctssnmpv5
     public string? User5 { get; set; }
 
     public string? LoopbackSourceIp { get; set; }
+
+    public string? Description { get; set; }
+
+    public string? Severity { get; set; }
+
+    public string? Vpnid1 { get; set; }
+
+    public string? Vpnid2 { get; set; }
+
+    public string? Vpnid3 { get; set; }
+
+    public string? Vpnid4 { get; set; }
+
+    public string? Vpnid5 { get; set; }
+
+    public string? Userid { get; set; }
+
+    public string? Oracleid { get; set; }
+
+    public string? Dynamicsid { get; set; }
+
+    public string? Ncrid { get; set; }
 }
