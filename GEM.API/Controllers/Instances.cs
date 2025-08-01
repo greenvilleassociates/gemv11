@@ -1,0 +1,78 @@
+﻿using System;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using Microsoft.AspNetCore.Http;
+using System.Net.Mail;
+using GEMAPI.Models;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OpenApi;
+using Microsoft.AspNetCore.Http;
+namespace Enterprise.Controllers;
+
+public static class GinstancesEndpoints
+{
+
+    public static async void MapGinstanceEndpoints(this IEndpointRouteBuilder routes)
+    {
+        var group = routes.MapGroup("/api/Ginstance").WithTags(nameof(Ginstance));
+
+        //[HttpGet]
+        group.MapGet("/", () =>
+        {
+            using (var context = new GemContext())
+            {
+                return context.Ginstances.ToList();
+            }
+
+        })
+        .WithName("GetAllGinstances")
+        .WithOpenApi();
+
+        //[HttpGet]
+        group.MapGet("/{id}", (int id) =>
+        {
+            using (var context = new GemContext())
+            {
+                return context.Ginstances.Where(m => m.Id == id).ToList();
+            }
+        })
+        .WithName("GetInstanceById")
+        .WithOpenApi();
+
+        //[HttpPut]
+        group.MapPut("/{id}", (int id, Grouter input) =>
+        {
+            using (var context = new GemContext())
+            {
+                Ginstance[] someInstance = context.Ginstances.Where(m => m.Id == id).ToArray();
+                context.Ginstances.Attach(someInstance[0]);
+                someInstance[0].Region = input.Region;
+                context.SaveChanges();
+                return TypedResults.Accepted("Updated ID:" + input.Id);
+            }
+
+
+        })
+        .WithName("UpdateGinstance")
+        .WithOpenApi();
+
+        group.MapPost("/", async (Ginstance input) =>
+        {
+            using (var context = new GemContext())
+            {
+                Random rnd = new Random();
+                int dice = rnd.Next(1000, 10000000);
+                //input.Id = dice;
+                context.Ginstances.Add(input);
+                await context.SaveChangesAsync();
+                return TypedResults.Created("Created ID:" + input.Id);
+            }
+
+        })
+        .WithName("CreateGinstances")
+        .WithOpenApi();
+
+    }
+}
+
