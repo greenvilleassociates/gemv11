@@ -127,5 +127,5 @@ app.MapGfirewallcontextEndpoints();
 app.MapGdatabasesEndpoints();
 app.MapGdbmsEndpoints();
 app.MapRackEndpoints();
-app.MapGinstancesEndpoints();
+app.MapGinstanceEndpoints();
 app.Run();

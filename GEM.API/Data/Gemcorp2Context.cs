@@ -478,10 +478,19 @@ public partial class Gemcorp2Context : DbContext
             entity.Property(e => e.Ctsfulllocation)
                 .HasMaxLength(150)
                 .HasColumnName("ctsfulllocation");
+            entity.Property(e => e.Description)
+                .HasMaxLength(150)
+                .HasColumnName("description");
+            entity.Property(e => e.Dynamicsid)
+                .HasMaxLength(25)
+                .HasColumnName("dynamicsid");
             entity.Property(e => e.EnterpriseOid)
                 .HasMaxLength(150)
                 .HasColumnName("enterprise_oid");
             entity.Property(e => e.GenericTrapType).HasColumnName("generic_trap_type");
+            entity.Property(e => e.Inventoryid)
+                .HasMaxLength(150)
+                .HasColumnName("inventoryid");
             entity.Property(e => e.Lat)
                 .HasMaxLength(50)
                 .HasColumnName("lat");
@@ -491,6 +500,22 @@ public partial class Gemcorp2Context : DbContext
             entity.Property(e => e.LoopbackSourceIp)
                 .HasMaxLength(150)
                 .HasColumnName("loopback_source_ip");
+            entity.Property(e => e.Ncrid)
+                .HasMaxLength(25)
+                .HasColumnName("ncrid");
+            entity.Property(e => e.Oracleid)
+                .HasMaxLength(25)
+                .HasColumnName("oracleid");
+            entity.Property(e => e.Producttypeid)
+                .HasMaxLength(50)
+                .HasColumnName("producttypeid");
+            entity.Property(e => e.Queue)
+                .HasMaxLength(100)
+                .HasColumnName("queue");
+            entity.Property(e => e.Repairticket).HasColumnName("repairticket");
+            entity.Property(e => e.Severity)
+                .HasMaxLength(10)
+                .HasColumnName("severity");
             entity.Property(e => e.SnmpVersion)
                 .HasMaxLength(100)
                 .HasColumnName("snmp_version");
@@ -498,6 +523,7 @@ public partial class Gemcorp2Context : DbContext
                 .HasMaxLength(45)
                 .HasColumnName("source_ip");
             entity.Property(e => e.SpecificTrapCode).HasColumnName("specific_trap_code");
+            entity.Property(e => e.Techassigned).HasColumnName("techassigned");
             entity.Property(e => e.Timestamp)
                 .HasMaxLength(100)
                 .HasColumnName("timestamp");
@@ -519,9 +545,27 @@ public partial class Gemcorp2Context : DbContext
             entity.Property(e => e.User5)
                 .HasMaxLength(150)
                 .HasColumnName("user5");
+            entity.Property(e => e.Userid)
+                .HasMaxLength(150)
+                .HasColumnName("userid");
             entity.Property(e => e.Vpnid)
                 .HasMaxLength(50)
                 .HasColumnName("vpnid");
+            entity.Property(e => e.Vpnid1)
+                .HasMaxLength(25)
+                .HasColumnName("vpnid1");
+            entity.Property(e => e.Vpnid2)
+                .HasMaxLength(25)
+                .HasColumnName("vpnid2");
+            entity.Property(e => e.Vpnid3)
+                .HasMaxLength(25)
+                .HasColumnName("vpnid3");
+            entity.Property(e => e.Vpnid4)
+                .HasMaxLength(25)
+                .HasColumnName("vpnid4");
+            entity.Property(e => e.Vpnid5)
+                .HasMaxLength(25)
+                .HasColumnName("vpnid5");
         });
 
         modelBuilder.Entity<Employee>(entity =>

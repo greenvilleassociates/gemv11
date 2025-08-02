@@ -66,4 +66,14 @@ public partial class Ctssnmpv5
     public string? Dynamicsid { get; set; }
 
     public string? Ncrid { get; set; }
+
+    public string? Inventoryid { get; set; }
+
+    public string? Queue { get; set; }
+
+    public string? Producttypeid { get; set; }
+
+    public int? Techassigned { get; set; }
+
+    public long? Repairticket { get; set; }
 }

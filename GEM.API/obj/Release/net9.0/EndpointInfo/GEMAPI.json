@@ -4355,6 +4355,151 @@
         }
       }
     },
+    "/api/Gdatabases": {
+      "get": {
+        "tags": [
+          "Gdatabase"
+        ],
+        "operationId": "GetAllGdatabases",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Gdatabase"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Gdatabase"
+        ],
+        "operationId": "CreateGdatabases",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Gdatabase"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": { }
+            }
+          },
+          "201": {
+            "description": "Created"
+          }
+        }
+      }
+    },
+    "/api/Gdatabases/{id}": {
+      "get": {
+        "tags": [
+          "Gdatabase"
+        ],
+        "operationId": "GetGdatabasesById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Gdatabase"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Gdatabase"
+        ],
+        "operationId": "UpdateGdatabases",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Gdatabase"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "202": {
+            "description": "Accepted"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Gdatabase"
+        ],
+        "operationId": "DeleteGdatabases",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Gdataservices": {
       "get": {
         "tags": [
@@ -4475,6 +4620,151 @@
           "Gdataservice"
         ],
         "operationId": "DeleteGdataservices",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Gdbms": {
+      "get": {
+        "tags": [
+          "Gdbmsinstance"
+        ],
+        "operationId": "GetAllGdbms",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Gdbmsinstance"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Gdbmsinstance"
+        ],
+        "operationId": "CreateGdbms",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Gdbmsinstance"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": { }
+            }
+          },
+          "201": {
+            "description": "Created"
+          }
+        }
+      }
+    },
+    "/api/Gdbms/{id}": {
+      "get": {
+        "tags": [
+          "Gdbmsinstance"
+        ],
+        "operationId": "GetGdbmsById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Gdbmsinstance"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Gdbmsinstance"
+        ],
+        "operationId": "UpdateGdbms",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Gdbmsinstance"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "202": {
+            "description": "Accepted"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Gdbmsinstance"
+        ],
+        "operationId": "DeleteGdbms",
         "parameters": [
           {
             "name": "id",
@@ -5345,6 +5635,151 @@
           "Gfirewall"
         ],
         "operationId": "DeleteGfirewall",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Gfirewallcontext": {
+      "get": {
+        "tags": [
+          "Gfirewallcontext"
+        ],
+        "operationId": "GetAllGfirewallcontexts",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Gfirewallcontext"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Gfirewallcontext"
+        ],
+        "operationId": "CreateGfirewallcontext",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Gfirewallcontext"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": { }
+            }
+          },
+          "201": {
+            "description": "Created"
+          }
+        }
+      }
+    },
+    "/api/Gfirewallcontext/{id}": {
+      "get": {
+        "tags": [
+          "Gfirewallcontext"
+        ],
+        "operationId": "GetGfirewallcontextById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Gfirewallcontext"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Gfirewallcontext"
+        ],
+        "operationId": "UpdateGfirewallcontext",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Gfirewallcontext"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "202": {
+            "description": "Accepted"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Gfirewallcontext"
+        ],
+        "operationId": "DeleteGfirewallcontext",
         "parameters": [
           {
             "name": "id",
@@ -6816,6 +7251,122 @@
                 }
               }
             }
+          }
+        }
+      }
+    },
+    "/api/Ginstance": {
+      "get": {
+        "tags": [
+          "Ginstance"
+        ],
+        "operationId": "GetAllGinstances",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Ginstance"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Ginstance"
+        ],
+        "operationId": "CreateGinstances",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Ginstance"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": { }
+            }
+          },
+          "201": {
+            "description": "Created"
+          }
+        }
+      }
+    },
+    "/api/Ginstance/{id}": {
+      "get": {
+        "tags": [
+          "Ginstance"
+        ],
+        "operationId": "GetInstanceById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Ginstance"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Ginstance"
+        ],
+        "operationId": "UpdateGinstance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Grouter"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "202": {
+            "description": "Accepted"
           }
         }
       }
@@ -8535,6 +9086,151 @@
           "Gproduct"
         ],
         "operationId": "DeleteGproduct",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Grack": {
+      "get": {
+        "tags": [
+          "Grack"
+        ],
+        "operationId": "GetAllGracks",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Grack"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Grack"
+        ],
+        "operationId": "CreateGrack",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Grack"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": { }
+            }
+          },
+          "201": {
+            "description": "Created"
+          }
+        }
+      }
+    },
+    "/api/Grack/{id}": {
+      "get": {
+        "tags": [
+          "Grack"
+        ],
+        "operationId": "GetGracksById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Grack"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Grack"
+        ],
+        "operationId": "UpdateGrack",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Grack"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "202": {
+            "description": "Accepted"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Grack"
+        ],
+        "operationId": "DeleteGrack",
         "parameters": [
           {
             "name": "id",
@@ -13687,6 +14383,40 @@
         }
       }
     },
+    "/api/Users/Userid/{Userid}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "operationId": "GetUserByUserId",
+        "parameters": [
+          {
+            "name": "Userid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Users/logout/{token}": {
       "put": {
         "tags": [
@@ -14511,7 +15241,7 @@
         }
       }
     },
-    "/api/Userprofile/uid/{Userid}": {
+    "/api/Userprofile/userid/{Userid}": {
       "get": {
         "tags": [
           "Userprofile"
@@ -14543,7 +15273,9 @@
             }
           }
         }
-      },
+      }
+    },
+    "/api/Userprofile/uid/{Userid}": {
       "put": {
         "tags": [
           "Userprofile"
@@ -15426,6 +16158,72 @@
           "loopbackSourceIp": {
             "type": "string",
             "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "severity": {
+            "type": "string",
+            "nullable": true
+          },
+          "vpnid1": {
+            "type": "string",
+            "nullable": true
+          },
+          "vpnid2": {
+            "type": "string",
+            "nullable": true
+          },
+          "vpnid3": {
+            "type": "string",
+            "nullable": true
+          },
+          "vpnid4": {
+            "type": "string",
+            "nullable": true
+          },
+          "vpnid5": {
+            "type": "string",
+            "nullable": true
+          },
+          "userid": {
+            "type": "string",
+            "nullable": true
+          },
+          "oracleid": {
+            "type": "string",
+            "nullable": true
+          },
+          "dynamicsid": {
+            "type": "string",
+            "nullable": true
+          },
+          "ncrid": {
+            "type": "string",
+            "nullable": true
+          },
+          "inventoryid": {
+            "type": "string",
+            "nullable": true
+          },
+          "queue": {
+            "type": "string",
+            "nullable": true
+          },
+          "producttypeid": {
+            "type": "string",
+            "nullable": true
+          },
+          "techassigned": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "repairticket": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -16057,6 +16855,16 @@
           "alohaid": {
             "type": "string",
             "nullable": true
+          },
+          "region": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "sitehq": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -16286,6 +17094,68 @@
         },
         "additionalProperties": false
       },
+      "Gdatabase": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "siteid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "parentid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "bu": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "branchid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "ownerid": {
+            "type": "string",
+            "nullable": true
+          },
+          "vendorid": {
+            "type": "string",
+            "nullable": true
+          },
+          "techcontactid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "sitecontactid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "region": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "instanceid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "Gdataservice": {
         "type": "object",
         "properties": {
@@ -16308,6 +17178,49 @@
           },
           "inventoryid": {
             "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Gdbmsinstance": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "siteid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "vendorid": {
+            "type": "string",
+            "nullable": true
+          },
+          "techcontactid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "sitecontactid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "region": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "instanceid": {
+            "type": "integer",
+            "format": "int32",
             "nullable": true
           }
         },
@@ -16473,6 +17386,72 @@
             "format": "int32"
           },
           "firewallid": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "ipaddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "telemetryipaddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "vpnid1": {
+            "type": "string",
+            "nullable": true
+          },
+          "vpnid2": {
+            "type": "string",
+            "nullable": true
+          },
+          "inventoryid": {
+            "type": "string",
+            "nullable": true
+          },
+          "instanceid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "custid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "serialnumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "regionid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "siteid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Gfirewallcontext": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "firewallid": {
+            "type": "string",
+            "nullable": true
+          },
+          "contextid": {
             "type": "string",
             "nullable": true
           },
@@ -17057,6 +18036,49 @@
         },
         "additionalProperties": false
       },
+      "Ginstance": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "custid": {
+            "type": "string",
+            "nullable": true
+          },
+          "ncrid": {
+            "type": "string",
+            "nullable": true
+          },
+          "dynamicsid": {
+            "type": "string",
+            "nullable": true
+          },
+          "oracleid": {
+            "type": "string",
+            "nullable": true
+          },
+          "buscontactid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "techcontactid": {
+            "type": "string",
+            "nullable": true
+          },
+          "techcontactemail": {
+            "type": "string",
+            "nullable": true
+          },
+          "region": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "Ginventory": {
         "type": "object",
         "properties": {
@@ -17593,6 +18615,44 @@
         },
         "additionalProperties": false
       },
+      "Grack": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "siteid": {
+            "type": "string",
+            "nullable": true
+          },
+          "region": {
+            "type": "string",
+            "nullable": true
+          },
+          "floor": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "suite": {
+            "type": "string",
+            "nullable": true
+          },
+          "instanceid": {
+            "type": "string",
+            "nullable": true
+          },
+          "custid": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "Grouter": {
         "type": "object",
         "properties": {
@@ -17853,6 +18913,11 @@
           },
           "custid": {
             "type": "string",
+            "nullable": true
+          },
+          "region": {
+            "type": "integer",
+            "format": "int32",
             "nullable": true
           }
         },
@@ -18139,6 +19204,11 @@
           },
           "groupid": {
             "type": "string",
+            "nullable": true
+          },
+          "region": {
+            "type": "integer",
+            "format": "int32",
             "nullable": true
           }
         },

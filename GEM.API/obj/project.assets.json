@@ -7856,11 +7856,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\GEMAPI.csproj",
+      "projectUniqueName": "C:\\Users\\stritzj\\source\\repos\\gemv11\\GEM.API\\GEMAPI.csproj",
       "projectName": "GEMAPI",
-      "projectPath": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\GEMAPI.csproj",
+      "projectPath": "C:\\Users\\stritzj\\source\\repos\\gemv11\\GEM.API\\GEMAPI.csproj",
       "packagesPath": "C:\\Users\\stritzj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\stritzj\\Documents\\567\\API\\gemv9\\GEM.API\\obj\\",
+      "outputPath": "C:\\Users\\stritzj\\source\\repos\\gemv11\\GEM.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -49,7 +49,11 @@ public partial class GemContext : DbContext
 
     public virtual DbSet<Gcustomer> Gcustomers { get; set; }
 
+    public virtual DbSet<Gdatabase> Gdatabases { get; set; }
+
     public virtual DbSet<Gdataservice> Gdataservices { get; set; }
+
+    public virtual DbSet<Gdbmsinstance> Gdbmsinstances { get; set; }
 
     public virtual DbSet<Gdbmsrelease> Gdbmsreleases { get; set; }
 
@@ -614,6 +618,8 @@ public partial class GemContext : DbContext
             entity.Property(e => e.Oracleid)
                 .HasMaxLength(250)
                 .HasColumnName("oracleid");
+            entity.Property(e => e.Region).HasColumnName("region");
+            entity.Property(e => e.Sitehq).HasColumnName("sitehq");
         });
 
         modelBuilder.Entity<Gcomputer>(entity =>
@@ -780,6 +786,35 @@ public partial class GemContext : DbContext
                 .HasColumnName("zip");
         });
 
+        modelBuilder.Entity<Gdatabase>(entity =>
+        {
+            entity
+                .HasNoKey()
+                .ToTable("gdatabases");
+
+            entity.Property(e => e.Branchid).HasColumnName("branchid");
+            entity.Property(e => e.Bu).HasColumnName("bu");
+            entity.Property(e => e.Description)
+                .HasMaxLength(150)
+                .HasColumnName("description");
+            entity.Property(e => e.Id)
+                .ValueGeneratedOnAdd()
+                .UseIdentityAlwaysColumn()
+                .HasColumnName("id");
+            entity.Property(e => e.Instanceid).HasColumnName("instanceid");
+            entity.Property(e => e.Ownerid)
+                .HasMaxLength(150)
+                .HasColumnName("ownerid");
+            entity.Property(e => e.Parentid).HasColumnName("parentid");
+            entity.Property(e => e.Region).HasColumnName("region");
+            entity.Property(e => e.Sitecontactid).HasColumnName("sitecontactid");
+            entity.Property(e => e.Siteid).HasColumnName("siteid");
+            entity.Property(e => e.Techcontactid).HasColumnName("techcontactid");
+            entity.Property(e => e.Vendorid)
+                .HasMaxLength(150)
+                .HasColumnName("vendorid");
+        });
+
         modelBuilder.Entity<Gdataservice>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("gdataservices_pkey");
@@ -797,6 +832,29 @@ public partial class GemContext : DbContext
                 .HasMaxLength(100)
                 .HasColumnName("inventoryid");
             entity.Property(e => e.Networkid).HasColumnName("networkid");
+        });
+
+        modelBuilder.Entity<Gdbmsinstance>(entity =>
+        {
+            entity
+                .HasNoKey()
+                .ToTable("gdbmsinstances");
+
+            entity.Property(e => e.Description)
+                .HasMaxLength(150)
+                .HasColumnName("description");
+            entity.Property(e => e.Id)
+                .ValueGeneratedOnAdd()
+                .UseIdentityAlwaysColumn()
+                .HasColumnName("id");
+            entity.Property(e => e.Instanceid).HasColumnName("instanceid");
+            entity.Property(e => e.Region).HasColumnName("region");
+            entity.Property(e => e.Sitecontactid).HasColumnName("sitecontactid");
+            entity.Property(e => e.Siteid).HasColumnName("siteid");
+            entity.Property(e => e.Techcontactid).HasColumnName("techcontactid");
+            entity.Property(e => e.Vendorid)
+                .HasMaxLength(150)
+                .HasColumnName("vendorid");
         });
 
         modelBuilder.Entity<Gdbmsrelease>(entity =>
@@ -1489,6 +1547,9 @@ public partial class GemContext : DbContext
             entity.Property(e => e.Oracleid)
                 .HasMaxLength(100)
                 .HasColumnName("oracleid");
+            entity.Property(e => e.Region)
+                .HasMaxLength(25)
+                .HasColumnName("region");
             entity.Property(e => e.Techcontactemail)
                 .HasMaxLength(150)
                 .HasColumnName("techcontactemail");
@@ -2209,6 +2270,7 @@ public partial class GemContext : DbContext
             entity.Property(e => e.Postal)
                 .HasMaxLength(150)
                 .HasColumnName("postal");
+            entity.Property(e => e.Region).HasColumnName("region");
             entity.Property(e => e.Siteclli)
                 .HasMaxLength(100)
                 .HasColumnName("siteclli");
@@ -2470,6 +2532,7 @@ public partial class GemContext : DbContext
             entity.Property(e => e.Groupname)
                 .HasMaxLength(250)
                 .HasColumnName("groupname");
+            entity.Property(e => e.Region).HasColumnName("region");
         });
 
         modelBuilder.Entity<Guserprofile>(entity =>
