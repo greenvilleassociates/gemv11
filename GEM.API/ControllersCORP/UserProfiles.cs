@@ -88,7 +88,7 @@ public static class UserprofileEndpoints
                 someUserprofile[0].Managerid = input.Managerid;
                 someUserprofile[0].Regionid = input.Regionid;
                 someUserprofile[0].Branchid = input.Branchid;    
-                context.SaveChanges();
+                context.SaveChangesAsync();
                 return TypedResults.Accepted("Updated ID:" + input.Id);
             }
 
@@ -134,7 +134,7 @@ public static class UserprofileEndpoints
                 someUserprofile[0].Managerid = input.Managerid;
                 someUserprofile[0].Regionid = input.Regionid;
                 someUserprofile[0].Branchid = input.Branchid;
-                context.SaveChanges();
+                context.SaveChangesAsync();
                 return TypedResults.Accepted("Updated ID:" + input.Id);
             }
 
